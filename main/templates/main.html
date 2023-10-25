@@ -1,2 +1,87 @@
-<h1>Nama page: </h1>
-<p>{{ namapage }}<p>
+{% extends 'base.html' %}
+
+
+{% block content %}
+<style>
+    .list-link {
+        list-style-type: none;
+    }
+</style>
+
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        LiteraLoka
+      </a>
+    </div>
+  </nav>
+
+
+
+
+<div class="main-container d-flex p-3 flex-row">
+    <div class="content-page">
+        <h1>Nama page: </h1>
+        <p>{{ namapage }}<p>
+        
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Language</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Year Published</th>
+                </tr>
+            
+                {% comment %} Berikut cara memperlihatkan data produk di bawah baris ini {% endcomment %}
+            
+        
+                {% for buku in kumpulanbuku %}
+                    <tr>
+        
+                        <td>{{buku.title}}</td>
+                        <td>{{buku.language}}</td>
+                        <td>{{buku.author}}</td>
+                        <td>{{buku.category}}</td>
+                        <td>{{buku.year_published}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        
+            <br />
+        
+            <a href="{% url 'main:create_product' %}">
+                <button>
+                    Add New Product
+                </button>
+            </a>
+    </div>
+    <div class="listpage border border-black w-30 p-2 m-2">
+        <h3>Contributor:</h3>
+        <ol>
+            <li>Fernando Valentino Sitinjak (2206081332)</li>
+            <li>Muhammad Hilmy Erryanto (2206025905)</li>
+            <li>Fathirahma Alyssa Pristanti (2206082215)</li>
+            <li>Chika Marsya Diandra Lumban Gaol (2206083344)</li>
+            <li>Pradipta Arya Pramudita (2206083685)</li>
+            <li>Leticia Kalila Darlene (2206830561)</li>
+        </ol>
+        <h3>Hyperlink:</h3>
+        <div class="list-link">
+            <ul>
+                <li><a>Admin Site</a></li>
+                <li><a>Shop</a></li>
+                <li><a>Shopping cart & Checkout</a></li>
+            </ul>
+        </div>
+    </div>  
+    
+</div>
+<a href="{% url 'main:logout' %}">
+    <button>
+        Logout
+    </button>
+</a>
+
+{% endblock content %}
