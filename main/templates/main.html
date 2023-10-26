@@ -32,6 +32,7 @@
                     <th>Author</th>
                     <th>Category</th>
                     <th>Year Published</th>
+                    <th>Thumbnail</th>
                 </tr>
             
                 {% comment %} Berikut cara memperlihatkan data produk di bawah baris ini {% endcomment %}
@@ -41,10 +42,11 @@
                     <tr>
         
                         <td>{{buku.title}}</td>
-                        <td>{{buku.language}}</td>
+                        <td>{{buku.lang}}</td>
                         <td>{{buku.author}}</td>
                         <td>{{buku.category}}</td>
-                        <td>{{buku.year_published}}</td>
+                        <td>{{buku.publication_date}}</td>
+                        <td><img src = "{{buku.image_url}}" width="200"></td>
                     </tr>
                 {% endfor %}
             </table>

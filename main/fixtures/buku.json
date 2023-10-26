@@ -1,0 +1,1702 @@
+[
+    {
+        "model": "main.Buku",
+        "pk": 1,
+        "fields": {
+            "isbn": "9780807056424",
+            "title": "The Great Transformation",
+            "description": "In this classic work of economic history and social theory, Karl Polanyi analyzes the economic and social changes brought about by the \"great transformation\" of the Industrial Revolution. His analysis explains not only the deficiencies of the self-regulating market, but the potentially dire social consequences of untempered market capitalism. New introductory material reveals the renewed importance of Polanyi's seminal analysis in an era of globalization and free trade.",
+            "author": "Karl Polanyi",
+            "publisher": "Beacon Press",
+            "publication_date": "2001-03-28",
+            "page_count": 360,
+            "category": "Business & Economics",
+            "image_url": "http://books.google.com/books/content?id=YfpIs1Z6B2sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 75000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 2,
+        "fields": {
+            "isbn": "9780307267399",
+            "title": "The Last Mughal",
+            "description": "In this evocative study of the fall of the Mughal Empire and the beginning of the Raj, award-winning historian William Dalrymple uses previously undiscovered sources to investigate a pivotal moment in history. The last Mughal emperor, Zafar, came to the throne when the political power of the Mughals was already in steep decline. Nonetheless, Zafar\u2014a mystic, poet, and calligrapher of great accomplishment\u2014created a court of unparalleled brilliance, and gave rise to perhaps the greatest literary renaissance in modern Indian history. All the while, the British were progressively taking over the Emperor's power. When, in May 1857, Zafar was declared the leader of an uprising against the British, he was powerless to resist though he strongly suspected that the action was doomed. Four months later, the British took Delhi, the capital, with catastrophic results. With an unsurpassed understanding of British and Indian history, Dalrymple crafts a provocative, revelatory account of one the bloodiest upheavals in history.",
+            "author": "William Dalrymple",
+            "publisher": "Vintage",
+            "publication_date": "2007-03-27",
+            "page_count": 560,
+            "category": "History",
+            "image_url": "http://books.google.com/books/content?id=zlEDvkhEmL8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 166000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 3,
+        "fields": {
+            "isbn": "9780521477352",
+            "title": "The Discarded Image",
+            "description": "Hailed as \"the final memorial to the work of a great scholar and teacher and a wise and noble mind,\" this work paints a lucid picture of the medieval world view, as historical and cultural background to the literature of the Middle Ages and Renaissance.",
+            "author": "C. S. Lewis",
+            "publisher": "Cambridge University Press",
+            "publication_date": "1994-08-26",
+            "page_count": 248,
+            "category": "History",
+            "image_url": "http://books.google.com/books/content?id=WADDM36d3TAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 120000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 4,
+        "fields": {
+            "isbn": "9780521004794",
+            "title": "A Concise History of Greece",
+            "description": "This book provides a concise, illustrated introduction to the history of modern Greece, with a new final chapter about Greek history and politics to the present day. 56 illustrations. 10 maps.",
+            "author": "Richard Clogg",
+            "publisher": "Cambridge University Press",
+            "publication_date": "2002-06-20",
+            "page_count": 316,
+            "category": "History",
+            "image_url": "http://books.google.com/books/content?id=H5pyUIY4THYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 123000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 5,
+        "fields": {
+            "isbn": "9781473545373",
+            "title": "Homo Deus",
+            "description": "**THE MILLION COPY BESTSELLER** Sapiens showed us where we came from. In our increasingly uncertain times, Homo Deus shows us where we're going. 'Spellbinding' Guardian The world-renowned historian and intellectual Yuval Noah Harari envisions a near future in which we face a new set of challenges. Homo Deus explores the projects, dreams and nightmares that will shape the twenty-first century and beyond - from overcoming death to creating artificial life. It asks the fundamental questions: how can we protect this fragile world from our own destructive power? And what does our future hold? 'Even more readable, even more important, than his excellent Sapiens' Kazuo Ishiguro 'Homo Deus will shock you. It will entertain you. It will make you think in ways you had not thought before' Daniel Kahneman, bestselling author of Thinking, Fast and Slow",
+            "author": "Yuval Noah Harari",
+            "publisher": "Random House",
+            "publication_date": "2016-09-08",
+            "page_count": 504,
+            "category": "Social Science",
+            "image_url": "http://books.google.com/books/content?id=dWYyCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 128000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 6,
+        "fields": {
+            "isbn": "9780300154047",
+            "title": "Tibet",
+            "description": "Presents a comprehensive history of the country, from its beginnings in the seventh century, to its rise as a Buddhist empire in medieval times, to its conquest by China in 1950, and subsequent rule by the Chinese.",
+            "author": "Sam van Schaik",
+            "publisher": "Yale University Press",
+            "publication_date": "2011-06-28",
+            "page_count": 350,
+            "category": "History",
+            "image_url": "http://books.google.com/books/content?id=La1CWinaDR4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 113000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 7,
+        "fields": {
+            "isbn": "9780241188101",
+            "title": "The Gates of Europe",
+            "description": "From award-winning historian Serhii Plokhy, The Gates of Europe is the definitive history of Ukraine that helps us understand the country's past and the current crisis Located at the western edge of the Eurasian steppe, Ukraine has long been the meeting place of empires - Roman to Ottoman, Habsburg to Russian - and they all left their imprint on the landscape, the language and the people living within these shifting borders. In this authoritative book, Serhii Plokhy traces the history of Ukraine from the arrival of the Vikings in the tenth century to the current Russian invasion of eastern Ukraine and annexation of Crimea. Fascinating and multi-layered, The Gates of Europe is the essential guide to understanding not just Ukraine's past but also its future.",
+            "author": "Serhii Plokhy",
+            "publisher": "Penguin UK",
+            "publication_date": "2015-12-01",
+            "page_count": 432,
+            "category": "History",
+            "image_url": "http://books.google.com/books/content?id=4E3ZCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 175000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 8,
+        "fields": {
+            "isbn": "9780571268412",
+            "title": "The Museum of Innocence",
+            "description": "The Museum of Innocence - set in Istanbul between 1975 and today - tells the story of Kemal, the son of one of Istanbul's richest families, and of his obsessive love for a poor and distant relation, the beautiful Fusun, who is a shop-girl in a small boutique. In his romantic pursuit of F\u00fcsun over the next eight years, Kemal compulsively amasses a collection of objects that chronicles his lovelorn progress-a museum that is both a map of a society and of his heart. The novel depicts a panoramic view of life in Istanbul as it chronicles this long, obsessive love affair; and Pamuk beautifully captures the identity crisis experienced by Istanbul's upper classes that find themselves caught between traditional and westernised ways of being. Orhan Pamuk's first novel since winning the Nobel Prize is a stirring love story and exploration of the nature of romance. Pamuk built The Museum of Innocence in the house in which his hero's fictional family lived, to display Kemal's strange collection of objects associated with Fusun and their relationship. The house opened to the public in 2012 in the Beyoglu district of Istanbul. 'Pamuk has created a work concerning romantic love worthy to stand in the company of Lolita, Madame Bovary and Anna Karenina.' --Financial Times",
+            "author": "Orhan Pamuk",
+            "publisher": "Faber & Faber",
+            "publication_date": "2011-08-05",
+            "page_count": 756,
+            "category": "History",
+            "image_url": "http://books.google.com/books/content?id=vHr5vhO5gXsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 149000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 9,
+        "fields": {
+            "isbn": "9781317026587",
+            "title": "The Journey of William of Rubruck to the Eastern Parts of the World, 1253-55",
+            "description": "The texts of Willem van Ruusbroec and Giovanni da Pian del Carpine, translated from the Latin and edited, with an Introductory Notice. See also Second Series 173. This is a new print-on-demand hardback edition of the volume first published in 1900.",
+            "author": "William Woodville Rockhill",
+            "publisher": "Taylor & Francis",
+            "publication_date": "2017-05-15",
+            "page_count": 287,
+            "category": "History",
+            "image_url": "http://books.google.com/books/content?id=LAgkDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 127000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 10,
+        "fields": {
+            "isbn": "9780300066647",
+            "title": "Stalin and the Bomb",
+            "description": "'Stalin and the Bomb' represents a comprehensive history of Soviet nuclear policy, from developments in physics in the 1920s to the emergence of nuclear deterrence in the 1950s. The author looks at how the bombs were built, and the role that espionage played.",
+            "author": "David Holloway",
+            "publisher": "Yale University Press",
+            "publication_date": "1994-01-01",
+            "page_count": 505,
+            "category": "Political Science",
+            "image_url": "http://books.google.com/books/content?id=HO2ODwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 83000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 11,
+        "fields": {
+            "isbn": "9780813139364",
+            "title": "A History of the Modern Chinese Army",
+            "description": "Since the establishment of the Red Army in 1927, China's military has responded to profound changes in Chinese society, particularly its domestic politics, shifting economy, and evolving threat perceptions. Recently tensions between China and Taiwan and other east Asian nations have aroused great interest in the extraordinary transformation and new capabilities of the Chinese army. In A History of the Modern Chinese Army, Xiaobing Li, a former member of the People's Liberation Army (PLA), provides a comprehensive examination of the PLA from the Cold War to the beginning of the twenty-first century that highlights the military's central function in modern Chinese society. In the 1940s, the Chinese army was in its infancy, and many soldiers were rural conscripts and volunteers who had received little formal schooling. The Chinese military rapidly increased its mobility and weapon strength, and the Korean War and Cold War offered intense combat experience that not only allowed soldiers to hone their fighting techniques but also helped China to develop military tactics tailored to the surrounding countries whose armies posed the most immediate threats. Yet even in the 1970s, the completion of a middle school education (nine years) was considered above-average, and only 4 percent of the 224 top Chinese generals had any college credit hours. However, in 1995 the high command began to institute massive reforms to transform the PLA from a labor-intensive force into a technology-intensive army. Continually seeking more urban conscripts and emphasizing higher education, the PLA Reserve Officer Training and Selection program recruited students from across the nation. These reservists would become commissioned officers upon graduation, and they majored in atomic physics, computer science, and electrical engineering. Grounding the text in previously unreleased official Chinese government and military records as well as the personal testimonies of more than two hundred PLA soldiers, Li charts the development of China's armed forces against the backdrop of Chinese society, cultural traditions, political history, and recent technological advancements. A History of the Modern Chinese Army links China's military modernization to the country's growing international and economic power and provides a unique perspective on China's esttablishment and maintenance of one of the world's most advanced military forces.",
+            "author": "Xiaobing Li",
+            "publisher": "University Press of Kentucky",
+            "publication_date": "2007-06-01",
+            "page_count": 432,
+            "category": "History",
+            "image_url": "http://books.google.com/books/content?id=HClVMlNksQMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 62000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 12,
+        "fields": {
+            "isbn": "9780486830230",
+            "title": "The Twelve Caesars",
+            "description": "One of antiquity's great historical resources, this chronicle portrays the lives and reigns of Julius Caesar and his 11 immediate successors.",
+            "author": "Suetonius",
+            "publisher": "Courier Dover Publications",
+            "publication_date": "2018-04-18",
+            "page_count": 656,
+            "category": "History",
+            "image_url": "http://books.google.com/books/content?id=MeVVDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 118000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 13,
+        "fields": {
+            "isbn": "9781137103499",
+            "title": "The Black Death",
+            "description": "A fascinating account of the phenomenon known as the Black Death, this volume offers a wealth of documentary material focused on the initial outbreak of the plague that ravaged the world in the 14th century. A comprehensive introduction that provides important background on the origins and spread of the plague is followed by nearly 50 documents organized into topical sections that focus on the origin and spread of the illness; the responses of medical practitioners; the societal and economic impact; religious responses; the flagellant movement and attacks on Jews provoked by the plague; and the artistic response. Each chapter has an introduction that summarizes the issues explored in the documents; headnotes to the documents provide additional background material. The book contains documents from many countries - including Muslim and Byzantine sources - to give students a variety of perspectives on this devastating illness and its consequences. The volume also includes illustrations, a chronology of the Black Death, and questions to consider.",
+            "author": "NA NA",
+            "publisher": "Springer",
+            "publication_date": "2016-04-30",
+            "page_count": 215,
+            "category": "History",
+            "image_url": "http://books.google.com/books/content?id=_LcYDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 157000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 14,
+        "fields": {
+            "isbn": "9780226308593",
+            "title": "Caucasus",
+            "description": "A rugged land between the Black and Caspian seas, the Caucasus is a battle ground for a fascinating and formidable clash of cultures: Russia on one side, the predominantly Muslim mountains on the other. In Caucasus, award-winning author Nicholas Griffin recounts his journey to this war torn region to explore the roots of today's conflict, centering his travelogue on Imam Shamil, the great nineteenth century Muslim warrior who commanded a quarter-century resistance against invading Russian forces. Delving deep into the Caucasus, Griffin transcends the headlines trumpeting Chechen insurgency to give the land and its conflicts dimension: evoking the weather, terrain, and geography alongside national traditions, religious affiliations, and personal legends as barriers to peaceful co-existence. In focusing his tale on Shamil while retracing his steps, Griffin compellingly demonstrates the way history repeats itself.",
+            "author": "Nicholas Griffin",
+            "publisher": "University of Chicago Press",
+            "publication_date": "2004-04-27",
+            "page_count": 260,
+            "category": "History",
+            "image_url": "http://books.google.com/books/content?id=NH6aEY0zDjQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 78000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 15,
+        "fields": {
+            "isbn": "9780241979952",
+            "title": "The Holocaust",
+            "description": "THE SUNDAY TIMES TOP 10 BESTSELLER AND THE FIRST AUTHORITATIVE ACCOUNT FOR 30 YEARS. 'By far the clearest book ever written about the Holocaust, and also the best at explaining its origins and grotesque mentality, as well as its chaotic development' Antony Beevor 'Groundbreaking. You might have thought that we know everything there is to know about the Holocaust but this book proves there is much more' Andrew Roberts, Mail on Sunday Two fundamental questions about the Holocaust must be answered: How did it happen? And why? More completely than any other single work of history yet published, Laurence Rees's Holocaust definitively answers them. 'With The Holocaust Rees has set himself the task of writing an accessible chronological account of the murder of six million Jews in conditions of scarcely imaginable horror. He's done it excellently. There is no shortage of books on the Holocaust but Rees's stands out as a readable and authoritative exposition of how and why it happened, and the barbarous methods by which it was pursued. The amount of ground it covers in 500 pages is remarkable - from the anti-Semitism of popular German literature of the 19th century to Hitler's suicide and the surrender of his regime. It's excellently written and skilfully interweaves narrative history, sound interpretation and the recollections (through interviews, listed in the notes as \"previously unpublished testimony\") of survivors. Rees provides an exemplary account of how the greatest crime in modern history came about' The Times 'Rees has distilled 25 years of research into this compelling study, the finest single-volume account of the Holocaust. It is not a book for the faint-hearted. Some of the first-hand testimony is both shocking and heart-rending. Yet it has important things to say about human nature - what our species is capable of doing if not prevented by civilized laws - and demands to be read' Saul David, Telegraph 'Anyone wanting a compelling, highly readable explanation of how and why the Holocaust happened, drawing on recent scholarship and impressively incorporating moving and harrowing interviews need look no further than Laurence Rees's brilliant book' Professor Ian Kershaw, bestselling author of Hitler",
+            "author": "Laurence Rees",
+            "publisher": "Penguin UK",
+            "publication_date": "2017-01-26",
+            "page_count": 528,
+            "category": "History",
+            "image_url": "http://books.google.com/books/content?id=iHMNDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 145000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 16,
+        "fields": {
+            "isbn": "9781846147340",
+            "title": "Iron Curtain",
+            "description": "At the end of the Second World War, the Soviet Union unexpectedly found itself in control of a huge swathe of territory in Eastern Europe. Stalin and his secret police set out to convert a dozen radically different countries to a completely new political and moral system: communism. In Iron Curtain, Pulitzer Prize-winning historian Anne Applebaum describes how the Communist regimes of Eastern Europe were created and what daily life was like once they were complete. Applebaum describes in devastating detail how political parties, the church, the media, young people's organizations - the institutions of civil society on every level - were quickly eviscerated. She explains how the secret police services were organized, how the media came to be dominated by communists, and how all forms of opposition were undermined and destroyed. Ranging widely across new archival material and many sources unknown in English, she follows the communists' tactics as they bullied, threatened and murdered their way to power. She also chronicles individual lives to show the choices people had to make - to fight, to flee, or to collaborate. Within a remarkably short period after the end of the war, Eastern Europe had been ruthlessly Stalinized. Iron Curtain is a brilliant history of a brutal period and a haunting reminder of how fragile free societies can be. Today the Soviet Bloc is a lost civilization, one whose cruelty, paranoia, bizarre morality, and strange aesthetics Anne Applebaum captures in the pages of this exceptional work of historical and moral reckoning.",
+            "author": "Anne Applebaum",
+            "publisher": "Penguin UK",
+            "publication_date": "2012-10-04",
+            "page_count": 656,
+            "category": "History",
+            "image_url": "http://books.google.com/books/content?id=MhI2cTeWAOAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 182000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 17,
+        "fields": {
+            "isbn": "9780199798797",
+            "title": "The Ottoman Age of Exploration",
+            "description": "In 1517, the Ottoman Sultan Selim \"the Grim\" conquered Egypt and brought his empire for the first time in history into direct contact with the trading world of the Indian Ocean. During the decades that followed, the Ottomans became progressively more engaged in the affairs of this vast and previously unfamiliar region, eventually to the point of launching a systematic ideological, military and commercial challenge to the Portuguese Empire, their main rival for control of the lucrative trade routes of maritime Asia. The Ottoman Age of Exploration is the first comprehensive historical account of this century-long struggle for global dominance, a struggle that raged from the shores of the Mediterranean to the Straits of Malacca, and from the interior of Africa to the steppes of Central Asia. Based on extensive research in the archives of Turkey and Portugal, as well as materials written on three continents and in a half dozen languages, it presents an unprecedented picture of the global reach of the Ottoman state during the sixteenth century. It does so through a dramatic recounting of the lives of sultans and viziers, spies, corsairs, soldiers-of-fortune, and women from the imperial harem. Challenging traditional narratives of Western dominance, it argues that the Ottomans were not only active participants in the Age of Exploration, but ultimately bested the Portuguese in the game of global politics by using sea power, dynastic prestige, and commercial savoir faire to create their own imperial dominion throughout the Indian Ocean.",
+            "author": "Giancarlo Casale",
+            "publisher": "Oxford University Press",
+            "publication_date": "2010-02-25",
+            "page_count": 304,
+            "category": "History",
+            "image_url": "http://books.google.com/books/content?id=Xf3h3Z1YQtIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 99000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 18,
+        "fields": {
+            "isbn": "9781107030565",
+            "title": "An Economic History of China",
+            "description": "The first comprehensive study of China's economic development across 3,000 years of history to be published in English.",
+            "author": "Richard von Glahn",
+            "publisher": "Cambridge University Press",
+            "publication_date": "2016-03-10",
+            "page_count": 477,
+            "category": "Business & Economics",
+            "image_url": "http://books.google.com/books/content?id=Z02SCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 68000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 19,
+        "fields": {
+            "isbn": "9780465049059",
+            "title": "The Nazi Doctors",
+            "description": "Winner of the Los Angeles Times Book Prize With a new preface by the author In his most powerful and important book, renowned psychiatrist Robert Jay Lifton presents a brilliant analysis of the crucial role that German doctors played in the Nazi genocide. Now updated with a new preface, The Nazi Doctors remains the definitive work on the Nazi medical atrocities, a chilling expos\u00e9 of the banality of evil at its epitome, and a sobering reminder of the darkest side of human nature.",
+            "author": "Robert Jay Lifton",
+            "publisher": "Basic Books",
+            "publication_date": "1988-04-12",
+            "page_count": 570,
+            "category": "Psychology",
+            "image_url": "http://books.google.com/books/content?id=zfH0l08UwusC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+            "lang": "en",
+            "price": 55000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 20,
+        "fields": {
+            "isbn": "9781439187333",
+            "title": "William Golding",
+            "description": "In 1953, William Golding was a provincial schoolteacher writing books on his breaks, lunch hours and holidays. His work had been rejected by every major publisher\u2014until an editor at Faber and Faber pulled his manuscript off the rejection pile. This was to become Lord of the Flies, a book that would sell in the millions and bring Golding worldwide recognition. Golding went on to become one of the most popular and influential British authors to have emerged since World War II. He received the Booker Prize for the novel Rites of Passage in 1980, and the Nobel Prize for Literature in 1983. Stephen King has stated that the Castle Rock in Lord of the Flies continues to inspire him, so much so that he named his entertainment company after it and has placed the Golding novel prominently in his novels Hearts in Atlantis and Cujo. Golding has been called a British Vonnegut\u2014disheveled and darkly humorous, perverse when it would have been easier to be bitter, bitter when it would have been easier to be lazy, sometimes more disturbing than he is palatable and above all fascinating beyond measure. Yet despite the fame and acclaim, the renowned author saw himself as a monster\u2014a reclusive depressive ruled by his fears and a man who battled alcoholism throughout his life. In addition to being a schoolteacher, Golding was a scientist, a sailor and a poet before becoming a bestselling author, and his embitterment and alienation, his family, the women in his past, along with his experiences in the war, inform his work. This is the first book to unpack the life and character of a man whose entire oeuvre dealt with the conflict between light and dark in the human soul, tracing the defects of society back to the defects of human nature itself. Drawing almost entirely on materials that have never before been made public, John Carey sheds new light on Golding. Through his exclusive access to Golding\u2019s family, Carey uses hundreds of letters, unpublished works and Golding\u2019s intimate journals to draw a revelatory and definitive portrait. An acclaimed critic, Carey enriches crucially our appreciation of the literary work of Golding, bringing us, as the best literary biographies do, back to the books. And with equal parts lyricism and driving emotion, Carey brings to light a life that is extraordinary to the point of transcendent and a writer who trusted the imagination above all things.",
+            "author": "John Carey",
+            "publisher": "Simon and Schuster",
+            "publication_date": "2010-06-01",
+            "page_count": 592,
+            "category": "Biography & Autobiography",
+            "image_url": "http://books.google.com/books/content?id=8sAZ4J_PL3MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 136000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 21,
+        "fields": {
+            "isbn": "9781408149041",
+            "title": "Ion",
+            "description": "A translation of one of Euripides' finest plays by one of Britain's most experienced translators Ion is the story of the abandoned child Ion, reunited with her mother Xouthos",
+            "author": "Euripides,",
+            "publisher": "Bloomsbury Publishing",
+            "publication_date": "2014-05-08",
+            "page_count": 78,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=3zBjAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 183000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 22,
+        "fields": {
+            "isbn": "9783966376754",
+            "title": "Rosmersholm",
+            "description": "Johannes Rosmer ist ein ehemaliger Pfarrer und der alteingesessene Gutsbesitzer von Rosmersholm. Seine Frau Beate ist \u00fcber ihre Kinderlosigkeit so bek\u00fcmmert, dass sie sich im nahen Fluss ertr\u00e4nkt. Bald tritt die junge Rebekka West in sein Leben und Johannes verliebt sich. Doch bald wird klar, dass Rebekka ein ganz klein wenig manipulativ sein kann. Sie hat - Achtung Spoiler! - Beate in den Suizid getrieben und - Achtung, Doppelspoiler! - letzten Endes springen Johannes und Rebekka ebenfalls in den Fluss. Gr\u00f6ls-Verlag (Edition Werke der Weltliteratur)",
+            "author": "Henrik Ibsen",
+            "publisher": "BoD \u2013 Books on Demand",
+            "publication_date": "2022-10-07",
+            "page_count": 101,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=sdeTEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "de",
+            "price": 149000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 23,
+        "fields": {
+            "isbn": "9781625589101",
+            "title": "A Doll's House",
+            "description": "A Doll's House is Henrik Ibsen's best-known play. This masterpiece created quite a stir when it was first released because of its feminist stance. It is considered by many to be the first truly feminist play ever written. The play comes to a climax as Nora, the play's protagonist, rejects her marriage and her smothering life in a man's \"dollhouse.\" Wonderfully written, a true classic.",
+            "author": "Henrick Isben",
+            "publisher": "Simon and Schuster",
+            "publication_date": "2013-03-26",
+            "page_count": 67,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=KlfsAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 126000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 24,
+        "fields": {
+            "isbn": "9781590178614",
+            "title": "Prometheus Bound",
+            "description": "Prometheus Bound is the starkest and strangest of the classic Greek tragedies, a play in which god and man are presented as radically, irreconcilably at odds. It begins with the shock of hammer blows as the Titan Prometheus is shackled to a rock in the Caucasus. This is his punishment for giving the gift of fire to humankind and for thwarting Zeus\u2019s decision to exterminate the human race. Prometheus\u2019s pain is unceasing, but he refuses to recant his commitment to humanity, to whom he has also brought the knowledge of writing, mathematics, medicine, and architecture. He hints that he knows how Zeus will be brought low in the future, but when Hermes demands that Prometheus divulge his secret, he refuses and is sent spinning into the abyss by a divine thunderbolt. To whom does humanity look for guidance: to the supreme deity or to the rebel Titan? What law controls the cosmos? Prometheus Bound, one of the great poetic achievements of the ancient world, appears here in a splendid new translation by Joel Agee that does full justice to the harsh and keening music of the original Greek.",
+            "author": "Aeschylus",
+            "publisher": "New York Review of Books",
+            "publication_date": "2015-03-24",
+            "page_count": 100,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=CHZoBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 175000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 25,
+        "fields": {
+            "isbn": "9789386834713",
+            "title": "The Iliad (World Classics, Unabridged)",
+            "description": "The story of the Iliad centers on the critical events in the last year of the Trojan War, which lead to Achilles's killing of Hektor and determine the fate of Troy. But Homer's theme is not simply war or heroism. With compassion and humanity, he presents a universal and tragic view of the world, of human life lived under the shadow of suffering and death, set against a vast and largely unpitying divine background. The Iliad is the first of the great tragedies.",
+            "author": "Homer",
+            "publisher": "Vij Books India Pvt Ltd",
+            "publication_date": "2016-09-01",
+            "page_count": 406,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=a3LOEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 184000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 26,
+        "fields": {
+            "isbn": "9781408160770",
+            "title": "Mother Courage and Her Children",
+            "description": "This Student Edition of Brecht's anti-war masterpiece features an extensive introduction and commentary that includes a plot summary, discussion of the context, themes, characters, style and language as well as questions for further study and notes on words and phrases in the text. It is the perfect edition for students of theatre and literature. In this chronicle of the Thirty Years War of the seventeenth century, Mother Courage follows the armies back and forth across Europe, selling provisions and liquor from her canteen wagon. As the action of the play progresses between the years 1624 and 1646 she loses her children to the war but remains indomitable, refusing to part with her livelihood - the wagon. The play is one of the most celebrated examples of Epic Theatre and of Brecht's use of alienation effect to focus attention on the issues of the play above the individual characters. It remains regarded as one of the greatest plays of the twentieth century and one of the great anti-war plays of all time. The Berlin production of 1949, with Helene Weigel as Mother Courage, marked the foundation of the Berliner Ensemble. This volume contains expert notes on the author's life and work, historical and political background to the play, photographs from stage productions and a glossary of difficult words and phrases. The play is translated by Brecht scholar John Willett who did more than anyone else to make Brecht's work available in the English language.",
+            "author": "Bertolt Brecht",
+            "publisher": "Bloomsbury Publishing",
+            "publication_date": "2015-02-13",
+            "page_count": 160,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=uQAzBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 155000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 27,
+        "fields": {
+            "isbn": "9780486113784",
+            "title": "Pygmalion",
+            "description": "A success on the stage, a popular film, and a musical hit (My Fair Lady), this brilliantly written play, with its irresistible theme of the emerging butterfly, is one of the most acclaimed comedies in the English language.",
+            "author": "George Bernard Shaw",
+            "publisher": "Courier Corporation",
+            "publication_date": "2012-05-04",
+            "page_count": 96,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=zZijAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 116000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 28,
+        "fields": {
+            "isbn": "9789386834737",
+            "title": "Don Quixote (World Classics, Unabridged)",
+            "description": "Don Quixote is a Spanish novel by Miguel de Cervantes Saavedra. Published in two volumes, in 1605 and 1615, Don Quixote is considered the most influential work of literature from the Spanish Golden Age and the entire Spanish literary canon. As a founding work of modern Western literature and one of the earliest canonical novels, it regularly appears high on lists of the greatest works of fiction ever published. The story follows the adventures of a hidalgo named Mr. Alonso Quixano who reads so many chivalric romances that he loses his sanity and decides to set out to revive chivalry, undo wrongs, and bring justice to the world, under the name Don Quixote de la Mancha. He recruits a simple farmer, Sancho Panza, as his squire, who often employs a unique, earthy wit in dealing with Don Quixote's rhetorical orations on antiquated knighthood. Don Quixote, in the first part of the book, does not see the world for what it is and prefers to imagine that he is living out a knightly story. Throughout the novel, Cervantes uses such literary techniques as realism, metatheatre, and intertextuality.",
+            "author": "Miguel de Cervantes Saavedra",
+            "publisher": "Vij Books India Pvt Ltd",
+            "publication_date": "2016-10-01",
+            "page_count": 1160,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=WXLOEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 157000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 29,
+        "fields": {
+            "isbn": "9780199880812",
+            "title": "Bakkhai",
+            "description": "Regarded by many as Euripides' masterpiece, Bakkhai is a powerful examination of religious ecstasy and the resistance to it. A call for moderation, it rejects the temptation of pure reason as well as pure sensuality, and is a staple of Greek tragedy, representing in structure and thematics an exemplary model of the classic tragic elements. Disguised as a young holy man, the god Bacchus arrives in Greece from Asia proclaiming his godhood and preaching his orgiastic religion. He expects to be embraced in Thebes, but the Theban king, Pentheus, forbids his people to worship him and tries to have him arrested. Enraged, Bacchus drives Pentheus mad and leads him to the mountains, where Pentheus' own mother, Agave, and the women of Thebes tear him to pieces in a Bacchic frenzy. Gibbons, a prize-winning poet, and Segal, a renowned classicist, offer a skilled new translation of this central text of Greek tragedy.",
+            "author": "Euripides",
+            "publisher": "Oxford University Press",
+            "publication_date": "2001-02-22",
+            "page_count": 160,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=nDgwZdT2EK8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 115000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 30,
+        "fields": {
+            "isbn": "9781408177839",
+            "title": "Medea",
+            "description": "A student edition of this challenging and popular tragedy with notes and commentary. The most controversial of the Greek tragedians, Euripedes is also the most modern in his sympathies, a dramatist who handles the complex emotions of his characters with extraordinary depth and insight. Wronged and discarded by her husband, Medea gradually reveals her revenge in its increasing horror, while the audience is led to understand the incomprehensible; a woman who murders her own children. Since its first production (431 BC), the play has exerted an irresistible attraction for actors and directors alike. Translated by J.Michael Walton.",
+            "author": "Euripides,",
+            "publisher": "A&C Black",
+            "publication_date": "2014-07-04",
+            "page_count": 112,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=m0LLAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 63000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 31,
+        "fields": {
+            "isbn": "9780307417077",
+            "title": "As You Like It",
+            "description": "This wisely funny comedy, which contains some of Shakespeare\u2019s loveliest poetry, contrasts a court\u2019s world of envy and rivalry with a forest\u2019s world of compassion and harmony. In the Forest of Arden, the banished young heroine, Rosalind, disguised as a gentleman farmer, encounters an extraordinary assemblage of characters, including a fool, a malcontent traveler, her own banished father, and the banished young man she loves. Romantic happiness triumphs, even as we laugh at the excesses of love, at the ways of court and countryside, indeed, at everything, in this masterpiece of comic writing. Each Edition Includes: \u2022 Comprehensive explanatory notes \u2022 Vivid introductions and the most up-to-date scholarship \u2022 Clear, modernized spelling and punctuation, enabling contemporary readers to understand the Elizabethan English \u2022 Completely updated, detailed bibliographies and performance histories \u2022 An interpretive essay on film adaptations of the play, along with an extensive filmography",
+            "author": "William Shakespeare",
+            "publisher": "Bantam Classics",
+            "publication_date": "2009-10-28",
+            "page_count": 288,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=HF1rh5D2cUsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 87000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 32,
+        "fields": {
+            "isbn": "9780140481389",
+            "title": "The Crucible",
+            "description": "A haunting examination of groupthink and mass hysteria in a rural community The place is Salem, Massachusetts, in 1692, an enclave of rigid piety huddled on the edge of a wilderness. Its inhabitants believe unquestioningly in their own sanctity. But in Arthur Miller's edgy masterpiece, that very belief will have poisonous consequences when a vengeful teenager accuses a rival of witchcraft\u2014and then when those accusations multiply to consume the entire village. First produced in 1953, at a time when America was convulsed by a new epidemic of witch-hunting, The Crucible brilliantly explores the threshold between individual guilt and mass hysteria, personal spite and collective evil. It is a play that is not only relentlessly suspenseful and vastly moving but that compels readers to fathom their hearts and consciences in ways that only the greatest theater ever can. \"A drama of emotional power and impact\" \u2014New York Post",
+            "author": "Arthur Miller",
+            "publisher": "Penguin",
+            "publication_date": "1976-10-28",
+            "page_count": 164,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=Moio5nt1FB8C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+            "lang": "en",
+            "price": 157000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 33,
+        "fields": {
+            "isbn": "9789386834829",
+            "title": "The Odyssey (World Classics, Unabridged)",
+            "description": "Homer's epic chronicle of the Greek hero Odysseus' journey home from the Trojan War has inspired writers from Virgil to James Joyce. Odysseus survives storm and shipwreck, the cave of the Cyclops and the isle of Circe, the lure of the Sirens' song and a trip to the Underworld, only to find his most difficult challenge at home, where treacherous suitors seek to steal his kingdom and his loyal wife, Penelope. Favorite of the gods, Odysseus embodies the energy, intellect, and resourcefulness that were of highest value to the ancients and that remain ideals in out time.",
+            "author": "Homer",
+            "publisher": "Vij Books India Pvt Ltd",
+            "publication_date": "2016-10-01",
+            "page_count": 345,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=SXLOEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 148000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 34,
+        "fields": {
+            "isbn": "9781775412144",
+            "title": "Othello",
+            "description": "Believed to have been written in 1603, Shakespeare's Othello is a tragedy that puts the playwright's prodigious creative gifts on full display. Based loosely on a Renaissance-era Italian tale, Othello follows the stormy relationship of the Moorish general Othello and his lovely wife Desdemona. Addressing timeless themes of love and betrayal, as well as surprisingly contemporary concepts such as race-based stereotypes, Othello is a satisfying read for modern-day fans of the Bard.",
+            "author": "William Shakespeare",
+            "publisher": "The Floating Press",
+            "publication_date": "2009-01-01",
+            "page_count": 253,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=MRpBMulY8u8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 63000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 35,
+        "fields": {
+            "isbn": "9780241187975",
+            "title": "The Merchant of Venice",
+            "description": "William Shakespeare's The Merchant of Venice is both a witty comedy and a moving exploration of bigotry and stigmatisation, and this Penguin Shakespeare edition is edited by W. Moelwyn Merchant with an introduction by Peter Holland. 'The quality of mercy is not strain'd, It droppeth as the gentle rain from heaven' Bassanio, a noble but impoverished Venetian, asks his friend the merchant Antonio for a loan to impress an heiress. Antonio agrees, but is forced to borrow the sum from a cynical Jewish moneylender, Shylock, who forces him into a chilling contract, which stipulates he must honour the debt with a pound of his own flesh. But Bassanio's beloved is not as demure as she seems, and disguising herself as a lawyer, Portia proves herself one of Shakespeare's most cunning heroines, in a witty attack on Shylock's claim. A complex and controversial comedy, The Merchant of Venice explores prejudice and the true nature of justice. This book contains a general introduction to Shakespeare's life and Elizabethan theatre, a separate introduction to The Merchant of Venice, a chronology, suggestions for further reading, an essay discussing performance options on both stage and screen, and a commentary. William Shakespeare (1564-1616) was born to John Shakespeare and Mary Arden some time in late April 1564 in Stratford-upon-Avon. He wrote about 38 plays (the precise number is uncertain), many of which are regarded as the most exceptional works of drama ever produced, including Romeo and Juliet (1595), Henry V (1599), Hamlet (1601), Othello (1604), King Lear (1606) and Macbeth (1606), as well as a collection of 154 sonnets, which number among the most profound and influential love-poetry in English. If you enjoyed The Merchant of Venice, you might like The Taming of the Shrew, also available in Penguin Shakespeare. 'The man who of all modern, and perhaps ancient poets, had the largest and most comprehensive soul' John Dryden",
+            "author": "William Shakespeare",
+            "publisher": "Penguin UK",
+            "publication_date": "2015-04-30",
+            "page_count": 240,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=pKQfBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 71000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 36,
+        "fields": {
+            "isbn": "9781408142783",
+            "title": "As You Like It",
+            "description": "With its explorations of sexual ambivalence, As You Like It speaks directly to the twenty-first century. Juliet Dusinberredemonstrates that Rosalind's authority in the play grows from new ideas about women and reveals that Shakespeare's heroine reinvents herself for every age. But the play is also deeply rooted in Elizabethan culture and through it Shakespeare addresses some of the hotly debated issues of the period.\"This will be the definitive edition of As You Like It for many years to come\" - Phyllis Rackin, University of Pennsylvania",
+            "author": "William Shakespeare",
+            "publisher": "Bloomsbury Publishing",
+            "publication_date": "2014-09-25",
+            "page_count": 472,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=cUZkEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 125000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 37,
+        "fields": {
+            "isbn": "9783736418042",
+            "title": "The Importance of Being Earnest: A Trivial Comedy for Serious People",
+            "description": "The Importance of Being Earnest, A Trivial Comedy for Serious People is a farcical comedy in which the protagonists maintain fictitious person\u00e6 to escape burdensome social obligations. Working within the social conventions of late Victorian London, the play's major themes are the triviality with which it treats institutions as serious as marriage, and the resulting satire of Victorian ways. Contemporary reviews all praised the play's humour, though some were cautious about its explicit lack of social messages, while others foresaw the modern consensus that it was the culmination of Wilde's artistic career so far. Its high farce and witty dialogue have helped make The Importance of Being Earnest Wilde's most enduringly popular play.",
+            "author": "Oscar Wilde",
+            "publisher": "anboco",
+            "publication_date": "2016-10-26",
+            "page_count": 108,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=pSSvEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 136000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 38,
+        "fields": {
+            "isbn": "9783988288516",
+            "title": "The Happy Prince",
+            "description": "High above a city on a slender column stands the statue of the happy prince. She is covered with gold leaf, her eyes are sapphires. During his lifetime, the Happy Prince was admired by all people because he was always cheerful. Now, as a statue, he notices the misery of the city. When a little swallow on its way to Egypt settles down at the feet of the prince to sleep, a tear from the eye of the happy prince hits it. The prince tells the swallow about a poor seamstress whose son is sick, and asks her to bring the mother a ruby to help her.... Gr\u00f6ls Classics - English Edition",
+            "author": "Oscar Wilde",
+            "publisher": "BoD \u2013 Books on Demand",
+            "publication_date": "2023-01-06",
+            "page_count": 121,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=IMapEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 197000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 39,
+        "fields": {
+            "isbn": "9780486270678",
+            "title": "A Midsummer Night's Dream",
+            "description": "Among the most popular of all Shakespeare's comedies, this play humorously celebrates the vagaries of love. With its several pairs of lovers, on-again, off-again romances, magic spells, fairies, and a bumbling troupe of would-be actors, the play continues to enchant audiences. Unabridged reprint of an authoritative British edition, complete with explanatory footnotes.",
+            "author": "William Shakespeare",
+            "publisher": "Courier Corporation",
+            "publication_date": "1992-01-01",
+            "page_count": 81,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=U1aMCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 120000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 40,
+        "fields": {
+            "isbn": "9780143128601",
+            "title": "Julius Caesar",
+            "description": "Shakespeare\u2019s cautionary tale about the dangers of upending democracy, Julius Caesar, which recently ran at the Public Theater\u2019s Shakespeare in the Park. Winner of the 2016 AIGA + Design Observer 50 Books | 50 Covers competition This edition of Julius Caesar is edited by William Montgomery with an introduction by Douglas Trevor and was recently repackaged with cover art by Manuja Waldia. Waldia received a Gold Medal from the Society of Illustrators for the Pelican Shakespeare series. The legendary Pelican Shakespeare series features authoritative and meticulously researched texts paired with scholarship by renowned Shakespeareans. Each book includes an essay on the theatrical world of Shakespeare\u2019s time, an introduction to the individual play, and a detailed note on the text used. Updated by general editors Stephen Orgel and A. R. Braunmuller, these easy-to-read editions incorporate over thirty years of Shakespeare scholarship undertaken since the original series, edited by Alfred Harbage, appeared between 1956 and 1967. With stunning new covers, definitive texts, and illuminating essays, the Pelican Shakespeare will remain a valued resource for students, teachers, and theater professionals for many years to come. For more than seventy years, Penguin has been the leading publisher of classic literature in the English-speaking world. With more than 1,700 titles, Penguin Classics represents a global bookshelf of the best works throughout history and across genres and disciplines. Readers trust the series to provide authoritative texts enhanced by introductions and notes by distinguished scholars and contemporary authors, as well as up-to-date translations by award-winning translators.",
+            "author": "William Shakespeare",
+            "publisher": "Penguin",
+            "publication_date": "2016-11-01",
+            "page_count": 162,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=jMUsDQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+            "lang": "en",
+            "price": 167000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 41,
+        "fields": {
+            "isbn": "9786232421196",
+            "title": "The Plotters",
+            "description": "\u201cSebuah gambaran yang kuat tentang seorang pembunuh bayaran \u2026. The Plotters bukanlah buku pertama yang mengenalkan Korea. Apa yang ditawarkannya adalah potret jelas dari tokoh utama yang memikat: Reseng yang tabah. Buku ini juga terus-menerus membuat pembaca penasaran dengan kelanjutan cerita. Dalam The Plotters, Kim menggabungkan kebodohan, orang-orang gila, dan cerita pembunuh bayaran menjadi campuran yang kaya dan mengguncang pembacanya.\u201d \u2014The Washington Post [FIKSI, THIRILLER, GENERAL, THE POTTERS, NOURA, NOURA BOOK, NOVEL]",
+            "author": "Un-Su Kim",
+            "publisher": "Noura Books",
+            "publication_date": "2020-08-08",
+            "page_count": 352,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=ZE7wDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "id",
+            "price": 159000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 42,
+        "fields": {
+            "isbn": "9780525522881",
+            "title": "How to Stop Time",
+            "description": "From the New York Times bestselling author of The Midnight Library. \u201cA quirky romcom dusted with philosophical observations\u2026.A delightfully witty\u2026poignant novel.\u201d \u2014The Washington Post \u201cShe smiled a soft, troubled smile and I felt the whole world slipping away, and I wanted to slip with it, to go wherever she was going\u2026 I had existed whole years without her, but that was all it had been. An existence. A book with no words.\u201d Tom Hazard has just moved back to London, his old home, to settle down and become a high school history teacher. And on his first day at school, he meets a captivating French teacher at his school who seems fascinated by him. But Tom has a dangerous secret. He may look like an ordinary 41-year-old, but owing to a rare condition, he's been alive for centuries. Tom has lived history--performing with Shakespeare, exploring the high seas with Captain Cook, and sharing cocktails with Fitzgerald. Now, he just wants an ordinary life. Unfortunately for Tom, the Albatross Society, the secretive group which protects people like Tom, has one rule: Never fall in love. As painful memories of his past and the erratic behavior of the Society's watchful leader threaten to derail his new life and romance, the one thing he can't have just happens to be the one thing that might save him. Tom will have to decide once and for all whether to remain stuck in the past, or finally begin living in the present. How to Stop Time tells a love story across the ages\u2014and for the ages\u2014about a man lost in time, the woman who could save him, and the lifetimes it can take to learn how to live. It is a bighearted, wildly original novel about losing and finding yourself, the inevitability of change, and how with enough time to learn, we just might find happiness. Soon to be a major motion picture starring Benedict Cumberbatch.",
+            "author": "Matt Haig",
+            "publisher": "Penguin",
+            "publication_date": "2018-02-06",
+            "page_count": 352,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=In8mDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 141000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 43,
+        "fields": {
+            "isbn": "9781524761356",
+            "title": "Ready Player Two",
+            "description": "#1 NEW YORK TIMES BESTSELLER \u2022 The thrilling sequel to the beloved worldwide bestseller Ready Player One, the near-future adventure that inspired the blockbuster Steven Spielberg film. NAMED ONE OF THE BEST BOOKS OF THE YEAR BY THE WASHINGTON POST \u2022 \u201cThe game is on again. . . . A great mix of exciting fantasy and threatening fact.\u201d\u2014The Wall Street Journal AN UNEXPECTED QUEST. TWO WORLDS AT STAKE. ARE YOU READY? Days after winning OASIS founder James Halliday\u2019s contest, Wade Watts makes a discovery that changes everything. Hidden within Halliday\u2019s vaults, waiting for his heir to find, lies a technological advancement that will once again change the world and make the OASIS a thousand times more wondrous\u2014and addictive\u2014than even Wade dreamed possible. With it comes a new riddle, and a new quest\u2014a last Easter egg from Halliday, hinting at a mysterious prize. And an unexpected, impossibly powerful, and dangerous new rival awaits, one who\u2019ll kill millions to get what he wants. Wade\u2019s life and the future of the OASIS are again at stake, but this time the fate of humanity also hangs in the balance. Lovingly nostalgic and wildly original as only Ernest Cline could conceive it, Ready Player Two takes us on another imaginative, fun, action-packed adventure through his beloved virtual universe, and jolts us thrillingly into the future once again.",
+            "author": "Ernest Cline",
+            "publisher": "Ballantine Books",
+            "publication_date": "2020-11-24",
+            "page_count": 385,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=FOHtDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 68000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 44,
+        "fields": {
+            "isbn": "9780553902549",
+            "title": "Journey to the Center of the Earth",
+            "description": "The intrepid Professor Lindenbrock embarks upon the strangest expedition of the nineteenth century: a journey down an extinct Icelandic volcano to the Earth\u2019s very core. In his quest to penetrate the planet\u2019s primordial secrets, the geologist\u2014together with his quaking nephew Axel and their devoted guide, Hans\u2014discovers an astonishing subterranean menagerie of prehistoric proportions. Verne\u2019s imaginative tale is at once the ultimate science fiction adventure and a reflection on the perfectibility of human understanding and the psychology of the questor. As David Brin notes in his Introduction, though Verne never knew the term \u201cscience fiction,\u201d Journey to the Centre of the Earth is \u201cinarguably one of the wellsprings from which it all began.\u201d",
+            "author": "Jules Verne",
+            "publisher": "Bantam",
+            "publication_date": "2006-04-25",
+            "page_count": 240,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=icKmd-tlvPMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 186000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 45,
+        "fields": {
+            "isbn": "9780679720218",
+            "title": "The Plague",
+            "description": "\u201cIts relevance lashes you across the face.\u201d \u2014Stephen Metcalf, The Los Angeles Times \u2022 \u201cA redemptive book, one that wills the reader to believe, even in a time of despair.\u201d \u2014Roger Lowenstein, The Washington Post A haunting tale of human resilience and hope in the face of unrelieved horror, Albert Camus' iconic novel about an epidemic ravaging the people of a North African coastal town is a classic of twentieth-century literature. The townspeople of Oran are in the grip of a deadly plague, which condemns its victims to a swift and horrifying death. Fear, isolation and claustrophobia follow as they are forced into quarantine. Each person responds in their own way to the lethal disease: some resign themselves to fate, some seek blame, and a few, like Dr. Rieux, resist the terror. An immediate triumph when it was published in 1947, The Plague is in part an allegory of France's suffering under the Nazi occupation, and a timeless story of bravery and determination against the precariousness of human existence.",
+            "author": "Albert Camus",
+            "publisher": "Vintage",
+            "publication_date": "1991-05-07",
+            "page_count": 312,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=KVGd-NabpW0C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+            "lang": "en",
+            "price": 86000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 46,
+        "fields": {
+            "isbn": "9780553897777",
+            "title": "The Odyssey of Homer",
+            "description": "Homer's epic chronicle of the Greek hero Odysseus' journey home from the Trojan War has inspired writers from Virgil to James Joyce. Odysseus survives storm and shipwreck, the cave of the Cyclops and the isle of Circe, the lure of the Sirens' song and a trip to the Underworld, only to find his most difficult challenge at home, where treacherous suitors seek to steal his kingdom and his loyal wife, Penelope. Favorite of the gods, Odysseus embodies the energy, intellect, and resourcefulness that were of highest value to the ancients and that remain ideals in out time. In this new verse translation, Allen Mandelbaum--celebrated poet and translator of Virgil's Aeneid and Dante's Divine Comedy --realizes the power and beauty of the original Greek verse and demonstrates why the epic tale of The Odyssey has captured the human imagination for nearly three thousand years.",
+            "author": "Homer",
+            "publisher": "Bantam Classics",
+            "publication_date": "2005-12-06",
+            "page_count": 515,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=ORyo8qAA-CQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 191000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 47,
+        "fields": {
+            "isbn": "9786555523683",
+            "title": "Jane Eyre",
+            "description": "Mist\u00e9rio, trai\u00e7\u00e3o, esc\u00e2ndalo e um amor que transcende o tempo. Desde o momento em que Jane Eyre colocou os olhos no propriet\u00e1rio de Thornfield Hall, soube que sua vida mudaria irrevogavelmente. O homem enigm\u00e1tico, complexo e tentador exige tudo o que Jane tem a oferecer ao convid\u00e1-la para uma jornada dos sentidos que escandalizaria a sociedade. Em seus bra\u00e7os fortes, ela se rende aos desejos mais sombrios do homem amado e descobre que os dela s\u00e3o igualmente abrasadores, mergulhando-a em um mundo que nunca suspeitou existir, mas do qual n\u00e3o quer mais escapar.",
+            "author": "Charlotte Bronte",
+            "publisher": "Principis",
+            "publication_date": "2021-03-10",
+            "page_count": 576,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=b74fEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "pt-BR",
+            "price": 73000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 48,
+        "fields": {
+            "isbn": "9791168056367",
+            "title": "\uc601\uc5b4\uace0\uc804803 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 5\ub300 \ud76c\uadf9 \ubca0\ub2c8\uc2a4\uc758 \uc0c1\uc778 1596(English Classics803 The Merchant of Venice by William Shakespeare)",
+            "description": "\u25b6 \ubca0\ub124\uce58\uc544(Venezia)\ub3c4, \uac1c\uc131\uc0c1\uc778(\u958b\u57ce\u5546\u4eba)\ub3c4 \uc544\ub2cc \u2018\ubca0\ub2c8\uc2a4\uc758 \uc0c1\uc778\u2019 : \ubca0\ub2c8\uc2a4\uc758 \uc0c1\uc778(The Merchant of Venice by William Shakespeare)(1596)\uc740 \ub9d0\uad04\ub7c9\uc774 \uae38\ub4e4\uc774\uae30(The Taming of the Shrew by William Shakespeare)(1590)\uc640 \ud55c\uc5ec\ub984 \ubc24\uc758 \uafc8(A Midsummer Night's Dream by William Shakespeare)(1595)\uc5d0 \uc774\uc740 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4(William Shakespeare)(1564~1616)\uc758 \ud76c\uadf9\uc73c\ub85c, 5\ub300 \ud76c\uadf9(Five Great Comedies) \uc911 \uc138 \ubc88\uc9f8 \uc791\ud488\uc785\ub2c8\ub2e4. \uc791\ud488\uba85 \ubca0\ub2c8\uc2a4\uc758 \uc0c1\uc778(The Merchant of Venice)\uc740 \uc720\ub300\uc778 \uace0\ub9ac\ub300\uae08\uc5c5\uc790\uc640 \ubd88\uacf5\uc815\ud55c \uacc4\uc57d\uc744 \uccb4\uacb0\ud574 \ubaa9\uc228\uc744 \uc783\uc744 \uc704\uae30\uc5d0 \ucc98\ud558\uc9c0\ub9cc, \ud604\uba85\ud55c \uce5c\uad6c \uc544\ub0b4(\uacb0\ud63c\uc2dd\uc744 \uce58\ub8e8\uae30 \uc804\uc774\uc9c0\ub9cc)\uc758 \ub3c4\uc6c0\uc73c\ub85c \uadf9\ubcf5\ud574\ub0b4\ub294 \u2018\ubca0\ub2c8\uc2a4\uc758 \uc0c1\uc778 \uc548\ud1a0\ub2c8\uc624(Antonio)\u2019\ub97c \uc9c0\uce6d\ud569\ub2c8\ub2e4. 2004\ub144 \ub3d9\uba85\uc758 \uc601\ud654\uac00 \uc81c\uc791\ub418\uc5c8\uc73c\uba70, \uc601\ud654 \ub300\ubd80(The Godfather)\ub85c \uc720\uba85\ud55c \uc54c \ud30c\uce58\ub178(Alfredo James \"Al\" Pacino)(1940~)\uac00 \ud53c\ub3c4 \ub208\ubb3c\ub3c4 \uc5c6\ub294 \uc0e4\uc77c\ub85d \u5f79\uc744 \ub9e1\uc558\uc2b5\ub2c8\ub2e4. \ud14c\ub9c8\uc5ec\ud589\uc2e0\ubb38 TTN Korea \uc601\uc5b4\uace0\uc804(English Classics)\uacfc \ud568\uaed8 \uc5b4\uc81c\ub3c4, \uc624\ub298\ub3c4, \ub0b4\uc77c\ub3c4 \uba4b\uc9c4 \ubb38\ud559\uc5ec\ud589\uc744! B \u25b6 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 5\ub300 \ud76c\uadf9(Five Great Comedies) : \ub9d0\uad04\ub7c9\uc774 \uae38\ub4e4\uc774\uae30(The Taming of the Shrew)(1590), \ud55c\uc5ec\ub984 \ubc24\uc758 \uafc8(A Midsummer Night's Dream)(1595), \ubca0\ub2c8\uc2a4\uc758 \uc0c1\uc778(The Merchant of Venice)(1596), \ub73b\ub300\ub85c \ud558\uc138\uc694(As You Like It)(1599), \uc2ed\uc774\uc57c(Twelfth Night, or What You Will)(1601). \u25b6 \uc138\uacc4 \ucd5c\ucd08\uc758 \uc2e0\uccb4\ud3ec\uae30\uac01\uc11c(\u8eab\u9ad4\u62cb\u68c4\u89ba\u66f8)?! : \ud604\ub300\uc758 \uc758\ud559\uae30\uc220\ub85c\ub3c4 \uc804\ud608 \ud5cc\ud608\uc2dc 320ml \ud639\uc740 400ml\ub97c \ud5cc\ud608\ud55c \ud6c4 8\uc8fc\uac04 \ud734\uc2dd\uc744 \ucde8\ud558\ub294 \uac83\uc744 \uac10\uc548\ud55c\ub2e4\uba74, \ubd80\uc704\uc5d0 \ub530\ub77c \ucc28\uc774\ub294 \uc788\uaca0\uc73c\ub098 \u20181\ud30c\uc6b4\ub4dc(\uc57d 453g)\uc758 \uc0b4\u2019\uc740 \ubd84\uba85 \uc0dd\uba85\uc5d0 \uc704\ud611\uc744 \uc904\ub9cc\ud55c \ub7c9\uc77c \uac83\uc785\ub2c8\ub2e4. \ubb3c\ub860 \uc2e0\uccb4\ud3ec\uae30\uac01\uc11c(\u8eab\u9ad4\u62cb\u68c4\u89ba\u66f8)\ub294 \ud604\ub300\uc758 \ud5cc\ubc95\uacfc \ubbfc\ubc95\uc5d0 \uc758\uac70\ud574 \uacc4\uc57d \uc790\uccb4\uac00 \ubb34\ud6a8\uc785\ub2c8\ub2e4\ub9cc, 16\uc138\uae30 \ud76c\uace1\uc5d0\uc11c\ub294 \uc0e4\uc77c\ub85d(Shylock)\uc758 \uc545\ub9c8\uc131\uc744 \ubd80\uac01\ud558\uae30 \uc704\ud55c \uc911\uc694\ud55c \uc124\uc815\uc73c\ub85c \ub4f1\uc7a5\ud558\uc9c0\uc694. \uc791\ud488\uc758 \uc138\uacc4\uc801\uc778 \uc778\uae30\uc5d0 \ud798\uc785\uc5b4 \ucc30\uc2a4 \ub514\ud0a8\uc2a4(Charles John Huffam Dickens)(1812~1870)\uc758 \uc2a4\ud06c\ub8e8\uc9c0(Scrooge)\uac00 \uc218\uc804\ub178\uc758 \uc804\ud615(a character who hates spending money)\uc774\ub4ef \uc0e4\uc77c\ub85d\uc740 \uace0\ub9ac\ub300\uae08\uc5c5\uc790\uc758 \ub300\uba85\uc0ac(a relentless and revengeful moneylender)\ub85c \ud65c\uc6a9\ub429\ub2c8\ub2e4. \u25b6 \uc0e4\uc77c\ub85d\uc740 \uc0ac\uc2e4 \ubc95\uc815\uc0ac\uae30\uadf9\uc758 \ud53c\ud574\uc790?! : \uc548\ud1a0\ub2c8\uc624\uc758 \ubaa9\uc228\uc744 \uac74\uc9c4 \uba85\ud310\uacb0\uc744 \ub0b4\ub9b0 \uc7ac\ud310\uad00\uc740 \uc0ac\uc2e4 \uc548\ud1a0\ub2c8\uc624(Antonio)\uac00 \ub3c8\uc744 \ube4c\ub824\uc900 \uce5c\uad6c \ubc14\uc0ac\ub2c8\uc624(Bassanio)\uac00 \uccad\ud63c\ud55c \uc5ec\uc778, \ud3ec\uc0e4(Portia)\uc600\uc2b5\ub2c8\ub2e4. \ud3ec\uc0e4\ub294 \uc7ac\ud310\uad00 \uc790\uaca9\uc774 \uc5c6\uc74c\uc5d0\ub3c4 \ubd88\uad6c\ud558\uace0, \uc7ac\ud310\uc11d\uc5d0 \uc784\uc758\ub85c \uc549\uc558\uc744 \ubfd0 \uc544\ub2c8\ub77c \uc9c0\uc778\uc5d0\uac8c\ub294 \uadf9\ub3c4\ub85c \uc720\ub9ac\ud55c \ud310\uacb0\uc744, \uc0e4\uc77c\ub85d\uc5d0\uac8c\ub294 \uc804 \uc7ac\uc0b0\uc744 \uc555\ub958\ud558\ub294 \uac00\ud639\ud55c \ucc98\ubc8c\uc744 \ub0b4\ub838\uc2b5\ub2c8\ub2e4. \ube44\ub85d \uc548\ud1a0\ub2c8\uc624\uc758 \uc591\ubcf4\ub85c \uc801\ub2f9\ud788 \uc911\uc7ac\ub418\uae34 \ud558\uc600\uc73c\ub098, \uc911\uc138\uc758 \ud5c8\uc220\ud55c \uad00\uc810\uc73c\ub85c \ubcf4\ub354\ub77c\ub3c4 \ucd1d\uccb4\uc801\uc778 \ubc95\uc815\uc0ac\uae30\uadf9\uc784\uc744 \ubd80\uc778\ud560 \uc218\ub294 \uc5c6\uc744 \uac83\uc785\ub2c8\ub2e4. \ub2e4\ub9cc \uc170\uc775\uc2a4\ud53c\uc5b4\ub97c \uc704\ud574 \ubcc0\uba85\ud558\uc790\uba74, \ubca0\ub2c8\uc2a4\uc758 \uc0c1\uc778(The Merchant of Venice)(1596)\uc740 \uc5b4\ub514\uae4c\uc9c0\ub098 \ub300\uc911\ub4e4\uc758 \uc720\ud76c\ub97c \uc704\ud55c \ud76c\uadf9(\u559c\u5287)\uc774\ub780 \uac83! \u25b6 \ub108\uc640 \ub098\uc758 \ubc18\uc720\ub300\uc8fc\uc758(\u53cdJudea\u4e3b\u7fa9) : \ub3c5\uc77c\uc778\uc758 \uc720\ub300\uc778\uc5d0 \ub300\ud55c \uc99d\uc624\uc640 \uc774\uc640 \uad00\ub828\ud55c \uc218\ub9ce\uc740 \uc545\ud589\uc740 \uc218\ub9ce\uc740 \ucc45\uacfc \uc601\ud654 \ub4f1\uc73c\ub85c \uc798 \uc54c\ub824\uc838 \uc788\uc2b5\ub2c8\ub2e4. \uadf8\ub7ec\ub098 \uc720\ub300\uc778\uc744 \uc99d\uc624\ud55c \uc774\uac00 \ud788\ud2c0\ub7ec\uc640 \ub3c5\uc77c\ubfd0\uc778 \uac83\uc740 \uacb0\ucf54 \uc544\ub2d9\ub2c8\ub2e4. \uc911\uc138 \uc720\ub7fd\uc5d0\uc11c \uc720\ub300\uc778\uc740 \uc624\ub7ab\ub3d9\uc548 \uba78\uc2dc\uc640 \ud0c4\uc555\uc758 \ub300\uc0c1\uc774\uc600\uc2b5\ub2c8\ub2e4. \uace0\ud5a5\uc744 \ub5a0\ub09c \ubfd4\ubfd4\uc774 \ud769\uc5b4\uc9c4 \uc720\ub300\uc778\uc740 \ud574\ub2f9 \uad6d\uac00\uc758 \uc885\uad50\uc801\uc778 \uad50\ub9ac\uc5d0 \ub530\ub77c \uc218\uc2dc\ub85c \ucd94\ubc29\ub418\uc5c8\uace0, \uac70\uc8fc\ub97c \ud5c8\ub77d\ubc1b\ub354\ub77c\ub3c4 \ud1a0\uc9c0\ub97c \uc18c\uc720\ud560 \uc218 \uc5c6\uc5c8\uae30 \ub54c\ubb38\uc5d0 \uace0\ub9ac\ub300\uae08\uc5c5\uc744 \ube44\ub86f\ud55c \uadf9\ud788 \uc81c\ud55c\uc801\uc778 \uc5c5\uc885\uc5d0\ub9cc \uc885\uc0ac\ud560 \uc218 \uc788\uc5c8\uc73c\uba70, \uc720\ub300\uc778\ub9cc \uac70\uc8fc\ud558\ub294 \uaca9\ub9ac\uacf5\uac04 \uac8c\ud1a0(Ghetto)\uac00 \uc788\uc5c8\uc744 \uc815\ub3c4\ub2c8\uae4c\uc694\ub2e4. \uc601\uad6d \ub610\ud55c 1290\ub144 \uc5d0\ub4dc\uc6cc\ub4dc 1\uc138(Edward I)(1239~1307)\uc758 \uba85\ub839\uc73c\ub85c 1\ub9cc\uc5ec \uba85\uc758 \uc720\ub300\uc778\uc744 \ud558\ub8e8\uc544\uce68\uc5d0 \ucd94\ubc29\ud55c \ubc14 \uc788\uc73c\uba70, \uc170\uc775\uc2a4\ud53c\uc5b4\uac00 \ucc3d\uc870\ud55c \uc0e4\uc77c\ub85d \ub610\ud55c 16\uc138\uae30 \uc601\uad6d \ub300\uc911\ub4e4\uc5d0\uac8c \uce5c\uc219\ud55c \ubc18\uc720\ub300\uc8fc\uc758(\u53cdJudea\u4e3b\u7fa9)\uc5d0 \uae30\ubc18\ud55c \uce90\ub9ad\ud130\uc785\ub2c8\ub2e4. \u25b6 SHYLOCK. This kindness will I show. Go with me to a notary, seal me there Your single bond; and in a merry sport, If you repay me not on such a day, In such a place, such sum or sums as are Express\u2019d in the condition, let the forfeit Be nominated for an equal pound Of your fair flesh, to be cut off and taken In what part of your body pleaseth me. \u25b7 \uc0e4\uc77c\ub85d. \uc774 \uce5c\uc808\uc744 \ubca0\ud480\uaca0\uc2b5\ub2c8\ub2e4. \ub098\uc640 \ud568\uaed8 \uacf5\uc99d\uc778\uc5d0\uac8c \uac00\uc11c \ub098\ub97c \uac70\uae30\uc5d0 \ubd09\uc778\ud574 \uc8fc\uc138\uc694. \ub2f9\uc2e0\uc758 \ub2e8 \ud558\ub098\uc758 \uc720\ub300; \uadf8\ub9ac\uace0 \uc990\uac70\uc6b4 \uc2a4\ud3ec\uce20\uc5d0\uc11c, \uadf8\ub7f0 \ub0a0 \uac1a\uc9c0 \uc54a\uc73c\uba74\uc694 \uadf8\ub7ec\ud55c \uc7a5\uc18c\uc5d0\uc11c, \ub2e4\uc74c\uacfc \uac19\uc740 \ud569\uacc4\uac00 \uc788\uc2b5\ub2c8\ub2e4. \uc870\uac74\ubd80\ub85c \ud45c\ud604\ud558\uace0, \ubab0\uc218\ud558\uac8c \ub194\ub450\uc138\uc694. \ub3d9\uc77c\ud55c \ubb34\uac8c\uc5d0 \uc9c0\uba85\ub429\ub2c8\ub2e4. \ub2f9\uc2e0\uc758 \uace0\uc6b4 \uc0b4\uc740 \uc798\ub824\ub098\uac00\uc11c \ube7c\uc557\uae38 \uac83\uc785\ub2c8\ub2e4. \ub2f9\uc2e0 \ubab8\uc758 \uc5b4\ub290 \ubd80\ubd84\uc774 \ub098\ub97c \uae30\uc058\uac8c \ud558\ub098\uc694. \u25b6 SHYLOCK. Hath not a Jew eyes? Hath not a Jew hands, organs, dimensions, senses, affections, passions? Fed with the same food, hurt with the same weapons, subject to the same diseases, healed by the same means, warmed and cooled by the same winter and summer as a Christian is? If you prick us, do we not bleed? If you tickle us, do we not laugh? If you poison us, do we not die? And if you wrong us, shall we not revenge? If we are like you in the rest, we will resemble you in that. If a Jew wrong a Christian, what is his humility? Revenge. If a Christian wrong a Jew, what should his sufferance be by Christian example? Why, revenge! The villainy you teach me I will execute, and it shall go hard but I will better the instruction. \u25b7 \uc0e4\uc77c\ub85d. \uc720\ub300\uc778\uc758 \ub208\uc774 \uc5c6\uc2b5\ub2c8\uae4c? \uc720\ub300\uc778\uc758 \uc190, \uae30\uad00, \uce58\uc218, \uac10\uac01, \uc560\uc815, \uc815\uc695\uc774 \uc5c6\uc2b5\ub2c8\uae4c? \uac19\uc740 \uc74c\uc2dd\uc744 \uba39\uace0, \uac19\uc740 \ubb34\uae30\ub85c \uc0c1\ucc98\ub97c \ubc1b\uace0, \uac19\uc740 \uc9c8\ubcd1\uc5d0 \uac78\ub9ac\uace0, \uac19\uc740 \ubc29\ubc95\uc73c\ub85c \uace0\uce68\uc744 \ubc1b\uace0, \uac19\uc740 \uaca8\uc6b8\uacfc \uc5ec\ub984\uc73c\ub85c \ub530\ub73b\ud568\uacfc \ub0c9\uae30\ub97c \uadf8\ub9ac\uc2a4\ub3c4\uc778\uacfc \ub611\uac19\uc774 \ud569\ub2c8\uae4c? \ub2f9\uc2e0\uc774 \uc6b0\ub9ac\ub97c \ucc0c\ub974\uba74 \uc6b0\ub9ac\uac00 \ud53c\ub97c \ud758\ub9ac\uc9c0 \uc54a\uc2b5\ub2c8\uae4c? \ub2f9\uc2e0\uc774 \uc6b0\ub9ac\ub97c \uac04\uc9c0\ub7fd\ud788\uba74 \uc6b0\ub9ac\ub294 \uc6c3\uc9c0 \uc54a\uc2b5\ub2c8\uae4c? \ub2f9\uc2e0\uc774 \uc6b0\ub9ac\ub97c \ub3c5\uc0b4\ud558\uba74 \uc6b0\ub9ac\ub294 \uc8fd\uc9c0 \uc54a\uc2b5\ub2c8\uae4c? \uadf8\ub9ac\uace0 \ub2f9\uc2e0\uc774 \uc6b0\ub9ac\uc5d0\uac8c \uc798\ubabb\uc744 \uc800\uc9c8\ub800\ub2e4\uba74, \uc6b0\ub9ac\ub294 \ubcf5\uc218\ud558\uc9c0 \uc54a\uaca0\uc2b5\ub2c8\uae4c? \uc6b0\ub9ac\uac00 \ub098\uba38\uc9c0 \ubd80\ubd84\uc5d0\uc11c \ub2f9\uc2e0\uacfc \uac19\ub2e4\uba74 \uc6b0\ub9ac\ub294 \ub2f9\uc2e0\uc744 \ub2ee\uc744 \uac83\uc785\ub2c8\ub2e4. \uc720\ub300\uc778\uc774 \uadf8\ub9ac\uc2a4\ub3c4\uc778\uc5d0\uac8c \uc798\ubabb\uc744 \uc800\uc9c8\ub800\ub2e4\uba74 \uadf8\uc758 \uacb8\uc190\uc740 \ubb34\uc5c7\uc785\ub2c8\uae4c? \ubcf5\uc218. \uadf8\ub9ac\uc2a4\ub3c4\uc778\uc774 \uc720\ub300\uc778\uc5d0\uac8c \uc798\ubabb\uc744 \uc800\uc9c8\ub800\ub2e4\uba74 \uadf8\uc758 \uace0\ub09c\uc740 \uadf8\ub9ac\uc2a4\ub3c4\uc778\uc758 \ubaa8\ubc94\uc73c\ub85c \uc5b4\ub5a0\ud574\uc57c \ud569\ub2c8\uae4c? \uc65c, \ubcf5\uc218! \ub2f9\uc2e0\uc774 \ub098\uc5d0\uac8c \uac00\ub974\uce58\ub294 \uc545\ub2f9\uc740 \ub0b4\uac00 \ucc98\ud615\ud560 \uac83\uc774\uba70, \ud798\ub4e4\uaca0\uc9c0\ub9cc \ub354 \ub098\uc740 \uc9c0\uc2dc\ub97c \ub0b4\ub9b4 \uac83\uc785\ub2c8\ub2e4. \u25b6 PORTIA. Therefore prepare thee to cut off the flesh. Shed thou no blood, nor cut thou less nor more, But just a pound of flesh: if thou tak\u2019st more Or less than a just pound, be it but so much As makes it light or heavy in the substance, Or the division of the twentieth part Of one poor scruple, nay, if the scale do turn But in the estimation of a hair, Thou diest, and all thy goods are confiscate. \u25b7 \ud3ec\uc0e4. \uadf8\ub7ec\ub2c8 \uc0b4\uc810\uc744 \uc798\ub77c\ub0bc \uc900\ube44\ub97c \ud558\uc138\uc694. \ud53c\ub3c4 \ud758\ub9ac\uc9c0 \uc54a\uace0, \uc801\uac8c \ubca0\uac70\ub098 \ub9ce\uc774 \ubca0\uc9c0 \ub9c8\uc2ed\uc2dc\uc624. \ud558\uc9c0\ub9cc \uc0b4\uc740 1\ud30c\uc6b4\ub4dc\ub9cc \ub354 \uac00\uc838\uac04\ub2e4\uba74\uc694 \uc544\ub2c8\uba74 \uadf8\ub0e5 1\ud30c\uc6b4\ub4dc\ub3c4 \uc548 \ub418\uaca0\uc9c0\ub9cc \ub108\ubb34 \ub9ce\uc774\uc694. \ubb3c\uc9c8 \uc18d\uc5d0 \uac00\ubccd\uac70\ub098 \ubb34\uac70\uc6cc\uc9c0\uac8c \ub9cc\ub4e4 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc544\ub2c8\uba74 20\ubd80\uc758 \ub098\ub217\uc148\uc785\ub2c8\ub2e4. \uac00\uc5fe\uc740 \uc591\uc2ec\uc758 \uac00\ucc45\uc744 \ub290\ub07c\uc8e0, \uc544\ub1e8, \ub9cc\uc57d \uc800\uc6b8\uc774 \ub3cc\uba74\uc694. \ud558\uc9c0\ub9cc \uba38\ub9ac\uce74\ub77d\uc758 \ucd94\uc815\uc73c\ub85c\ub294\uc694 \ub2f9\uc2e0\uc774 \uc8fd\uc73c\uba74, \ub2f9\uc2e0\uc758 \ubaa8\ub4e0 \uc7ac\uc0b0\uc740 \ubab0\uc218\ub429\ub2c8\ub2e4. -\ubaa9\ucc28(Index)- \u25b6 \ud504\ub864\ub85c\uadf8(Prologue). \ud14c\ub9c8\uc5ec\ud589\uc2e0\ubb38 TTN Korea \uc601\uc5b4\uace0\uc804(English Classics) 999\uc120\uc744 \uc77d\uc5b4\uc57c \ud558\ub294 7\uac00\uc9c0 \uc774\uc720 \u25b6 12\uac00\uc9c0 \ud0a4\uc6cc\ub4dc\ub85c \uc77d\ub294 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4(William Shakespeare)(1564~1616) 01. \uc601\ubb38\ud559 \ucd5c\uace0\uc758 \uc791\uac00(the greatest writer in the English language)\uc774\uc790 \uc138\uacc4 \ucd5c\uace0\uc758 \uadf9\uc791\uac00(the world's greatest dramatist), \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4(William Shakespeare)(1564~1616) 02. \uc6b0\ub9ac\ub294 \uc170\uc775\uc2a4\ud53c\uc5b4\ub97c \ud3ec\uae30\ud560 \uc218\ub294 \uc5c6\uc2b5\ub2c8\ub2e4!(We cannot do without Shakespeare!)(1841) feat. \ud1a0\uba38\uc2a4 \uce7c\ub77c\uc77c(Thomas Carlyle) 03. \ud574\ub7f4\ub4dc \ube14\ub8f8(Harold Bloom)\uc758 \uc11c\uad6c\ubb38\ud559\uc815\uc804(The Western Canon)(1994) 04. \u2018\uc5b8\uc5b4\uc758 \uc5f0\uae08\uc220\uc0ac\u2019 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc2e0\uc870\uc5b4(Shakespearean Neologisms) 05. \uc170\uc775\uc2a4\ud53c\uc5b4 \ucd95\uc81c(Shakespeare Festival)(1953~) 06. BBC \ub2f9\uc2e0\uc758 \ubc00\ub808\ub2c8\uc5c4(Your Millennium) \uc704\ub300\ud55c \uc791\uac00(Greatest Writer) 1\uc704(1999) 07. BBC \uc120\uc815 \uc704\ub300\ud55c \uc601\uad6d\uc778 5\uc704(100 Greatest Britons)(2002) 08. \uc138\uacc4\uae30\ub85d\uc720\uc0b0(Memory of the World) \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ubb38\uc11c\ub4e4(The Shakespeare Documents)(2017) 09. \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4(William Shakespeare)\ub97c \ub9cc\ub098\ub294 16\uacf3 10. \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc791\ud488 \uc5f0\ub300\uae30(Chronology of Shakespeare's Works)(1589~1613) 11. \uc624\ub514\uc624\ubd81(Audio Books)\uc73c\ub85c \ub4e3\ub294 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4(William Shakespeare) 12. \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4(William Shakespeare) \uc5b4\ub85d(Quotes)(444) \u25b6 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 5\ub300 \ud76c\uadf9 \ubca0\ub2c8\uc2a4\uc758 \uc0c1\uc778 1596(The Merchant of Venice by William Shakespeare) Dramatis Person\u00e6 \u25b7 ACT I. I-Scene I. Venice. A street. I-Scene II. Belmont. A room in Portia\u2019s house. I-Scene III. Venice. A public place. \u25b7 ACT II. II-Scene I. Belmont. A room in Portia\u2019s house. II-Scene II. Venice. A street. II-Scene III. The same. A room in Shylock\u2019s house. II-Scene IV. The same. A street. II-Scene V. The same. Before Shylock\u2019s house. II-Scene VI. The same. II-Scene VII. Belmont. A room in Portia\u2019s house. II-Scene VIII. Venice. A street. II-Scene IX. Belmont. A room in Portia\u2019s house. \u25b7 ACT III. III-Scene I. Venice. A street. III-Scene II. Belmont. A room in Portia\u2019s house. III-Scene III. Venice. A street. III-Scene IV. Belmont. A room in Portia\u2019s house. III-Scene V. The same. A garden. \u25b7 ACT IV. IV-Scene I. Venice. A court of justice. IV-Scene II. The same. A street. \u25b7 ACT V. V-Scene I. Belmont. The avenue to Portia\u2019s house. \u25b6 \ubd80\ub85d(Appendix). \uc138\uacc4\uc758 \uace0\uc804\uc744 \uc5ec\ud589\ud558\ub294 \ud788\uce58\ud558\uc774\ucee4\ub97c \uc704\ud55c \uc548\ub0b4\uc11c(The Hitchhiker's Guide to Worlds's Classics) A01. \ud558\ubc84\ub4dc \uc11c\uc810(Harvard Book Store) \uc9c1\uc6d0 \ucd94\ucc9c \ub3c4\uc11c 100\uc120(Staff's Favorite 100 Books) & \ud310\ub9e4\ub3c4\uc11c 100\uc704(Top 100 Books) A02. \uc11c\uc6b8\ub300(Seoul University) \uad8c\uc7a5\ub3c4\uc11c 100 A03. \uc5f0\uc138\ub300(Yonsei University) \ud544\ub3c5\ub3c4\uc11c \uace0\uc804 200\uc120 A04. \uace0\ub824\ub300(Korea University) \uc138\uc885\ucea0\ud37c\uc2a4 \uad8c\uc7a5\ub3c4\uc11c 100\uc120 A05. \uc11c\uc6b8\ub300\u00b7\uc5f0\uc138\ub300\u00b7\uace0\ub824\ub300(SKY University) \uacf5\ud1b5 \uad8c\uc7a5\ub3c4\uc11c 60\uad8c A06. \uc131\uade0\uad00\ub300(Sungkyunkwan University) \uc624\uac70\uc11c(\u4e94\u8eca\u66f8) \uc131\uade0 \uace0\uc804 100\uc120 A07. \uacbd\ud76c\ub300(Kyung Hee University) \ud6c4\ub9c8\ub2c8\ud0c0\uc2a4 \uce7c\ub9ac\uc9c0(Humanitas College) \uad50\uc591\ud544\ub3c5\uc11c 100\uc120 A08. \ud3ec\uc2a4\ud14d(\ud3ec\ud56d\uacf5\ub300)(POSTECH) \uad8c\uc7a5\ub3c4\uc11c 100\uc120 A09. \uce74\uc774\uc2a4\ud2b8(KAIST) \ub3c5\uc11c\ub9c8\uc77c\ub9ac\uc9c0\uc81c \ucd94\ucc9c\ub3c4\uc11c 100\uad8c A10. \ubb38\ud559\uc0c1(Literary awards) \uc218\uc0c1\uc791 \ubc0f \ucd94\ucc9c\ub3c4\uc11c(44) A11. \uc601\uc5b4\uace0\uc804(English Classics) \uc624\ub514\uc624\ubd81\uc744 \ubb34\ub8cc\ub85c \ub4e3\ub294 5\uac00\uc9c0 \ubc29\ubc95(How to listen to FREE audio Books legally?) A12. \uc601\ud654\u00b7\ub4dc\ub77c\ub9c8\ub85c \ub9cc\ub098\ub294 \uc601\uc5b4\uace0\uc804(Movies and TV Shows Based on English Classic Books) \u25b6 \ud14c\ub9c8\uc5ec\ud589\uc2e0\ubb38 TTN Korea \uc601\uc5b4\uace0\uc804(English Classics) 999\uc120 \u25b6 \ud14c\ub9c8\uc5ec\ud589\uc2e0\ubb38 TTN Korea \ub3c4\uc11c\ubaa9\ub85d(1,687) \u25b6 \ud14c\ub9c8\uc5ec\ud589\uc2e0\ubb38 TTN Korea \uc601\uc5b4\uace0\uc804(English Classics) 999\uc120 \ud14c\ub9c8\uc5ec\ud589\uc2e0\ubb38 TTN Korea \uc601\uc5b4\uace0\uc804(English Classics) 999\uc120\uc740 \uc218\ubc31 \ub144\uc758 \uc138\uc6d4\uc5d0\ub3c4 \ubcc0\uce58 \uc54a\ub294 \uba85\uc800 \uc911 \ub300\uc911\uc131\uc744 \uacb8\ube44\ud55c \ubca0\uc2a4\ud2b8\uc140\ub7ec\ub97c \uc5c4\uc120\ud574 \uc120\uc815\ud558\uc600\uc2b5\ub2c8\ub2e4. \uc870\uba85\ud654 \ud3b8\uc9d1\uc7a5\uc758 \u2018\ud0a4\uc6cc\ub4dc\ub85c \uc77d\ub294 \uc791\uac00 & \uc791\ud488\u2019 \ud574\uc124\uacfc \uc138\uacc4 \ucd5c\ub300\uc758 \ubb34\ub8cc \ub3c4\uba54\uc778 \uc624\ub514\uc624\ubd81(free public domain audioBooks) \ud50c\ub7ab\ud3fc \ub9ac\ube0c\ub9ac\ubcf5\uc2a4(LibrIVox) \uc624\ub514\uc624\ubd81 \ub9c1\ud06c\ub97c \ucca8\ubd80\ud558\uc600\uc2b5\ub2c8\ub2e4. \uc218\ubc31 \ub144\uc758 \uc138\uc6d4\uc5d0\ub3c4 \ubcc0\uce58 \uc54a\ub294 \uba85\uc800\uc758 \uac10\ub3d9\uc744 \ub2e4\uc2dc \ud55c \ubc88 \ud655\uc778\ud574 \ubcf4\uc2dc\uae30 \ubc14\ub78d\ub2c8\ub2e4. \ud14c\ub9c8\uc5ec\ud589\uc2e0\ubb38 TTN Korea \uc601\uc5b4\uace0\uc804(English Classics) 999\uc120\uacfc \ud568\uaed8 \uc5b4\uc81c\ub3c4, \uc624\ub298\ub3c4, \ub0b4\uc77c\ub3c4 \uba4b\uc9c4 \ubb38\ud559\uc5ec\ud589\uc744! \u25b6 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4 \uceec\ub809\uc158(William Shakespeare Collection)(56\ubd80\uc791) \u2160. \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ube44\uadf9(\u60b2\u5287), \ud76c\uadf9(\u559c\u5287), \uc5ed\uc0ac\uadf9(\uf98c\u53f2\u5287)(Tragedies, Comedies and Histories of William Shakespeare)(39) \uc601\uc5b4\uace0\uc804789 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ud76c\uadf9 \ubca0\ub85c\ub098\uc758 \ub450 \uc2e0\uc0ac 1589 English Classics789 The Two Gentlemen of Verona by William Shakespeare \uc601\uc5b4\uace0\uc804790 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 5\ub300 \ud76c\uadf9 \ub9d0\uad04\ub7c9\uc774 \uae38\ub4e4\uc774\uae30 1590 English Classics790 The Taming of the Shrew by William Shakespeare \uc601\uc5b4\uace0\uc804791 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc5ed\uc0ac\uadf9 \ud5e8\ub9ac 6\uc138 2\ubd80 1591 English Classics791 Henry VI Part 2 by William Shakespeare \uc601\uc5b4\uace0\uc804792 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc5ed\uc0ac\uadf9 \ud5e8\ub9ac 6\uc138 3\ubd80 1591 English Classics792 Henry VI Part 3 by William Shakespeare \uc601\uc5b4\uace0\uc804793 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc5ed\uc0ac\uadf9 \ud5e8\ub9ac 6\uc138 1\ubd80 1591 English Classics793 Henry VI Part 1 by William Shakespeare \uc601\uc5b4\uace0\uc804794 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ube44\uadf9 \ud0c0\uc774\ud130\uc2a4 \uc564\ub4dc\ub85c\ub2c8\ucee4\uc2a4 1591 English Classics794 The Tragedy of Titus Andronicus by William Shakespeare \uc601\uc5b4\uace0\uc804795 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc5ed\uc0ac\uadf9 \ub9ac\ucc98\ub4dc 3\uc138 1592 English Classics795 Richard III by William Shakespeare \uc601\uc5b4\uace0\uc804796 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc5ed\uc0ac\uadf9 \uc5d0\ub4dc\uc6cc\ub4dc 3\uc138 1592 English Classics796 King Edward III by William Shakespeare \uc601\uc5b4\uace0\uc804797 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ud76c\uadf9 \uc2e4\uc218\uc5f0\ubc1c 1594 English Classics797 The Comedy of Errors by William Shakespeare \uc601\uc5b4\uace0\uc804798 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ud76c\uadf9 \uc0ac\ub791\uc758 \ud5db\uc218\uace0 1594 English Classics798 Love's Labour's Lost by William Shakespeare \uc601\uc5b4\uace0\uc804799 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc5ed\uc0ac\uadf9 \ub9ac\ucc98\ub4dc 2\uc138 1595 English Classics799 Richard II by William Shakespeare \uc601\uc5b4\uace0\uc804800 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ube44\uadf9 \ub85c\ubbf8\uc624\uc640 \uc904\ub9ac\uc5e3 1595 English Classics800 The Tragedy of Romeo and Juliet by William Shakespeare \uc601\uc5b4\uace0\uc804801 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 5\ub300 \ud76c\uadf9 \ud55c\uc5ec\ub984 \ubc24\uc758 \uafc8 1595 English Classics801 A Midsummer Night's Dream by William Shakespeare \uc601\uc5b4\uace0\uc804802 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc5ed\uc0ac\uadf9 \uc874 \uc655 1596 English Classics802 King John by William Shakespeare \uc601\uc5b4\uace0\uc804803 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 5\ub300 \ud76c\uadf9 \ubca0\ub2c8\uc2a4\uc758 \uc0c1\uc778 1596 English Classics803 The Merchant of Venice by William Shakespeare \uc601\uc5b4\uace0\uc804804 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc5ed\uc0ac\uadf9 \ud5e8\ub9ac 4\uc138 1\ubd80 1596 English Classics804 Henry IV Part 1 by William Shakespeare \uc601\uc5b4\uace0\uc804805 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ud76c\uadf9 \uc708\uc800\uc758 \uc990\uac70\uc6b4 \uc544\ub099\ub124\ub4e4 1597 English Classics805 The Merry Wives of Windsor by William Shakespeare \uc601\uc5b4\uace0\uc804806 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc5ed\uc0ac\uadf9 \ud5e8\ub9ac 4\uc138 2\ubd80 1597 English Classics806 Henry IV Part 2 by William Shakespeare \uc601\uc5b4\uace0\uc804807 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ud76c\uadf9 \ud5db\uc18c\ub3d9 1598 English Classics807 Much Ado About Nothing by William Shakespeare \uc601\uc5b4\uace0\uc804808 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc5ed\uc0ac\uadf9 \ud5e8\ub9ac 5\uc138 1599 English Classics808 Henry V by William Shakespeare \uc601\uc5b4\uace0\uc804809 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ube44\uadf9 \uc728\ub9ac\uc6b0\uc2a4 \uce74\uc774\uc0ac\ub974 1599 English Classics809 The Tragedy of Julius Caesar by William Shakespeare \uc601\uc5b4\uace0\uc804810 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 5\ub300 \ud76c\uadf9 \ub73b\ub300\ub85c \ud558\uc138\uc694 1599 English Classics810 As You Like It by William Shakespeare \uc601\uc5b4\uace0\uc804811 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 4\ub300 \ube44\uadf9 \uc6b0\uc720\ubd80\ub2e8\ud55c \ud584\ub9bf 1599 English Classics811 The Tragedy of Hamlet, Prince of Denmark by William Shakespeare \uc601\uc5b4\uace0\uc804812 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 5\ub300 \ud76c\uadf9 \uc2ed\uc774\uc57c 1601 English Classics812 Twelfth Night; Or, What You Will by William Shakespeare \uc601\uc5b4\uace0\uc804813 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ube44\uadf9 \ud2b8\ub85c\uc77c\ub7ec\uc2a4\uc640 \ud06c\ub808\uc2dc\ub2e4 1600 English Classics813 The History of Troilus and Cressida by William Shakespeare \uc601\uc5b4\uace0\uc804814 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ud76c\uadf9 \uc790\uc5d0\ub294 \uc790\ub85c 1603 English Classics814 Measure for Measure by William Shakespeare \uc601\uc5b4\uace0\uc804815 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 4\ub300 \ube44\uadf9 \uc9c8\ud22c\ud558\ub294 \uc624\uc140\ub85c 1603 English Classics815 The Tragedy of Othello, Moor of Venice by William Shakespeare \uc601\uc5b4\uace0\uc804816 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ud76c\uadf9 \ub05d\uc774 \uc88b\uc73c\uba74 \ub2e4 \uc88b\uc544 1604 English Classics816 All's Well That Ends Well by William Shakespeare \uc601\uc5b4\uace0\uc804817 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 4\ub300 \ube44\uadf9 \uad50\ub9cc\ud55c \ub9ac\uc5b4\uc655 1605 English Classics817 The Tragedy of King Lear by William Shakespeare \uc601\uc5b4\uace0\uc804818 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ube44\uadf9 \uc544\ud14c\ub124\uc758 \ud2f0\ubaac 1605 English Classics818 The Life of Timon of Athens by William Shakespeare \uc601\uc5b4\uace0\uc804819 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 4\ub300 \ube44\uadf9 \uc57c\ub9dd\uc758 \ub9e5\ubca0\uc2a4 1606 English Classics819 The Tragedy of Macbeth by William Shakespeare \uc601\uc5b4\uace0\uc804820 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ube44\uadf9 \uc548\ud1a0\ub2c8\uc6b0\uc2a4\uc640 \ud074\ub808\uc624\ud30c\ud2b8\ub77c 1606 English Classics820 The Tragedy of Antony and Cleopatra by William Shakespeare \uc601\uc5b4\uace0\uc804821 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ud76c\uadf9 \ud2f0\ub808\uc758 \uc655\uc790 \ud398\ub9ac\ud074\ub808\uc2a4 1607 English Classics821 Pericles, Prince of Tyre by William Shakespeare \uc601\uc5b4\uace0\uc804822 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ube44\uadf9 \ucf54\ub9ac\uc62c\ub77c\ub204\uc2a4 1608 English Classics822 The Tragedy of Coriolanus by William Shakespeare \uc601\uc5b4\uace0\uc804823 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ud76c\uadf9 \uaca8\uc6b8 \uc774\uc57c\uae30 1609 English Classics823 The Winter's Tale by William Shakespeare \uc601\uc5b4\uace0\uc804824 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ud76c\uadf9 \uc2ec\ubca8\ub9b0 1610 English Classics824 Cymbeline by William Shakespeare \uc601\uc5b4\uace0\uc804825 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ud76c\uadf9 \ud15c\ud398\uc2a4\ud2b8 1610 English Classics825 The Tempest by William Shakespeare \uc601\uc5b4\uace0\uc804826 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc5ed\uc0ac\uadf9 \ud5e8\ub9ac 8\uc138 1612 English Classics826 The Life of Henry VIII by William Shakespeare \uc601\uc5b4\uace0\uc804827 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ube44\uadf9 \ub450 \uadc0\uc871 \uce5c\ucc99 1613 English Classics827 The Two Noble Kinsmen by William Shakespeare \u2161. \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc2dc\uc9d1(Poems of William Shakespeare)(07) \uc601\uc5b4\uace0\uc804828 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4 \uc2dc\uc9d1 \ube44\ub108\uc2a4\uc640 \uc544\ub3c4\ub2c8\uc2a4 1593 English Classics828 Venus and Adonis by William Shakespeare \uc601\uc5b4\uace0\uc804829 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4 \uc2dc\uc9d1 \ub8e8\ud06c\ub9ac\uc2a4\uc758 \ub2a5\uc695 1594 English Classics829 The Rape of Lucrece by William Shakespeare \uc601\uc5b4\uace0\uc804830 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4 \uc2dc\uc9d1 \uc5f4\uad11\uc801\uc778 \uc21c\ub840\uc790 1599 English Classics830 The Passionate Pilgrim by William Shakespeare \uc601\uc5b4\uace0\uc804831 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4 \uc2dc\uc9d1 \ubd88\uc0ac\uc870\uc640 \uc0b0\ube44\ub458\uae30 1601 English Classics831 The Phoenix and The Turtle by William Shakespeare \uc601\uc5b4\uace0\uc804832 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4 \uc2dc\uc9d1 \uc5f0\uc778\uc758 \ubd88\ub9cc 1609 English Classics832 A Lover's Complaint by William Shakespeare \uc601\uc5b4\uace0\uc804833 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4 \uc2dc\uc9d1 \uc18c\ub124\ud2b8\u2160 1609 English Classics833 Shakespeare's Sonnets\u2160 by William Shakespeare \uc601\uc5b4\uace0\uc804834 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4 \uc2dc\uc9d1 \uc18c\ub124\ud2b8\u2161 1609 English Classics834 Shakespeare's Sonnets\u2161 by William Shakespeare \u2162. \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uae30\ud0c0 \uc791\ud488(Other Works of William Shakespeare)(10) \uc601\uc5b4\uace0\uc804835 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4 \uc804\uc9d1(\u5168\u96c6) English Classics835 The Complete Works of William Shakespeare \uc601\uc5b4\uace0\uc804836 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ud37c\uc2a4\ud2b8 \ud3f4\ub9ac\uc624(\ud76c\uace1) English Classics836 Shakespeare's First Folio by William Shakespeare \uc601\uc5b4\uace0\uc804837 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ud30c\ubc84\uc0f4\uc758 \uc544\ub4e0(\ud76c\uace1) English Classics837 Arden of Feversham by William Shakespeare and Rev. Ronald Bayne \uc601\uc5b4\uace0\uc804838 \ub274 \ud5c8\ub4dc\uc2a8 \uc170\uc775\uc2a4\ud53c\uc5b4: \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc728\ub9ac\uc6b0\uc2a4 \uce74\uc774\uc0ac\ub974(\ud76c\uace1) English Classics838 The New Hudson Shakespeare: Julius C\u00e6sar by William Shakespeare \uc601\uc5b4\uace0\uc804839 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4(1763) 2\ub9c9\uc758 \uc694\uc815 \uc774\uc57c\uae30(\ud76c\uace1) English Classics839 A Fairy Tale in Two Acts Taken from Shakespeare(1763) by George Colman et al. \uc601\uc5b4\uace0\uc804840 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc74c\uc545\uc758 \uc7a1\ub2e4\ud55c \ub178\ud2b8\uc5d0 \ub300\ud55c \uc18c\ub124\ud2b8(\u8a69) English Classics840 Sonnets on Sundry Notes of Music by William Shakespeare \uc601\uc5b4\uace0\uc804841 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uc544\ub984\ub2e4\uc6b4 \uc774\uc57c\uae30 20\ud3b8(\ub3d9\ud654\uc9d1) English Classics841 Beautiful Stories from Shakespeare by E. Nesbit and William Shakespeare \uc601\uc5b4\uace0\uc804842 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4 \ud76c\uace1\uc758 \uaf43\ub2e4\ubc1c: \uc170\uc775\uc2a4\ud53c\uc5b4 \uc815\uc6d0\uc758 \uaf43(\uc0bd\ud654\uc9d1) English Classics842 Flowers from Shakespeare's Garden: A Posy from the Plays by William Shakespeare \uc601\uc5b4\uace0\uc804843 \uc624\ub798\ub41c \uc800\uc790\uc758 \uc0c8\ub85c\uc6b4 \ub3c5\uc11c: \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \ud5e8\ub9ac 5\uc138(\uc0bd\ud654\uc9d1) English Classics843 New Readings of Old Authors. Shakespeare. King Henry 5th by William Shakespeare et al. \uc601\uc5b4\uace0\uc804844 \uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4\uc758 \uba58\ud0c8 \ud3ec\ud1a0\uadf8\ub798\ud504(\uac8c\uc784\ubd81) English Classics844 Shakespeare's Mental Photographs by William Shakespeare \u25b6 \ud14c\ub9c8\uc5ec\ud589\uc2e0\ubb38 TTN Theme Travel News Korea\ub294 2012\ub144\ubd80\ud130 \ud604\uc7ac\uae4c\uc9c0 1,000\uc885 \uc774\uc0c1\uc758 \ucf58\ud150\uce20\ub97c \uae30\ud68d \ubc0f \ucd9c\uac04\ud55c \uc5ec\ud589 \uc804\ubb38 \ub514\uc9c0\ud138 \ucf58\ud150\uce20 \ud37c\ube14\ub9ac\uc154(Digital Contents Publisher)\uc785\ub2c8\ub2e4. \ub2e4\uc591\ud55c \ubd84\uc57c\uc758 \uc804\ubb38\uc791\uac00\uc640 \ud568\uaed8 \uc2e0\uac1c\ub150 \uc5ec\ud589 \uac00\uc774\ub4dc\ubd81 \uc6d0\ucf54\uc2a4(1 Course), \ud3ec\ud1a0\uc5d0\uc138\uc774 \uc6d0\ub354\ud480(Onederful), \uc5ec\ud589\uc5d0\uc138\uc774 \ubcc4 \ud5e4\ub294 \ubc24(Counting the Stars at Night) \ub4f1 \uc804 \uc138\uacc4\ub97c \uc544\uc6b0\ub974\ub294 \ubd84\uc57c\ubcc4 \uc5ec\ud589 \ucf58\ud150\uce20\ub97c \uc9c0\uc18d\uc801\uc73c\ub85c \ubc1c\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ud14c\ub9c8\uc5ec\ud589\uc2e0\ubb38 TTN Korea(\ubc29\uc1a1\ub300 \uae30\ub124\uc2a4\uc0c1 2017 \u2018\ucd5c\ub2e4 \ucd9c\uac04 \ubc0f \ucd5c\ub2e4 \uc790\uaca9\uc99d\u2019 \uc218\uc0c1)\uc640 \ud568\uaed8 \uc5b4\uc81c\ub3c4, \uc624\ub298\ub3c4, \ub0b4\uc77c\ub3c4 \uba4b\uc9c4 \uc5ec\ud589\uc744! Theme Travel News TTN Korea(\ud14c\ub9c8\uc5ec\ud589\uc2e0\ubb38 TTN Korea) is the digital content publisher that published more than 1,000 types of content since 2012. Along with professional writers in various fields, we regularly publish various travel contents such as 1 Course(\uc6d0\ucf54\uc2a4), Onederful(\uc6d0\ub354\ud480), Counting the Stars at Night(\ubcc4 \ud5e4\ub294 \ubc24) Series. Von voyage with Theme Travel News TTN Korea(\ud14c\ub9c8\uc5ec\ud589\uc2e0\ubb38 TTN Korea)! \ud14c\ub9c8\uc5ec\ud589\uc2e0\ubb38 TTN Theme Travel News Korea Webzine : http://themetn.com Publisher : www.upaper.net/themetn Youtube : https://bit.ly/3LFxOhm Facebook : www.fb.com/themetn Twitter : www.twitter.com/themetn",
+            "author": "\uc70c\ub9ac\uc5c4 \uc170\uc775\uc2a4\ud53c\uc5b4(William Shakespeare)",
+            "publisher": "\ud14c\ub9c8\uc5ec\ud589\uc2e0\ubb38 TTN Theme Travel News Korea",
+            "publication_date": "2022-09-12",
+            "page_count": 818,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=X5GIEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "ko",
+            "price": 131000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 49,
+        "fields": {
+            "isbn": "9783736408968",
+            "title": "Don Quixote",
+            "description": "Don Quixote is considered the most influential work of literature from the Spanish Golden Age and the entire Spanish literary canon. As a founding work of modern Western literature and one of the earliest canonical novels, it regularly appears high on lists of the greatest works of fiction ever published, such as the Bokklubben World Library collection that cites Don Quixote as authors' choice for the \"best literary work ever written\".",
+            "author": "Miguel de Cervantes Saavedra",
+            "publisher": "anboco",
+            "publication_date": "2016-08-27",
+            "page_count": 1421,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=ISOvEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 153000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 50,
+        "fields": {
+            "isbn": "9780307829450",
+            "title": "The Complete Stories",
+            "description": "The Complete Stories brings together all of Kafka\u2019s stories, from the classic tales such as \u201cThe Metamorphosis,\u201d \u201cIn the Penal Colony,\u201d and \u201cA Hunger Artist\u201d to shorter pieces and fragments that Max Brod, Kafka\u2019s literary executor, released after Kafka\u2019s death. With the exception of his three novels, the whole of Kafka\u2019s narrative work is included in this volume.",
+            "author": "Franz Kafka",
+            "publisher": "Schocken",
+            "publication_date": "2012-10-24",
+            "page_count": 512,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=ko6qK38hRDYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 125000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 51,
+        "fields": {
+            "isbn": "9780486110820",
+            "title": "Joseph Andrews",
+            "description": "First English realistic novel depicts misadventures of Joseph and his old tutor, Parson Adams, and their travels \u2014 along the way exposing, through their own innocence and honesty, the hypocrisy and affectation of others.",
+            "author": "Henry Fielding",
+            "publisher": "Courier Corporation",
+            "publication_date": "2012-05-04",
+            "page_count": 288,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=b6nCAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 187000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 52,
+        "fields": {
+            "isbn": "9781776597918",
+            "title": "Pan",
+            "description": "In this dreamlike parable from Norwegian writer Knut Hamsun, a disenchanted military man and the daughter of a small-town merchant cross paths one day and instantly fall prey to a heated mutual attraction. But can the passionate romance survive their drastically different backgrounds and beliefs?",
+            "author": "Knut Hamsun",
+            "publisher": "The Floating Press",
+            "publication_date": "2016-04-01",
+            "page_count": 191,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=_m5iDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 195000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 53,
+        "fields": {
+            "isbn": "9780525520382",
+            "title": "There There",
+            "description": "PULITZER PRIZE FINALIST \u2022 NATIONAL BESTSELLER \u2022 A wondrous and shattering award-winning novel that follows twelve characters from Native communities: all traveling to the Big Oakland Powwow, all connected to one another in ways they may not yet realize. A contemporary classic, this \u201castonishing literary debut\u201d (Margaret Atwood, bestselling author of The Handmaid\u2019s Tale) \u201cplaces Native American voices front and center\u201d (NPR/Fresh Air). Among them is Jacquie Red Feather, newly sober and trying to make it back to the family she left behind. Dene Oxendene, pulling his life together after his uncle\u2019s death and working at the powwow to honor his memory. Fourteen-year-old Orvil, coming to perform traditional dance for the very first time. They converge and collide on one fateful day at the Big Oakland Powwow and together this chorus of voices tells of the plight of the urban Native American\u2014grappling with a complex and painful history, with an inheritance of beauty and spirituality, with communion and sacrifice and heroism A book with \u201cso much jangling energy and brings so much news from a distinct corner of American life that it\u2019s a revelation\u201d (The New York Times). It is fierce, funny, suspenseful, and impossible to put down--full of poetry and rage, exploding onto the page with urgency and force. There There is at once poignant and unflinching, utterly contemporary and truly unforgettable.",
+            "author": "Tommy Orange",
+            "publisher": "Vintage",
+            "publication_date": "2018-06-05",
+            "page_count": 252,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=oNY0DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 175000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 54,
+        "fields": {
+            "isbn": "9789390960729",
+            "title": "The Adventures of Tom Sawyer",
+            "description": "Mark Twain, the author was an American Writer & Humorist. His Original name is \u201cSamuel Longhorne Clemens\u201d. Mark Twain is the pen name. His notable works are \u201cThe Adventures of Tom Sawyer\u201d & \u201cAdventures of Huckleberry Finn\u201d. In his credit, there are 28 books and numerous Sketches & Short stories. \u2018The Adventures of Tom Sawyer\u2019 came out in 1869. It features one of the best-loved characters in American fiction. Mark Twain\u2019s famous short stories are: \u2018The War Prayer\u2019, \u2018A Dog\u2019s Tale\u2019, \u2018Eve\u2019s Diary\u2019, \u2018A Ghost Story\u2019, \u2018Luck\u2019, \u2018Advice to little Girls\u2019, \u2018Cannibalism in the Cars\u2019, and lot many\u2026 This novel is about a boy growing up along the Mississippi River. Tom Sawyer has several adventures, after with his friend Huckleberry Finn. An Excerpt: \u201cTom falls in love with Becky Thatcher, a new girl in town wins the admiration of the judge in the church by obtaining the Bible as a prize but reveals his ignorance when he is unable to answer basic questions about Scripture. Tom pursues Becky, eventually persuading her to get engaged by kissing him. Their romance soon collapses when she discovers that Tom was engaged to another school girl\u2026\u201d The book has been widely adapted into feature films and Television Series. A must-have book for everyone.",
+            "author": "Mark Twain",
+            "publisher": "Diamond Pocket Books Pvt Ltd",
+            "publication_date": "2021-04-19",
+            "page_count": 248,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=tigqEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 198000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 55,
+        "fields": {
+            "isbn": "9788179508480",
+            "title": "Mohini Theevu",
+            "description": "Conversations turns into story telling of one\u2019s lifetime experience of visiting a Island somewhere below the Sri Lanka. A Writer who forced to take a trip to India from Burma aka Myanmar due to outbreak of war. Unfortunately or fortunately he get to travel in a old crowded ship.Due to Fear of bombers captain of the ship takes them to near by island. Beauty of the island invites everyone to it but few along with captain travels to the island. Where captain explains his earlier visit to island and take them back to ship. But writer wish to spend some more time before the ship continues its voyage so he hide himself behind the trees. Captain and passengers takes the row boat and ride back to the ship. They realise they left someone behind but due to sunset they decide to stay back in ship till dawn. Writer revisit the spot he enjoyed few moments back and experience something strange events. How those strange events impact him? Did he able to return back to ship? What story is awaiting for the writer to tell his friends is all about the story.",
+            "author": "Kalki",
+            "publisher": "Giri Trading Agency Private Limited",
+            "publication_date": "2022-10-26",
+            "page_count": 92,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=MZyXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "ta",
+            "price": 95000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 56,
+        "fields": {
+            "isbn": "9781504013895",
+            "title": "The Mysterious Island",
+            "description": "In Jules Verne\u2019s classic adventure tale, a hot air balloon is swept off course only to land on a faraway desert island In the midst of the American Civil War, five prisoners hijack a hot air balloon to make their escape. Caught in the winds of a violent storm, the balloon is blown far, far away from its point of departure in Richmond, Virginia. When the craft crash-lands, its passengers find themselves castaways on an exotic island. Here they are forced to contend with wild animals, pirates, and an active volcano\u2014in a fight for their very survival. Beloved for well over a century, The Mysterious Island is an enduring adventure classic by the masterful Jules Verne. This ebook has been professionally proofread to ensure accuracy and readability on all devices.",
+            "author": "Jules Verne",
+            "publisher": "Open Road Media",
+            "publication_date": "2015-05-26",
+            "page_count": 633,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=wwn4CAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 95000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 57,
+        "fields": {
+            "isbn": "9780307422347",
+            "title": "My Name Is Asher Lev",
+            "description": "NATIONAL BESTSELLER \u2022 In this modern classic from the National Book Award\u2013nominated author of The Chosen, a young religious artist is compulsively driven to render the world he sees and feels, even when it leads him to blasphemy. \u201cA novel of finely articulated tragic power .... Little short of a work of genius.\u201d\u2014The New York Times Book Review Asher Lev is a Ladover Hasid who keeps kosher, prays three times a day and believes in the Ribbono Shel Olom, the Master of the Universe. He grows up in a cloistered Hasidic community in postwar Brooklyn, a world suffused by ritual and revolving around a charismatic Rebbe. He is torn between two identities, the one consecrated to God, the other devoted only to art and his imagination, and in time, his artistic gift threatens to estrange him from that world and the parents he adores. As it follows his struggle, My Name Is Asher Lev becomes a luminous, visionary portrait of the artist, by turns heartbreaking and exultant.",
+            "author": "Chaim Potok",
+            "publisher": "Anchor",
+            "publication_date": "2009-07-01",
+            "page_count": 386,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=kYcUeOR4bdoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 129000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 58,
+        "fields": {
+            "isbn": "9783387004762",
+            "title": "The Happy Prince, and Other Tales",
+            "description": "Reproduction of the original. The publishing house Megali specialises in reproducing historical works in large print to make reading easier for people with impaired vision.",
+            "author": "Oscar Wilde",
+            "publisher": "BoD \u2013 Books on Demand",
+            "publication_date": "2023-08-27",
+            "page_count": 70,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=RiDTEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 74000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 59,
+        "fields": {
+            "isbn": "9781909156838",
+            "title": "Alpine Ballad",
+            "description": "A handful of families, several generations, more than a few wars. MoscTowards the end of World War II, a Belarusian soldier and an Italian girl escape from a Nazi concentration camp. The soldier wonders if he should get rid of the girl; she is a burden and is slowing him down. However, he cannot bring himself to abandon her in the snowy wilderness. Somewhere along the way, the two develop feelings for each other, but their love is not destined to grow beyond the edge of the mountains. Yet their bond cannot be denied, and in the end it proves stronger than death itself. From the master of psychological narrative whose firsthand experience with World War II enabled him to re-create the ordeal on pages of his books, Alpine Ballad is Vasil Bykau\u2019s most heartfelt story. Bykau sends a powerful message to his readers: human values can be extrapolated and in the context of war people can still uphold their humanity. An altruistic, philanthropic project of Glagoslav Publications, Alpine Ballad is coming out as a gesture of peace and a reminder to all of the human cost of wars that ransack our planet to this day. Translated from Belarusian by Mikalai Khilo. The previous translations of Alpine Ballad were based on the Soviet-censored Russian version of the original manuscript. ow, Kabul, Barcelona. Anna Nemzer announces herself on the literary scene boldly and loudly with this debut novel about the insane, unspeakable nature of war, about human fears, treachery, lies, fateful coincidences and destinies during warfare, when there is no room left for love. The protagonists survived the war and are rescued from captivity. They are not able, however, to leave the experiences of the war behind them and move on with their lives. The novel explores what happens once the conflict is over, as they learn to live without the war, with all their loves, passions and weaknesses.",
+            "author": "Vasil Bykau",
+            "publisher": "Glagoslav Publications",
+            "publication_date": "2018-01-01",
+            "page_count": 172,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=9zqsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 129000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 60,
+        "fields": {
+            "isbn": "9780374709952",
+            "title": "The Blue Fox",
+            "description": "Set against the stark backdrop of the Icelandic winter, an elusive, enigmatic fox leads a hunter on a transformative quest. At the edge of the hunter's territory, a naturalist struggles to build a life for his charge, a young woman with Down syndrome whom he had rescued from a shipwreck years before. By the end of Sj\u00f3n's slender, spellbinding fable of a novel, none of their lives will be the same. Winner of the 2005 Nordic Council Literature Prize\u2014the Nordic world's highest literary honor\u2014The Blue Fox is part mystery, part fairy tale, and the perfect introduction to a mind-bending, world-class literary talent.",
+            "author": "Sj\u00f3n",
+            "publisher": "Farrar, Straus and Giroux",
+            "publication_date": "2013-04-30",
+            "page_count": 128,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=mClftfWGbW8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 194000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 61,
+        "fields": {
+            "isbn": "9780486659695",
+            "title": "Quantum Theory",
+            "description": "This advanced undergraduate-level text presents the quantum theory in terms of qualitative and imaginative concepts, followed by specific applications worked out in mathematical detail.",
+            "author": "David Bohm",
+            "publisher": "Courier Corporation",
+            "publication_date": "1989-05-01",
+            "page_count": 673,
+            "category": "Science",
+            "image_url": "http://books.google.com/books/content?id=GKVGDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 188000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 62,
+        "fields": {
+            "isbn": "9781473545373",
+            "title": "Homo Deus",
+            "description": "**THE MILLION COPY BESTSELLER** Sapiens showed us where we came from. In our increasingly uncertain times, Homo Deus shows us where we're going. 'Spellbinding' Guardian The world-renowned historian and intellectual Yuval Noah Harari envisions a near future in which we face a new set of challenges. Homo Deus explores the projects, dreams and nightmares that will shape the twenty-first century and beyond - from overcoming death to creating artificial life. It asks the fundamental questions: how can we protect this fragile world from our own destructive power? And what does our future hold? 'Even more readable, even more important, than his excellent Sapiens' Kazuo Ishiguro 'Homo Deus will shock you. It will entertain you. It will make you think in ways you had not thought before' Daniel Kahneman, bestselling author of Thinking, Fast and Slow",
+            "author": "Yuval Noah Harari",
+            "publisher": "Random House",
+            "publication_date": "2016-09-08",
+            "page_count": 504,
+            "category": "Social Science",
+            "image_url": "http://books.google.com/books/content?id=dWYyCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 96000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 63,
+        "fields": {
+            "isbn": "9781416539322",
+            "title": "Einstein",
+            "description": "By the author of the acclaimed bestsellers Benjamin Franklin and Steve Jobs, this is the definitive biography of Albert Einstein. How did his mind work? What made him a genius? Isaacson\u2019s biography shows how his scientific imagination sprang from the rebellious nature of his personality. His fascinating story is a testament to the connection between creativity and freedom. Based on newly released personal letters of Einstein, this book explores how an imaginative, impertinent patent clerk\u2014a struggling father in a difficult marriage who couldn\u2019t get a teaching job or a doctorate\u2014became the mind reader of the creator of the cosmos, the locksmith of the mysteries of the atom, and the universe. His success came from questioning conventional wisdom and marveling at mysteries that struck others as mundane. This led him to embrace a morality and politics based on respect for free minds, free spirits, and free individuals. These traits are just as vital for this new century of globalization, in which our success will depend on our creativity, as they were for the beginning of the last century, when Einstein helped usher in the modern age.",
+            "author": "Walter Isaacson",
+            "publisher": "Simon and Schuster",
+            "publication_date": "2007-04-10",
+            "page_count": 624,
+            "category": "Biography & Autobiography",
+            "image_url": "http://books.google.com/books/content?id=m-AWQWmnICYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 171000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 64,
+        "fields": {
+            "isbn": "9781541647480",
+            "title": "False Alarm",
+            "description": "The New York Times-bestselling \"skeptical environmentalist\" argues that panic over climate change is causing more harm than good Hurricanes batter our coasts. Wildfires rage across the American West. Glaciers collapse in the Artic. Politicians, activists, and the media espouse a common message: climate change is destroying the planet, and we must take drastic action immediately to stop it. Children panic about their future, and adults wonder if it is even ethical to bring new life into the world. Enough, argues bestselling author Bjorn Lomborg. Climate change is real, but it's not the apocalyptic threat that we've been told it is. Projections of Earth's imminent demise are based on bad science and even worse economics. In panic, world leaders have committed to wildly expensive but largely ineffective policies that hamper growth and crowd out more pressing investments in human capital, from immunization to education. False Alarm will convince you that everything you think about climate change is wrong -- and points the way toward making the world a vastly better, if slightly warmer, place for us all.",
+            "author": "Bjorn Lomborg",
+            "publisher": "Hachette UK",
+            "publication_date": "2020-07-14",
+            "page_count": 320,
+            "category": "Science",
+            "image_url": "http://books.google.com/books/content?id=n3nBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 54000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 65,
+        "fields": {
+            "isbn": "9781139442183",
+            "title": "Nature's Magic",
+            "description": "Nature's Magic presents a bold vision of the evolutionary process from the Big Bang to the 21st century. Synergy of various kinds is not only a ubiquitous aspect of the natural world but it has also been a wellspring of creativity and the 'driver' of the broad evolutionary trend toward increased complexity, in nature and human societies alike. But in contrast with the many theories of emergence or complexity that rely on some underlying force or 'law', the 'Synergism Hypothesis', as Peter Corning calls it, is in essence an economic theory of biological complexity; it is fully consistent with mainstream evolutionary biology. Corning refers to it as Holistic Darwinism. Among the many important insights that are provided by this new paradigm, Corning presents a scenario in which the human species invented itself; synergistic, behavioral and technological innovations were the 'pacemakers' of our biological evolution. Synergy has also been the key to the evolution of complex modern societies, he concludes.",
+            "author": "Peter Corning",
+            "publisher": "Cambridge University Press",
+            "publication_date": "2003-05-05",
+            "page_count": 476,
+            "category": "Science",
+            "image_url": "http://books.google.com/books/content?id=Elwzu8vUmhQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 99000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 66,
+        "fields": {
+            "isbn": "9780226321394",
+            "title": "How We Became Posthuman",
+            "description": "In this age of DNA computers and artificial intelligence, information is becoming disembodied even as the \"bodies\" that once carried it vanish into virtuality. While some marvel at these changes, envisioning consciousness downloaded into a computer or humans \"beamed\" Star Trek-style, others view them with horror, seeing monsters brooding in the machines. In How We Became Posthuman, N. Katherine Hayles separates hype from fact, investigating the fate of embodiment in an information age. Hayles relates three interwoven stories: how information lost its body, that is, how it came to be conceptualized as an entity separate from the material forms that carry it; the cultural and technological construction of the cyborg; and the dismantling of the liberal humanist \"subject\" in cybernetic discourse, along with the emergence of the \"posthuman.\" Ranging widely across the history of technology, cultural studies, and literary criticism, Hayles shows what had to be erased, forgotten, and elided to conceive of information as a disembodied entity. Thus she moves from the post-World War II Macy Conferences on cybernetics to the 1952 novel Limbo by cybernetics aficionado Bernard Wolfe; from the concept of self-making to Philip K. Dick's literary explorations of hallucination and reality; and from artificial life to postmodern novels exploring the implications of seeing humans as cybernetic systems. Although becoming posthuman can be nightmarish, Hayles shows how it can also be liberating. From the birth of cybernetics to artificial life, How We Became Posthuman provides an indispensable account of how we arrived in our virtual age, and of where we might go from here.",
+            "author": "N. Katherine Hayles",
+            "publisher": "University of Chicago Press",
+            "publication_date": "2008-05-15",
+            "page_count": 364,
+            "category": "Philosophy",
+            "image_url": "http://books.google.com/books/content?id=JqB6Qy9z3TcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 71000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 67,
+        "fields": {
+            "isbn": "9780226089287",
+            "title": "From Natural Philosophy to the Sciences",
+            "description": "During the 19th century, much of the modern scientific enterprise took shape: scientific disciplines were formed, institutions and communities were founded and unprecedented applications to and interactions with other aspects of society and culture occurred. taught us about this exciting time and identify issues that remain unexamined or require reconsideration. They treat scientific disciplines - biology, physics, chemistry, the earth sciences, mathematics and the social sciences - in their specific intellectual and sociocultural contexts as well as the broader topics of science and medicine; science and religion; scientific institutions and communities; and science, technology and industry. From Natural Philosophy to the Sciences should be valuable for historians of science, but also of great interest to scholars of all aspects of 19th-century life and culture.",
+            "author": "David Cahan",
+            "publisher": "University of Chicago Press",
+            "publication_date": "2003-09-15",
+            "page_count": 469,
+            "category": "Science",
+            "image_url": "http://books.google.com/books/content?id=k5qgGcZVOugC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 67000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 68,
+        "fields": {
+            "isbn": "9781412992626",
+            "title": "Encyclopedia of Global Warming and Climate Change, Second Edition",
+            "description": "The First Edition of the Encyclopedia of Global Warming and Climate Change provided a multi-authored, academic yet non-technical resource for students and teachers to understand the importance of global warming, to appreciate the effects of human activity and greenhouse gases around the world, and to learn the history of climate change and the research enterprise examining it. This edition was well received, with notable reviews. Since its publication, the debate over the advent of global warming at least partially brought on by human enterprise has continued to ebb and flow, depending literally on the weather, politics, and media coverage of climate summits and debates. Advances in research also change the discourse as new data is collected and new scientific projects continue to explore and explain global warming and climate change. Thus, a new, Second Edition updates more than half of the original entries and adds new perspectives and content to keep students and researchers up-to-date in a field that has proven provocatively lively.",
+            "author": "S. George Philander",
+            "publisher": "SAGE Publications",
+            "publication_date": "2012-06-13",
+            "page_count": 1719,
+            "category": "Science",
+            "image_url": "http://books.google.com/books/content?id=hf50AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 157000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 69,
+        "fields": {
+            "isbn": "9781119403739",
+            "title": "Human Impact on the Natural Environment",
+            "description": "A brand new edition of the definitive textbook on humankind\u2019s impact on the Earth\u2019s environment\u2014now in full color This classic text explores the multitude of impacts that humans have had over time upon vegetation, animals, soils, water, landforms, and the atmosphere. It considers the ways in which climate changes and modifications in land cover may change the environment in coming decades. Thoroughly revised to cover the remarkable transformation in interest that humans are having in the environment, this book examines previously uncovered topics, such as rewilding, ecosystem services, techniques for study, novel and no analogue ecosystems, and more. It also presents the latest views on big themes such as human origins, the anthropocene, domestication, extinctions, and ecological invasions. Extensively re-written, Human Impact on the Natural Environment, Eighth Edition contains many new and updated statistical tables, figures, and references. It offers enlightening chapters that look at the past and present state of the world\u2014examining our impact on the land itself and the creatures that inhabit it; the oceans, lakes, rivers and streams; and the climate and atmosphere. The book also takes a deep look at our future impact on the planet and its resources\u2014our affect on the coastal environments, the cryosphere and the drylands, as well as the hydrological and geomorphological impacts. Fully updated to take account of recent advances in our understanding of global warming and other phenomena Offers current opinions on such topics as human origins, the anthropocene, domestication, extinctions, and ecological invasions Features a full-color presentation to allow for more and clearer photographs and diagrams Contains more international case studies than previous editions to balance UK examples Human Impact on the Natural Environment is essential reading for undergraduates in geography and environmental science, and for those who want a thorough, wide-ranging and balanced overview of the impacts of humans upon natural processes and systems from the Stone Age to the Anthropocene and who wish to understand the major environmental issues that concern the human race at the present time.",
+            "author": "Andrew S. Goudie",
+            "publisher": "John Wiley & Sons",
+            "publication_date": "2018-06-19",
+            "page_count": 472,
+            "category": "Computers",
+            "image_url": "http://books.google.com/books/content?id=QvRgDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 173000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 70,
+        "fields": {
+            "isbn": "9783540266938",
+            "title": "The Interstellar Medium",
+            "description": "Describing interstellar matter in our galaxy in all of its various forms, this book also considers the physical and chemical processes that are occurring within this matter. The first seven chapters present the various components making up the interstellar matter and detail the ways that we are able to study them. The following seven chapters are devoted to the physical, chemical and dynamical processes that control the behaviour of interstellar matter. These include the instabilities and cloud collapse processes that lead to the formation of stars. The last chapter summarizes the transformations that can occur between the different phases of the interstellar medium. Emphasizing methods over results, The Interstellar Medium is written for graduate students, for young astronomers, and also for any researchers who have developed an interest in the interstellar medium.",
+            "author": "James Lequeux",
+            "publisher": "Springer Science & Business Media",
+            "publication_date": "2006-03-30",
+            "page_count": 440,
+            "category": "Science",
+            "image_url": "http://books.google.com/books/content?id=0eDD_do6iTQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 115000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 71,
+        "fields": {
+            "isbn": "9781118723432",
+            "title": "Statistical Physics",
+            "description": "The Manchester Physics Series General Editors: D. J. Sandiford; F. Mandl; A. C. Phillips Department of Physics and Astronomy, University of Manchester Properties of Matter B. H. Flowers and E. Mendoza Optics Second Edition F. G. Smith and J. H. Thomson Statistical Physics Second Edition E. Mandl Electromagnetism Second Edition I. S. Grant and W. R. Phillips Statistics R. J. Barlow Solid State Physics Second Edition J. R. Hook and H. E. Hall Quantum Mechanics F. Mandl Particle Physics Second Edition B. R. Martin and G. Shaw The Physics of Stars Second Edition A. C. Phillips Computing for Scientists R. J. Barlow and A. R. Barnett Statistical Physics, Second Edition develops a unified treatment of statistical mechanics and thermodynamics, which emphasises the statistical nature of the laws of thermodynamics and the atomic nature of matter. Prominence is given to the Gibbs distribution, leading to a simple treatment of quantum statistics and of chemical reactions. Undergraduate students of physics and related sciences will find this a stimulating account of the basic physics and its applications. Only an elementary knowledge of kinetic theory and atomic physics, as well as the rudiments of quantum theory, are presupposed for an understanding of this book. Statistical Physics, Second Edition features: A fully integrated treatment of thermodynamics and statistical mechanics. A flow diagram allowing topics to be studied in different orders or omitted altogether. Optional \"starred\" and highlighted sections containing more advanced and specialised material for the more ambitious reader. Sets of problems at the end of each chapter to help student understanding. Hints for solving the problems are given in an Appendix.",
+            "author": "Franz Mandl",
+            "publisher": "John Wiley & Sons",
+            "publication_date": "2013-06-05",
+            "page_count": 248,
+            "category": "Science",
+            "image_url": "http://books.google.com/books/content?id=ZMSNPFrfaU8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 68000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 72,
+        "fields": {
+            "isbn": "9780374600006",
+            "title": "What a Plant Knows",
+            "description": "Thoroughly updated from root to leaf, this revised edition of the groundbreaking What a Plant Knows includes new revelations for lovers of all that is vegetal and verdant. Plants can hear\u2014and taste things, too! The renowned biologist Daniel Chamovitz builds on the original edition to present an intriguing look at how plants themselves experience the world\u2014from the colors they see to the schedules they keep, and now, what they do in fact hear and how they are able to taste. A rare inside look at what life is really like for the grass we walk on, the flowers we sniff, and the trees we climb, What a Plant Knows offers a greater understanding of their place in nature.",
+            "author": "Daniel Chamovitz",
+            "publisher": "Scientific American / Farrar, Straus and Giroux",
+            "publication_date": "2020-10-06",
+            "page_count": 148,
+            "category": "Science",
+            "image_url": "http://books.google.com/books/content?id=FJv_DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 116000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 73,
+        "fields": {
+            "isbn": "9781421408798",
+            "title": "Mammals of Mexico",
+            "description": "The most comprehensive reference on Mexico's diverse mammalian fauna. Mammals of Mexico is the first reference book in English on the more than 500 types of mammal species found in the diverse Mexican habitats, which range from the Sonoran Desert to the Chiapas cloud forests. The authoritative species accounts are written by a Who\u2019s Who of experts compiled by famed mammalogist and conservationist Gerardo Ceballos. Ten years in the making, Mammals of Mexico covers everything from obscure rodents to whales, bats, primates, and wolves. It is thoroughly illustrated with color photographs and meticulous artistic renderings, as well as range maps for each species. Introductory chapters discuss biogeography, conservation, and evolution. The final section of the book illustrates the skulls, jaws, and tracks of Mexico\u2019s mammals. This unparalleled collection of scientific information on, and photographs of, Mexican wildlife belongs on the shelf of every mammalogist, in public and academic libraries, and in the hands of anyone curious about Mexico and its wildlife.",
+            "author": "Gerardo Ceballos",
+            "publisher": "JHU Press",
+            "publication_date": "2014-01-15",
+            "page_count": 976,
+            "category": "Science",
+            "image_url": "http://books.google.com/books/content?id=MTMqBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 162000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 74,
+        "fields": {
+            "isbn": "9781317938811",
+            "title": "Natural Disasters",
+            "description": "As a well balanced and fully illustrated introductory text, this book provides a comprehensive overview of the physical, technological and social components of natural disaster. The main disaster-producing agents are reviewed systematically in terms of geophysical processes and effects, monitoring, mitigation and warning. The relationship between disasters and society is examined with respect to a wide variety of themes, including damage assessment and prevention, hazard mapping, emergency preparedness, the provision of shelter and the nature of reconstruction. Medical emergencies and the epidemiology of disasters are described, and refugee management and aid to the Third World are discussed. A chapter is devoted to the sociology, psychology, economics and history of disasters.; In many parts of the world the toll of death, injury, damage and deprivation caused by natural disasters is becoming increasingly serious. Major earthquakes, volcanic eruptions, droughts, floods and other similar catastrophes are often followed by large relief operations characterized by substantial involvement of the international community. The years 1990-2000 have therefore been designated by the United Nations as the International Decade for Natural Disaster Reduction.; The book goes beyond mere description and elevates the field of natural catastrophes to a serious academic level. The author's insights and perspectives are also informed by his practical experience of being a disaster victim and survivor, and hence the unique perspective of a participant observer. Only by surmounting the boundaries between disciplines can natural catastrophe be understood and mitigation efforts made effective. Thus, this book is perhaps the first completely interdisciplinary, fully comprehensive survey of natural hazards and disasters. It has a clear theoretical basis and it recognizes the importance of six fundamental approaches to the field, which it blends carefully in the text in order to avoid the partiality of previous works. It covers the earth and social sciences, as well as engineering, architecture and development studies. This breadth is made possible by virtue of a strong emphasis on simple principles of the interaction of geophysical agents with human vulnerability and response.; All students of environmental sciences/studies and geography should find this book useful. It is an introductory text which treats this dramatic subject area as something demanding serious academic treatment and not just as an assemblage of horror stories.; This book is intended for undergraduate students in geography and environmental studies/sciences. The book should also appeal to any professional or researcher concerned with man- environment relations, whether in social science or natural science or engineering.",
+            "author": "David Alexander",
+            "publisher": "Routledge",
+            "publication_date": "2018-10-24",
+            "page_count": 554,
+            "category": "Nature",
+            "image_url": "http://books.google.com/books/content?id=wnt0DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 148000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 75,
+        "fields": {
+            "isbn": "9789401122825",
+            "title": "Global Biodiversity",
+            "description": "Global Biodiversity is the most comprehensive compendium of conservation information ever published. It provides the first systematic report on the status, distribution, management, and utilisation of the planet's biological wealth.",
+            "author": "World Conservation Monitoring Centre",
+            "publisher": "Springer Science & Business Media",
+            "publication_date": "2012-12-06",
+            "page_count": 585,
+            "category": "Nature",
+            "image_url": "http://books.google.com/books/content?id=2__xCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 152000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 76,
+        "fields": {
+            "isbn": "9781482270426",
+            "title": "Lung Surfactants",
+            "description": "Integrating basic and clinical research on the biophysical and physiological functions of pulmonary surfactants, this practical reference presents thorough, cutting-edge coverage on surfactant-related lung disease. Manage neonatal respiratory distress syndrome (RDS), acute respiratory distress syndrome (ARDS), and acute lung injury more effecti",
+            "author": "Robert H. Notter",
+            "publisher": "CRC Press",
+            "publication_date": "2000-07-18",
+            "page_count": 464,
+            "category": "Science",
+            "image_url": "http://books.google.com/books/content?id=YDFRDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 156000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 77,
+        "fields": {
+            "isbn": "9780486607696",
+            "title": "Einstein's Theory of Relativity",
+            "description": "A Nobel Prize-winning physicist explains the historical background and scientific principles of Einstein's famous theory",
+            "author": "Max Born",
+            "publisher": "Courier Corporation",
+            "publication_date": "1962-01-01",
+            "page_count": 404,
+            "category": "Science",
+            "image_url": "http://books.google.com/books/content?id=wUGKAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 190000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 78,
+        "fields": {
+            "isbn": "9780486632773",
+            "title": "Understanding Thermodynamics",
+            "description": "Clearly written treament elucidates fundamental concepts and demonstrates their plausibility and usefulness. Language is informal, examples are vivid and lively, and the perspectivie is fresh. Based on lectures delivered to engineering students, this work will also be valued by scientists, engineers, technicians, businessmen, anyone facing energy challenges of the future.",
+            "author": "Hendrick C. Van Ness",
+            "publisher": "Courier Corporation",
+            "publication_date": "1983-01-01",
+            "page_count": 129,
+            "category": "Science",
+            "image_url": "http://books.google.com/books/content?id=dFw6DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 108000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 79,
+        "fields": {
+            "isbn": "9780226220802",
+            "title": "The Expression of the Emotions in Man and Animals",
+            "description": "Darwin's work of 1872 still provides the point of departure for research in the theory of emotion and expression. Although he lacked the modern research tool of cybernetics, his basic methods have not been improved upon: the study of infants, of the insane, of paintings and sculpture, of some of the commoner animals; the use of photographs of expression submitted to different judges; and the comparative study of expression among different peoples. This new edition will be warmly welcomed by those behavioral scientists who have recently shown an intense interest in the scientific study of expression. Lay readers, too, will be struck by the freshness and directness of this book, which includes, among other data, Darwin's delightfully objective analysis of his own baby's smiles and pouts.",
+            "author": "Charles Darwin",
+            "publisher": "University of Chicago Press",
+            "publication_date": "2015-07-31",
+            "page_count": 401,
+            "category": "Science",
+            "image_url": "http://books.google.com/books/content?id=p_ZJCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 61000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 80,
+        "fields": {
+            "isbn": "9780060935580",
+            "title": "The Music of the Primes",
+            "description": "Examines German mathematician Bernhard Riemann's hypothesis on imaginary numbers, sine waves, and prime numbers and attempts to unravel the mystery surrounding it.",
+            "author": "Marcus du Sautoy",
+            "publisher": "Harper Collins",
+            "publication_date": "2004-04-27",
+            "page_count": 350,
+            "category": "Mathematics",
+            "image_url": "http://books.google.com/books/content?id=x1Jlf9e3EgsC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+            "lang": "en",
+            "price": 173000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 81,
+        "fields": {
+            "isbn": "9780399504334",
+            "title": "Amphigorey",
+            "description": "An illustrated collection of 15 macabre short stories. In this gorgeously detailed volume, American artist and author Edward Gorey accents amphigory (nonsense verse or composition) with his signature cross-hatched pen-and-ink drawings. A mix of poetry and prose, light-hearted and decidedly more morbid storytelling, the book is sure to satisfy both fans of art and lovers of short stories alike. Stories included: \"The Unstrung Harp\" \"The Listing Attic\" \"The Doubtful Guest\" \"The Object Lesson\" \"The Bug Book\" \"The Fatal Lozenge\" \"The Hapless Child\" \"The Curious Sofa\" \"The Willowdale Handcar\" \"The Gashlycrumb Tinies\" \"The Insect God\" \"The West Wing\" \"The Wuggly Ump\" \"The Sinking Spell\" \"The Remembered Visit\"",
+            "author": "Edward Gorey",
+            "publisher": "Penguin",
+            "publication_date": "1980-01-28",
+            "page_count": 230,
+            "category": "Comics & Graphic Novels",
+            "image_url": "http://books.google.com/books/content?id=uQe2a18Ly6wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 105000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 82,
+        "fields": {
+            "isbn": "9780007431595",
+            "title": "Eats, Shoots and Leaves",
+            "description": "Anxious about the apostrophe? Confused by the comma? Stumped by the semicolon? Join Lynne Truss on a hilarious tour through the rules of punctuation that is sure to sort the dashes from the hyphens.",
+            "author": "Lynne Truss",
+            "publisher": "HarperCollins UK",
+            "publication_date": "2011-05-26",
+            "page_count": 244,
+            "category": "Humor",
+            "image_url": "http://books.google.com/books/content?id=VHO1kSJK1JcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 96000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 83,
+        "fields": {
+            "isbn": "9781610427388",
+            "title": "Dead Souls (Annotated with Biography)",
+            "description": "Dead Souls is a novel by Nikolai Gogol, first published in 1842, and widely regarded as an exemplar of 19th-century Russian literature. Gogol himself saw it as an \"epic poem in prose\", and within the book as a \"novel in verse\". Despite supposedly completing the trilogy's second part, Gogol destroyed it shortly before his death. Although the novel ends in mid-sentence (like Sterne's Sentimental Journey), it is usually regarded as complete in the extant form.",
+            "author": "Nikolai Gogol",
+            "publisher": "Golgotha Press",
+            "publication_date": "2013-11-21",
+            "page_count": 100,
+            "category": "Humor",
+            "image_url": "http://books.google.com/books/content?id=lksjAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 61000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 84,
+        "fields": {
+            "isbn": "9781447488224",
+            "title": "Joseph Andrews",
+            "description": "This fascinating volume contains a detailed treatise written by Henry Fielding on his seminal work, Joseph Andrews. Including interesting examinations of his characters and motifs, as well as comments on writing prose fiction in general and the various vicissitudes that come with it, this is a volume that will prove invaluable to the student of English Literature, and it is not to be missed by fans of Fielding's seminal work. 'Joseph Andrews, or The History of the Adventures of Joseph Andrews and of his Friend Mr. Abraham Adams', was the first published full-length novel of the English author and magistrate Henry Fielding, and indeed among the first novels in the English language. Henry Fielding (1707 \u2013 1754) was an English novelist and dramatist known for his rich earthy humour and satirical prowess, and as for being the author of the famous novel Tom Jones. The chapters of this book include: 'Of Writing Lives in General, and Particularly of Pamela with a Word By the Bye of Colley Cibber and Others'; 'Of Mr. Joseph Andrews, His Birth, Parentage, Education, and Great Endowments, With a Word or Two Concerning Ancestors'; 'Or Mr. Abraham Adams the Curate, Mrs. Slipslop the Chambermaid, and Others', et cetera. This antiquarian volume is being republished now complete with a new biography of the author.",
+            "author": "Henry Fielding",
+            "publisher": "Read Books Ltd",
+            "publication_date": "2013-04-16",
+            "page_count": 523,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=rdh8CgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 190000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 85,
+        "fields": {
+            "isbn": "9781776534791",
+            "title": "The Red Room",
+            "description": "Fans of well-honed satire will enjoy The Red Room, August Strindberg's no-holds-barred send-up of the pretensions of Swedish high society in the late nineteenth century. Earnest government worker Arvid Falk leaves his old life behind and tries to make a splash as a writer, but as he begins to spend more time with various elite and exclusive cliques, he becomes all the more disillusioned.",
+            "author": "August Strindberg",
+            "publisher": "The Floating Press",
+            "publication_date": "2014-05-01",
+            "page_count": 367,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=vA3CAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 170000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 86,
+        "fields": {
+            "isbn": "9781561638871",
+            "title": "Silk Road to Ruin",
+            "description": "Part graphic novel travelogue, part tongue-in-cheek travel guide, this collection gathers the adventures of caustic cartoonist Ted Rall in the wild and woolly central Asian countries, a veritable powder keg sitting atop the oil the world will need tomorrow. The book combines articles with comics in chapters that relate Rall\u2019s experiences retracing the legendary Silk Road, from the sublime history of China to the absurdity of the present-day petty dictatorships of the \u201cThe \u2019Stans,\u201d to which the author had the temerity\u2014or perhaps stupidity\u2014to return, including once with a group of listeners on his radio show, on a dare. This always-lively compendium offers readers an exotic adventure, satire, and a fun way to find out more about an often overlooked part of the world that looms in importance with its immense, and immensely coveted, reserves of oil.",
+            "author": "Ted Rall",
+            "publisher": "NBM Publishing",
+            "publication_date": "2014-04-01",
+            "page_count": 324,
+            "category": "Humor",
+            "image_url": "http://books.google.com/books/content?id=5bu9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 89000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 87,
+        "fields": {
+            "isbn": "9781588363800",
+            "title": "The Reluctant Metrosexual",
+            "description": "Peter Hyman wants the model/Fulbright Scholar girlfriend, the job with generous stock options and the well-appointed 2BR w/vu. Instead he routinely finds himself single and underemployed in his closet-free walk-up. The last woman he liked got back together with her lesbian lover; the one before that threw up on the first date. Welcome to the almost hip life of a reluctant metrosexual\u2013a straight man whose tastes are just gay enough. Equal parts cultural anthropologist, amateur sexologist and witty skeptic, Hyman wryly chronicles the promiscuity and perils of modern manhood, whether he\u2019s undergoing a painful Brazilian bikini wax, lurching through a disastrous threesome, or poignantly reflecting on the Scotch-soaked grief of a difficult breakup. So sit back in your Eames lounger and revel in the good fortune that The Reluctant Metrosexual is not you, it\u2019s him.",
+            "author": "Peter Hyman",
+            "publisher": "Villard",
+            "publication_date": "2004-07-27",
+            "page_count": 304,
+            "category": "Humor",
+            "image_url": "http://books.google.com/books/content?id=IhAsUkXRXTcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 159000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 88,
+        "fields": {
+            "isbn": "9781439152935",
+            "title": "The Bro Code",
+            "description": "From the hit TV show How I Met Your Mother comes Barney Stinson\u2019s words of wit, wisdom, and awesomeness, The Bro Code\u2014the New York Times bestseller (really!) with more than a million copies in print all around the world. Everyone\u2019s life is governed by an internal code of conduct. Some call it morality. Others call it religion. But Bros in the know call this Holy Grail The Bro Code. The Bro Code is a living document, much like the Constitution. Except instead of outlining a government, or the Bill of Rights, or anything even resembling laws, The Bro Code provides men with all the rules they need to know in order to become a \u201cbro\u201d and behave properly among other bros. Historically a spoken tradition passed from one generation to the next and dating back to the American Revolution, the official code of conduct for Bros appears here in its published form for the first time ever. By upholding the tenets of this sacred and legendary document, any dude can learn to achieve Bro-dom. Containing approximately 150 \u201cunspoken\u201d rules, this code of conduct for bros can range from the simple (bros before hos) to the complex (the hot-to-crazy ratio, complete with bar graphs and charts). With helpful sidebros The Bro Code will help any ordinary guy become the best bro he can be. Let ultimate bro and coauthor Barney Stinson and his book, The Bro Code share their wisdom, lest you be caught making eye contact in a devil\u2019s three-way (two dudes, duh).",
+            "author": "Barney Stinson",
+            "publisher": "Simon and Schuster",
+            "publication_date": "2008-10-14",
+            "page_count": 208,
+            "category": "Humor",
+            "image_url": "http://books.google.com/books/content?id=K3OlS-99_rEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 94000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 89,
+        "fields": {
+            "isbn": "9781473350182",
+            "title": "The Devil's Dictionary - With a Preface by the Author and a Short Biography of Ambrose Bierce",
+            "description": "Ambrose Gwinnett Bierce was born in Meigs County, Ohio, United States in 1842. Bierce is critically best remembered for his fiction and many other writings are also generally regarded as some of the best war writings of all time. Many of the earliest books, particularly those dating back to the 1900's and before, are now extremely scarce and increasingly expensive. We are republishing these classic works in affordable, high quality, modern editions.",
+            "author": "Ambrose Bierce",
+            "publisher": "Read Books Ltd",
+            "publication_date": "2016-08-16",
+            "page_count": 388,
+            "category": "Humor",
+            "image_url": "http://books.google.com/books/content?id=LB7aDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 196000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 90,
+        "fields": {
+            "isbn": "9781473635319",
+            "title": "Born A Crime",
+            "description": "WINNER OF THE THURBER PRIZE The compelling, inspiring, (often comic) coming-of-age story of Trevor Noah, set during the twilight of apartheid and the tumultuous days of freedom that followed. One of the comedy world's brightest new voices, Trevor Noah is a light-footed but sharp-minded observer of the absurdities of politics, race and identity, sharing jokes and insights drawn from the wealth of experience acquired in his relatively young life. As host of the US hit show The Daily Show with Trevor Noah, he provides viewers around the globe with their nightly dose of biting satire, but here Noah turns his focus inward, giving readers a deeply personal, heartfelt and humorous look at the world that shaped him. Noah was born a crime, son of a white Swiss father and a black Xhosa mother, at a time when such a union was punishable by five years in prison. Living proof of his parents' indiscretion, Trevor was kept mostly indoors for the first years of his life, bound by the extreme and often absurd measures his mother took to hide him from a government that could, at any moment, take him away. A collection of eighteen personal stories, Born a Crime tells the story of a mischievous young boy growing into a restless young man as he struggles to find his place in a world where he was never supposed to exist. Born a Crime is equally the story of that young man's fearless, rebellious and fervently religious mother - a woman determined to save her son from the cycle of poverty, violence and abuse that ultimately threatens her own life. Whether subsisting on caterpillars for dinner during hard times, being thrown from a moving car during an attempted kidnapping, or just trying to survive the life-and-death pitfalls of dating in high school, Noah illuminates his curious world with an incisive wit and an unflinching honesty. His stories weave together to form a personal portrait of an unlikely childhood in a dangerous time, as moving and unforgettable as the very best memoirs and as funny as Noah's own hilarious stand-up. Born a Crime is a must read.",
+            "author": "Trevor Noah",
+            "publisher": "Hachette UK",
+            "publication_date": "2016-11-17",
+            "page_count": 304,
+            "category": "Biography & Autobiography",
+            "image_url": "http://books.google.com/books/content?id=dAzJCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 112000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 91,
+        "fields": {
+            "isbn": "9780486110189",
+            "title": "The Importance of Being Earnest",
+            "description": "Wilde's witty and buoyant comedy of manners, filled with some of literature's most famous epigrams, reprinted from an authoritative British edition. Considered Wilde's most perfect work.",
+            "author": "Oscar Wilde",
+            "publisher": "Courier Corporation",
+            "publication_date": "2012-02-29",
+            "page_count": 64,
+            "category": "Drama",
+            "image_url": "http://books.google.com/books/content?id=5KODk_VCN2kC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 151000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 92,
+        "fields": {
+            "isbn": "9780241982099",
+            "title": "Everything I Know About Love",
+            "description": "THE SUNDAY TIMES BESTSELLER & MAJOR BBC ONE TV SERIES 'The book we will thrust into our friends' hands. Alderton feels like a best friend and your older sister all rolled into one and her pages wrap around you like a warm hug' Evening Standard 'Alderton is Nora Ephron for the millennial generation' Elizabeth Day Award-winning journalist Dolly Alderton survived her twenties (just about) and in Everything I Know About Love, she gives an unflinching account of the bad dates and squalid flat-shares, the heartaches and humiliations, and most importantly, the unbreakable female friendships that helped her to hold it all together. Glittering with wit, heart and humour, this is a book to press into the hands of every woman who has ever been there or is about to find themselves taking that first step towards the rest of their lives. 'Steeped in furiously funny accounts of one-night stands, ill-advised late-night taxi journeys up the M1, grubby flat-shares and the beauty of female friendships, as Alderton joyfully booze-cruises her way through her twenties' Metro 'Deeply funny, sometimes shocking, and admirably open-hearted and optimistic' Daily Telegraph 'A sensitive, astute and funny account of growing up millennial' Observer 'Alderton proves a razor-sharp observer of the shifting dynamics of long term female friendship' Mail on Sunday 'It's so full of life and laughs - I gobbled up this book. Alderton has built something beautiful and true out of many fragments of daftness' Amy Liptrot *Winner of Autobiography of the Year at the National Book Awards 2018* *A Waterstones Paperback of the Year 2019* *A Sunday Times paperback of the year 2019* *Selected for Stylist's The Decade's 15 Best Books by Remarkable Women* A Sunday Times bestseller, September 2022",
+            "author": "Dolly Alderton",
+            "publisher": "Penguin UK",
+            "publication_date": "2018-02-01",
+            "page_count": 278,
+            "category": "Biography & Autobiography",
+            "image_url": "http://books.google.com/books/content?id=IGkwDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 157000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 93,
+        "fields": {
+            "isbn": "9781528791670",
+            "title": "The Innocents Abroad",
+            "description": "First published in 1896, \u201cThe Innocents Abroad\u201d is a travel book written by Mark Twain. Within it, Twain recounts his trip aboard the ship \u201cQuaker City\u201d as it travelled through Europe and the Holy Land in 1867. The book sold more copies than any other Twain wrote in his life and remains among the best-selling travel book of all time. A fantastic example of classic travel literature by one of America's greatest men of letters. Samuel Langhorne Clemens (1835\u20131910), more commonly known under the pen name Mark Twain, was an American writer, lecturer, publisher and entrepreneur most famous for his novels \u201cThe Adventures of Tom Sawyer\u201d (1876) and \u201cThe Adventures of Huckleberry Finn\u201d (1884). Other notable works by this author include: \u201cThe Gilded Age: A Tale of Today\u201d (1873) and \u201cThe Prince and the Pauper\u201d (1881). Read & Co. Travel is proudly republishing this famous classic now in a new edition complete with a specially-commissioned biography of the author.",
+            "author": "Mark Twain",
+            "publisher": "Read Books Ltd",
+            "publication_date": "2020-11-06",
+            "page_count": 574,
+            "category": "Biography & Autobiography",
+            "image_url": "http://books.google.com/books/content?id=2dEHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 55000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 94,
+        "fields": {
+            "isbn": "9780486834801",
+            "title": "Three Men in a Boat",
+            "description": "Three men and a dog set out on a skiff down the Thames; what could be more idyllic? Almost anything, it turns out, as a boating holiday develops into a gauntlet of challenges.",
+            "author": "Jerome K. Jerome",
+            "publisher": "Courier Dover Publications",
+            "publication_date": "2018-09-12",
+            "page_count": 145,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=gTJnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 191000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 95,
+        "fields": {
+            "isbn": "9781775419662",
+            "title": "Penguin Island",
+            "description": "This masterwork of satire is a must-read for anyone who has ever rolled their eyes at the soft-focus, heavily romanticized histories of Europe's origins that were popular in the eighteenth and nineteenth centuries. In Anatole France's hilarious account, a half-blind missionary lands on a remote island and immediately sets about converting all the natives (which are actually penguins) to Christianity. Centuries' worth of historical hijinks ensue.",
+            "author": "Anatole France",
+            "publisher": "The Floating Press",
+            "publication_date": "2010-10-01",
+            "page_count": 416,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=fxluNEOoMb8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 117000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 96,
+        "fields": {
+            "isbn": "9780553902945",
+            "title": "Wild Ducks Flying Backward",
+            "description": "Known for his meaty seriocomic novels\u2013expansive works that are simultaneously lowbrow and highbrow\u2013Tom Robbins has also published over the years a number of short pieces, predominantly nonfiction. His travel articles, essays, and tributes to actors, musicians, sex kittens, and thinkers have appeared in publications ranging from Esquire to Harper\u2019s, from Playboy to the New York Times, High Times, and Life. A generous sampling, collected here for the first time and including works as diverse as scholarly art criticism and some decidedly untypical country- music lyrics, Wild Ducks Flying Backward offers a rare sweeping overview of the eclectic sensibility of an American original. Whether he is rocking with the Doors, depoliticizing Picasso\u2019s Guernica, lamenting the angst-ridden state of contemporary literature, or drooling over tomato sandwiches and a species of womanhood he calls \u201cthe genius waitress,\u201d Robbins\u2019s briefer writings often exhibit the same five traits that perhaps best characterize his novels: an imaginative wit, a cheerfully brash disregard for convention, a sweetly nasty eroticism, a mystical but keenly observant eye, and an irrepressible love of language. Embedded in this primarily journalistic compilation are a couple of short stories, a sheaf of largely unpublished poems, and an off-beat assessment of our divided nation. And wherever we open Wild Ducks Flying Backward, we\u2019re apt to encounter examples of the intently serious playfulness that percolates from the mind of a self-described \u201cromantic Zen hedonist\u201d and \u201cstray dog in the banquet halls of culture.\u201d",
+            "author": "Tom Robbins",
+            "publisher": "Bantam",
+            "publication_date": "2006-08-29",
+            "page_count": 272,
+            "category": "Literary Collections",
+            "image_url": "http://books.google.com/books/content?id=jy0zAmYW_0gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 127000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 97,
+        "fields": {
+            "isbn": "9780547540436",
+            "title": "How to Travel with a Salmon",
+            "description": "\u201cImpishly witty and ingeniously irreverent\u201d essays on topics from cell phones to librarians, by the author of The Name of the Rose and Foucault\u2019s Pendulum (The Atlantic Monthly). A cosmopolitan curmudgeon the Los Angeles Times called \u201cthe Andy Rooney of academia\u201d\u2014known for both nonfiction and novels that have become blockbuster New York Times bestsellers\u2014Umberto Eco takes readers on \u201ca delightful romp through the absurdities of modern life\u201d (Publishers Weekly) as he journeys around the world and into his own wildly adventurous mind. From the mundane details of getting around on Amtrak or in the back of a cab, to reflections on computer jargon and soccer fans, to more important issues like the effects of mass media and consumer civilization\u2014not to mention the challenges of trying to refrigerate an expensive piece of fish at an English hotel\u2014this renowned writer, semiotician, and philosopher provides \u201can uncanny combination of the profound and the profane\u201d (San Francisco Chronicle). \u201cEco entertains with his clever reflections and with his unique persona.\u201d \u2014Kirkus Reviews Translated from the Italian by William Weaver",
+            "author": "Umberto Eco",
+            "publisher": "HMH",
+            "publication_date": "1995-09-15",
+            "page_count": 259,
+            "category": "Humor",
+            "image_url": "http://books.google.com/books/content?id=3bytC0aZs5IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 186000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 98,
+        "fields": {
+            "isbn": "9781775450672",
+            "title": "Reginald",
+            "description": "Although the precise origin of Hector Hugh Munro's pen name is still unclear, writing under the name 'Saki' allowed the Edwardian satirist wide-ranging latitude to skewer the mores of the period. This collection includes a tale featuring Reginald, a multi-faceted character who embodies both the excesses and the virtues of the period.",
+            "author": "Saki",
+            "publisher": "The Floating Press",
+            "publication_date": "2011-01-01",
+            "page_count": 74,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=LKdFg0JO2IMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 53000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 99,
+        "fields": {
+            "isbn": "9781405930260",
+            "title": "Anxious People",
+            "description": "The funny, touching and unpredictable No. 1 New York Times bestseller, now a major Netflix TV series 'A brilliant and comforting read' MATT HAIG 'Funny, compassionate and wise. An absolute joy' A.J. PEARCE 'A surefooted insight into the absurdity, beauty and ache of life' GUARDIAN 'I laughed, I sobbed, I recommended it to literally everyone I know' BUZZFEED 'Captures the messy essence of being human' WASHINGTON POST From the 18 million copy internationally bestselling author of A Man Called Ove _______ It's New Year's Eve and House Tricks estate agents are hosting an open viewing in an up-market apartment when an incompetent bank robber rushes in and politely takes everyone hostage. For Anna-Lena and Roger, busy buying-up apartments to fill the hole in their marriage, it's something else to talk about. For Julia and Ro, panicky parents-to-be, it's yet another worry. Lonely bank manager Zara only came here for the view. While 87-year-old grandmother Estelle seems rather pleased by the company . . . As the police gather outside, the anxious strangers huddled within try to make the best of a very sticky situation - but could it be that they have a whole lot more in common than meets the eye? _______ Readers are loving Anxious People! 'Backman never disappoints . . . heartwarming and multi layered' 5***** READER REVIEW 'As always Backman manages to delight . . . a really satisfying ending that makes you feel better about the world' 5***** READER REVIEW 'A wonderfully unusual tale, told with flair and finesse that is so wonderful it is sure to cure everything that ails you. Don't miss out on this beautiful book' 5***** READER REVIEW 'This novel is about humanity at its most raw and at its most wonderful and I LOVED it!' 5***** READER REVIEW",
+            "author": "Fredrik Backman",
+            "publisher": "Penguin UK",
+            "publication_date": "2020-08-20",
+            "page_count": 338,
+            "category": "Fiction",
+            "image_url": "http://books.google.com/books/content?id=v_2-DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 95000
+        }
+    },
+    {
+        "model": "main.Buku",
+        "pk": 100,
+        "fields": {
+            "isbn": "9781524876302",
+            "title": "Oddball",
+            "description": "The newest Sarah's Scribbles collection from New York Times bestselling author and Goodreads Choice award winner Sarah Andersen. The fourth book in the enormously popular graphic novel series, the latest collection of Sarah's Scribbles comics explores the evils of procrastination, the trials of the creative process, the cuteness of kittens, and the beauty of not caring about your appearance as much as you did when you were younger. When it comes to humorous illustrations of the awkwardness and hilarity of millennial life, Sarah's Scribbles is without peer.",
+            "author": "Sarah Andersen",
+            "publisher": "Andrews McMeel Publishing",
+            "publication_date": "2021-12-07",
+            "page_count": 112,
+            "category": "Humor",
+            "image_url": "http://books.google.com/books/content?id=fXtIEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "lang": "en",
+            "price": 190000
+        }
+    }
+]

@@ -2,8 +2,14 @@ from django.db import models
 
 # Create your models here.
 class Buku(models.Model):
-    title = models.CharField(max_length=255)
-    language = models.CharField(max_length=255)
-    author = models.CharField(max_length=255)
-    category = models.CharField(max_length=255)
-    year_published = models.IntegerField()
+    isbn = models.CharField(null=True, blank=True, max_length=255)
+    title = models.CharField(null=True, blank=True, max_length=255)
+    description = models.TextField(null=True, blank=True)
+    author = models.CharField(null=True, blank=True, max_length=255)
+    publisher = models.CharField(null=True, blank=True, max_length=255)
+    publication_date = models.CharField(null=True, blank=True, max_length=255)
+    page_count = models.IntegerField(null=True, blank=True)
+    category = models.CharField(null=True, blank=True, max_length=255)
+    image_url = models.URLField(null=True, blank=True)
+    lang = models.CharField(null=True, blank=True, max_length=255)
+    price = models.IntegerField(null=True, blank=True)
