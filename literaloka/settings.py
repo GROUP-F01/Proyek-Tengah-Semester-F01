@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'cart_checkout',
     'inventory_management',
     'wishlist',
+    'jualbuku',
 ]
 
 MIDDLEWARE = [
