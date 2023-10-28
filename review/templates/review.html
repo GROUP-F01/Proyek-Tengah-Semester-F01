@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+  .container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+  .card {
+    width: 200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
+    margin-bottom: 20px;
+  }
+</style>
+<title>LiteraLoka | Review</title>
+<div style="padding-top:60px">
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        LiteraLoka
+      </a>
+    </div>
+  </nav>
+</div>
+
+<div>
+  <label for="rating-filter">Filter by Rating:</label>
+  <input type="checkbox" id="rating-1" class="rating-filter" value="1"> 1
+  <input type="checkbox" id="rating-2" class="rating-filter" value="2"> 2
+  <input type="checkbox" id="rating-3" class="rating-filter" value="3"> 3
+  <input type="checkbox" id="rating-4" class="rating-filter" value="4"> 4
+  <input type="checkbox" id="rating-5" class="rating-filter" value="5"> 5
+</div>
+
+<a href="{% url 'review:user_reviews' %}">
+  <button>
+    Review Anda
+</button>
+</a>
+
+<div class = "container" id="container"></div>
+
+<script>
+    async function getBuku() {
+      return fetch("{% url 'review:get_buku' %}").then((res) => res.json())
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const ratingCheckboxes = document.querySelectorAll(".rating-filter");
+      ratingCheckboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", () => {
+          refreshProducts();
+        });
+      });
+    });
+
+async function refreshProducts() {
+  const bukus = await getBuku();
+  const selectedRatings = Array.from(document.querySelectorAll(".rating-filter:checked")).map(
+    (checkbox) => parseInt(checkbox.value)
+  );
+
+  let filteredBukus;
+
+  if (selectedRatings.length === 0) {
+    filteredBukus = bukus;
+  } else {
+    filteredBukus = bukus.filter((buku) => {
+      const bukuRating = buku.fields.rating;
+      return selectedRatings.some((rating) => {
+        if (rating === 5) {
+          return bukuRating === 5;
+        } else {
+          return bukuRating === rating || (bukuRating > rating && bukuRating < rating + 1);
+        }
+      });
+    });
+  }
+
+  document.getElementById("container").innerHTML = "";
+  htmlString = "";
+
+  filteredBukus.forEach((buku) => {
+    const formattedRating = Number(buku.fields.rating).toFixed(2);
+    htmlString += `
+      <a href="/review/${buku.pk}" style="text-decoration: none; color: inherit;">
+          <div class="card">
+            <img src="${buku.fields.image_url}" style="scale: 0.8; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-text" style="color: grey;">${buku.fields.author}</h5>
+              <h5 class="card-text" style="font-weight: bold;">${buku.fields.title}</h5>
+              <h5 class="card-text" style="font-weight: bold;">${formattedRating}⭐</h5>
+            </div>
+          </div>
+        </a>
+      `;
+  });
+
+  document.getElementById("container").innerHTML = htmlString;
+}
+
+refreshProducts();
+
+  refreshProducts()
+</script>
+{% endblock content %}

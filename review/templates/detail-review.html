@@ -1,0 +1,212 @@
+{% extends 'base.html' %}
+{% block content %}
+<head>
+<style>
+    .card {
+      width: 200px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      border: 2px solid white;
+      margin-top: 50px;
+      margin-left:50px;
+    }
+    .admodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.admodal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+  </style>
+<title>LiteraLoka | {{buku.title}}</title>
+<body>
+  <div style="padding-top:60px">
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          LiteraLoka
+        </a>
+      </div>
+    </nav>
+  </div>
+  <div class="card">
+      <img src="{{ buku.image_url }}" style="scale: 0.8;">
+      <div class="rata-rata" id="rata-rata"></div>
+  </div>
+
+  
+<a href="{% url 'review:show_review' %}">
+  <button>
+    Kembali
+</button>
+</a>
+
+<button type="button" style="margin-left: 40px;" data-bs-toggle="modal" data-bs-target="#reviewModal">Tulis Review</button>
+
+  <div class = "container" id="kumpulan">
+  </div>
+
+  <div id="adModal" class="admodal">
+      <div class="admodal-content">
+          <span class="close" onclick="closeAdModal()">&times;</span>
+          <h2>Peringatan!</h2>
+          <p id="adMessage"></p>
+      </div>
+  </div>
+
+  <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="reviewModalLabel">Tulis Review</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form" onsubmit="return false;">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                      <label class="col-form-label">Rating:</label>
+                      <br>
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="rating" id="rating1" value="1">
+                          <label class="form-check-label" for="rating1">1⭐</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="rating" id="rating2" value="2">
+                          <label class="form-check-label" for="rating2">2⭐</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="rating" id="rating3" value="3">
+                          <label class="form-check-label" for="rating3">3⭐</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="rating" id="rating4" value="4">
+                          <label class="form-check-label" for="rating4">4⭐</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="rating" id="rating5" value="5">
+                          <label class="form-check-label" for="rating5">5⭐</label>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                        <label for="review" class="col-form-label">Review:</label>
+                        <textarea class="form-control" id="review" name="review"></textarea>
+                  </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="button_add" data-bs-dismiss="modal">Kirim Review</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    async function getReviews() {
+      return fetch("{% url 'review:get_reviews' buku.pk %}").then((res) => res.json())
+    }
+    async function refreshProducts() {
+  document.getElementById("kumpulan").innerHTML = "";
+  htmlString = "";
+  rata = 0;
+  counter = 0;
+  
+  const reviews = await getReviews();
+  
+  if (reviews.length === 0) {
+    document.getElementById("kumpulan").innerHTML = '<p>Belum ada review.</p>';
+    document.getElementById("rata-rata").innerHTML = '<p>0.00⭐</p>';
+  } else {
+    reviews.forEach((review) => {
+      counter += 1;
+      rata += review.rating;
+      htmlString += `
+        <div class="card">
+          <div class="card-body">
+            <p>
+              User: ${review.user.username}
+              Rating: ${review.rating}
+              <br>Review: ${review.review}
+            </p>
+          </div>
+        </div>
+      `;
+    });
+
+    rata = rata / counter;
+    if (isNaN(rata)) {
+      rata = "0.00";
+    } else {
+      rata = rata.toFixed(2);
+    }
+    document.getElementById("kumpulan").innerHTML = htmlString;
+    document.getElementById("rata-rata").innerHTML = '<p>' + rata + '⭐</p>';
+  }
+}
+
+
+      document.getElementById("button_add").onclick = addReview
+
+      async function addReview() {
+      const formData = new FormData(document.querySelector('#form'));
+      const response = await fetch(`{% url 'review:add_review' buku.pk %}`, {
+          method: "POST",
+          body: formData
+      });
+
+      if (response.status === 201) {
+          refreshProducts();
+          document.getElementById("form").reset();
+      } else {
+          const errorMessage = await response.text();
+          document.getElementById("adMessage").textContent = errorMessage;
+          openAdModal();
+          document.getElementById("form").reset();
+      }
+
+      return false;
+      }
+
+      function openAdModal() {
+          const adModal = document.getElementById("adModal");
+          adModal.style.display = "block";
+      }
+
+      function closeAdModal() {
+          const adModal = document.getElementById("adModal");
+          adModal.style.display = "none";
+      }
+      refreshProducts()
+  </script>
+</body>
+{% endblock content %}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<title>LiteraLoka | {{user.username}}'s Review Page</title>
+<div style="padding-top:60px">
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          LiteraLoka
+        </a>
+      </div>
+    </nav>
+  </div>
+
+<a href="{% url 'review:show_review' %}">
+    <button>
+      Kembali
+  </button>
+  </a>
+
+<br>
+
+<h1 style="text-align: center;">Welcome {{user.username}}!</h1>
+<h3 style="text-align: center;">Berikut review yang sudah anda tulis</h3>
+<br>
+
+{% for review in reviews %}
+<div class="card" style="width: 18rem; scale: 0.8;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);border: 2px solid white;">
+  <div class="card-body">
+    <h5 class="card-title" style="font-weight: bold;">{{review.buku.title}}</h5>
+    <h5 style="color: grey;">{{review.buku.author}}</h5>
+    <p>
+        Rating dari anda: {{review.rating|floatformat:"2"}}⭐
+        <br>
+        Review dari anda:<br>
+        {{review.review}}<br>
+        <a href="{% url 'review:delete_review' review.pk %}" style="text-decoration: none; font-size: 24px;">
+            🗑️
+        </a>
+    </p>
+
+  </div>
+</div>
+{% endfor %}
+
+{% endblock content %}

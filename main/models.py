@@ -1,6 +1,6 @@
+from django.contrib.auth.models import User
 from django.db import models
 
-# Create your models here.
 class Buku(models.Model):
     isbn = models.CharField(null=True, blank=True, max_length=255)
     title = models.CharField(null=True, blank=True, max_length=255)
@@ -13,3 +13,4 @@ class Buku(models.Model):
     image_url = models.URLField(null=True, blank=True)
     lang = models.CharField(null=True, blank=True, max_length=255)
     price = models.IntegerField(null=True, blank=True)
+    rating = models.FloatField(default=0)
