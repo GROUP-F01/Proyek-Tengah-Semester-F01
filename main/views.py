@@ -14,8 +14,8 @@ from django.contrib.auth.decorators import login_required
 def show_main(request):
     buku = Buku.objects.all()
     context = {
+        'user': request.user,
         'kumpulanbuku': buku,
-        'last_login': request.COOKIES['last_login'],
     }
 
     return render(request, "main.html", context)
@@ -29,23 +29,6 @@ def create_product(request):
 
     context = {'form': form}
     return render(request, "create_product.html", context)
-
-
-def show_xml(request):
-    data = Buku.objects.all()
-    return HttpResponse(serializers.serialize("xml", data), content_type="application/xml")
-
-def show_json(request):
-    data = Buku.objects.all()
-    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
-
-def show_xml_by_id(request, id):
-    data = Buku.objects.filter(pk=id)
-    return HttpResponse(serializers.serialize("xml", data), content_type="application/xml")
-
-def show_json_by_id(request, id):
-    data = Buku.objects.filter(pk=id)
-    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
 def register(request):
     form = UserCreationForm()
@@ -65,6 +48,12 @@ def login_user(request):
         password = request.POST.get('password')
         user = authenticate(request, username=username, password=password)
         if user is not None:
+            if user.is_staff:
+                login(request, user)
+                response = HttpResponseRedirect(reverse("inventory_management:literaloka_admin")) 
+                response.set_cookie('last_login', str(datetime.datetime.now()))
+                return response
+            
             login(request, user)
             response = HttpResponseRedirect(reverse("main:show_main")) 
             response.set_cookie('last_login', str(datetime.datetime.now()))
@@ -76,6 +65,5 @@ def login_user(request):
 
 def logout_user(request):
     logout(request)
-    response = HttpResponseRedirect(reverse('main:login'))
-    response.delete_cookie('last_login')
+    response = HttpResponseRedirect(reverse('main:show_main'))
     return response

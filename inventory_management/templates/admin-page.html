@@ -6,20 +6,38 @@
 
 <nav class="navbar bg-body-tertiary">
     <div class="container-fluid d-flex flex-row">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="{% url 'main:show_main' %}">
         <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
         LiteraLoka
       </a>
-      <div>
-        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border-radius: 8px;"><img src="https://cdn.icon-icons.com/icons2/1710/PNG/512/addplussignoutline_112526.png" width="23" height="20" alt="Tambah buku"></button>
-        <a href="#"><button style="border-radius: 8px;">Review</button></a>
-        <a href="#"><button style="border-radius: 8px;">Resensi</button></a>
-        <a href="#"><button style="border-radius: 8px;">Jual</button></a>
-        <a href="#"><button style="border-radius: 8px;"><img src="https://th.bing.com/th/id/R.672ae334c8366021fd588786f054cb2d?rik=5OKBZlZEdbRDrA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_225646.png&ehk=Tjxw1TwcwdV5%2ftOEQVrvqgnbn0XKd%2fweSJ6aBiXxKB0%3d&risl=&pid=ImgRaw&r=0" width="28" height="20" alt="Logo"></button></a>
-        <a href="{% url 'main:logout' %}""><button style="border-radius: 8px;">Logout</button></a>
+      <div style="display: flex; flex-direction: row;">
+        <button style="margin-top: 2px; margin-left: 2px; margin-right: 2px; border-radius: 8px; height: 35px;" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="https://cdn.icon-icons.com/icons2/1710/PNG/512/addplussignoutline_112526.png" width="20" height="20" alt="Tambah buku"></button>
+        <a href="#"><button style="margin-top: 2px; margin-left: 2px; margin-right: 2px; border-radius: 8px; height: 35px;"><img src="https://th.bing.com/th/id/R.672ae334c8366021fd588786f054cb2d?rik=5OKBZlZEdbRDrA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_225646.png&ehk=Tjxw1TwcwdV5%2ftOEQVrvqgnbn0XKd%2fweSJ6aBiXxKB0%3d&risl=&pid=ImgRaw&r=0" width="28" height="20" alt="Logo"></button></a>
+        <a href="{% url 'main:logout' %}""><button style="margin-top: 2px; margin-left: 2px; margin-right: 2px; border-radius: 8px; height: 35px;">Logout</button></a>
+        <div class="dropdown" style="padding-right: 2px;">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img width="20" height="25" src="https://static.vecteezy.com/system/resources/previews/000/582/257/non_2x/bulleted-list-icon-vector-illustration.jpg"></img></button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Resensi</a></li>
+              <li><a class="dropdown-item" href="#">Review</a></li>
+              <li><a class="dropdown-item" href="#">Jual</a></li>
+              <li><a href="{% url 'inventory_management:literaloka_admin' %}" class="dropdown-item" href="#">Manajemen Inventory</a></li>
+            </ul>
+          </div>
       </div>
     </div>
 </nav>
+
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h1>Admin Page</h1>
+    <h3>Filter by language:</h3>
+    <div style="display: flex; flex-direction: row;">
+        <input type="checkbox" id="en" class="lang-filter" value="en"> English
+        <input type="checkbox" id="ta" class="lang-filter" value="ta"> Tagalog
+        <input type="checkbox" id="id" class="lang-filter" value="id"> Indonesia
+        <input type="checkbox" id="ko" class="lang-filter" value="ko"> Korea 
+        <input type="checkbox" id="pt-BR" class="lang-filter" value="pt-BR"> Brazilian Portuguese
+    </div>
+</div>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -80,13 +98,22 @@
                         </select>
                     </div>
                     <div class="mb-3">
+                        <label for="url" class="col-form-label">Image URL:</label>
+                        <input type="url" class="form-control" id="url" name="url"></input>
+                    </div>
+                    <div class="mb-3">
                         <label for="lang" class="col-form-label">Language:</label>
                         <select id="lang" name="lang">
                             <option value="en">English</option>
+                            <option value="ta">Tagalog</option>
+                            <option value="ko">Korea</option>
+                            <option value="id">Indonesia</option>
+                            <option value="de">Deustch</option>
+                            <option value="pt-BR">Brazilian Portuguese</option>
                     </div>
                     <div class="mb-3">
-                        <label for="harga" class="col-form-label">Price:</label>
-                        <input type="number" class="form-control" id="price" name="harga"></input>
+                        <label for="price" class="col-form-label">Price:</label>
+                        <input type="number" class="form-control" id="price" name="price"></input>
                     </div>
                 </form>
             </div>
@@ -103,36 +130,44 @@
 
 <div class="main-container d-flex p-3 flex-row">
     <div class="content-page">
-                <div class="d-flex justify-content-start d-grid gap-3 flex-wrap m-3" id="product_table"></div>
+                <div class="d-flex d-grid gap-3 flex-wrap m-3" style="justify-content: space-evenly;" id="product_table"></div>
     </div>
     
 </div>
-<a href="{% url 'main:logout' %}"">
-    <button>
-        Logout
-    </button>
-</a>
 
-<h5>Sesi terakhir login: {{ last_login }}</h5>
+<h3>Account: {{ name }}</h3>
 
 <script> 
     async function getBuku() {
         return fetch("{% url 'inventory_management:get_product_json' %}").then((res) => res.json())
     }
 
+    
+
+
     async function refreshProducts() {
+        var macamBahasa = document.querySelectorAll('input[class="lang-filter"]');
+        var selectedCategories = [];
+
+        macamBahasa.forEach(function(checkbox) {
+            if (checkbox.checked) {
+                selectedCategories.push(checkbox.value);
+            }
+        });
+
+
         document.getElementById("product_table").innerHTML = ""
         const kumpulanbuku = await getBuku()
         let htmlString = ''
         kumpulanbuku.forEach((buku) => {
-            htmlString += `<div class="" style="width: 12rem; border-style: dashed; border-radius: 8px;" id="product_table">
+            htmlString += `<div class="bg-body-tertiary" style="width: 12rem; border-style: solid; border-radius: 8px;" id="product_table">
                             <img src="${buku.fields.image_url}" class="card-img-top " alt="..." width="200" height="200">
                             <div class="card-body" style="margin: 2px 2px; padding: 2px;">
-                                <h5 class="card-title" style="height: 100px;">${buku.fields.title}</h5>
-                                <p class="card-text" style="height: 50px;">${buku.fields.category}</p>
+                                <h5 class="card-title overflow-auto" style="height: 70px;">${buku.fields.title}</h5>
+                                <p class="card-text overflow-auto" style="height: 50px;">${buku.fields.description}</p>
                             <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                                <a href="#"><button>Lihat Detail</button></a>
-                                <a href="#"><button>Delete</button></a>
+                                <a href="#"><button style="border-radius: 8px;">Lihat Detail</button></a>
+                                <a href="/delete-buku/${buku.pk}"><button style="border-radius: 8px">SAMPAH</button></a>
                             </div>
                             </div>
                         </div>` 
@@ -140,20 +175,19 @@
         
         document.getElementById("product_table").innerHTML = htmlString
     }
-
-    refreshProducts()
-
-    function addProduct() {
+    
+    function addBuku() {
         fetch("{% url 'inventory_management:add_buku_ajax' %}", {
             method: "POST",
             body: new FormData(document.querySelector('#form'))
         }).then(refreshProducts)
-
+        
         document.getElementById("form").reset()
         return false
     }
-
-    document.getElementById("button_add").onclick = addProduct
+    
+    document.getElementById("button_add").onclick = addBuku
+    refreshProducts()
 
 </script>
 
