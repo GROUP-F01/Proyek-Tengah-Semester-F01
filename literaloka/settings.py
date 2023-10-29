@@ -43,8 +43,9 @@ INSTALLED_APPS = [
     'cart_checkout',
     'inventory_management',
     'wishlist',
-    'rest_framework',
-    'jualbuku']
+    'jualbuku',
+    'rest_framework'
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

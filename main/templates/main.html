@@ -10,6 +10,12 @@
         <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
         LiteraLoka
       </a>
+      <div>
+        <a href="#"><button style="border-radius: 8px;">Review</button></a>
+        <a href="#"><button style="border-radius: 8px;">Resensi</button></a>
+        <a href="{% url 'jualbuku:jual_buku' %}"><button style="border-radius: 8px;">Jual</button></a>
+        <a href="#"><button style="border-radius: 8px;"><img src="https://th.bing.com/th/id/R.672ae334c8366021fd588786f054cb2d?rik=5OKBZlZEdbRDrA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_225646.png&ehk=Tjxw1TwcwdV5%2ftOEQVrvqgnbn0XKd%2fweSJ6aBiXxKB0%3d&risl=&pid=ImgRaw&r=0" width="28" height="20" alt="Logo"></button></a>
+        <a href="{% url 'main:login' %}"><button style="border-radius: 8px;">Login</button></a>
       <div style="display: flex; flex-direction: row;">
         <a href="{% url 'cart_checkout:book_checkout' %}"><button style="margin-top: 2px; margin-left: 2px; margin-right: 2px; border-radius: 8px; height: 35px;"><img src="https://th.bing.com/th/id/R.672ae334c8366021fd588786f054cb2d?rik=5OKBZlZEdbRDrA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_225646.png&ehk=Tjxw1TwcwdV5%2ftOEQVrvqgnbn0XKd%2fweSJ6aBiXxKB0%3d&risl=&pid=ImgRaw&r=0" width="28" height="20" alt="Logo"></button></a>
         {% if user.is_authenticated %}
@@ -50,6 +56,30 @@
 
 <div class="main-container d-flex p-3 flex-row">
     <div class="content-page">
+                <div class="d-flex justify-content-start d-grid gap-3 flex-wrap m-3"">
+                
+                
+                    {% for buku in kumpulanbuku %}
+                        <div class="" style="width: 10rem;" id="product_table">
+                            <img src="{{ buku.image_url }}" class="card-img-top " alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">{{ buku.title }}</h5>
+                            <p class="card-text">{{ buku.category }}</p>
+                            <a href="#" class="btn btn-primary">Lihat detail</a>
+                            </div>
+                        </div>
+                        <tr>
+                        </tr>
+                    {% endfor %}
+                </div>
+        
+            <br />
+        
+            <a href="{% url 'main:create_product' %}">
+                <button>
+                    Add New Product
+                </button>
+            </a>
                 <div class="d-flex d-grid gap-3 flex-wrap m-3" style="justify-content: space-evenly;" id="product_table"></div>
     </div>
     
