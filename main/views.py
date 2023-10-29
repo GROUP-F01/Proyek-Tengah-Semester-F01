@@ -1,3 +1,4 @@
+import datetime
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect, HttpResponse
 from main.forms import ProductForm
@@ -11,7 +12,6 @@ from django.contrib.auth.decorators import login_required
 from cart_checkout.views import init_cart, add_to_cart
 
 # Create your views here.
-@login_required(login_url='/login')
 def show_main(request):
     buku = Buku.objects.all()
 
@@ -24,9 +24,12 @@ def show_main(request):
     amount_added = request.session.get('amount_added', 0)
 
     context = {
-        'namapage': 'Landing page utama',
         'kumpulanbuku': buku,
+<<<<<<< HEAD
         'amount_added': amount_added,
+=======
+        'last_login': request.COOKIES['last_login'],
+>>>>>>> 35755310f0e5a1c17710ac26dcefb0d27eda8352
     }
 
     return render(request, "main.html", context)
@@ -77,7 +80,9 @@ def login_user(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('main:show_main')
+            response = HttpResponseRedirect(reverse("main:show_main")) 
+            response.set_cookie('last_login', str(datetime.datetime.now()))
+            return response
         else:
             messages.info(request, 'Sorry, incorrect username or password. Please try again.')
     context = {}
@@ -85,4 +90,6 @@ def login_user(request):
 
 def logout_user(request):
     logout(request)
-    return redirect('main:login')
+    response = HttpResponseRedirect(reverse('main:login'))
+    response.delete_cookie('last_login')
+    return response
