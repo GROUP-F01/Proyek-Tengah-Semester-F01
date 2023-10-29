@@ -5,7 +5,6 @@ from cart_checkout.forms import CheckoutForm
 from django.urls import reverse
 from django.core import serializers
 from django.views.decorators.csrf import csrf_exempt
-# from cart_checkout.models import Checkout
 
 # Create your views here.
 def init_cart(request):
@@ -89,40 +88,4 @@ def delete_book_ajax(request, book_title):
         else:
             return HttpResponseNotFound()
     return HttpResponseNotFound()
-
-# def add_to_cart(request, book_id):
-#     if request.method == "POST":
-#         buku = Buku.objects.get(pk=book_id)
-
-#         cart = request.session.get('cart', {})
-#         cart[book_id] = f"{buku.title}, price: {buku.price}"
-#         request.session['cart'] = cart
-
-#     return redirect('main:show_main')
-
-# def book_checkout(request):
-#     form = CheckoutForm(request.POST or None)
-#     cart = request.session.get('cart', {})
-
-#     if form.is_valid() and request.method == "POST":
-#         form.save()
-
-#         book_items = list(cart.values())
-#         context1 = {'book_items': book_items}
-
-#         request.session['cart'] = {}
-#         return render(request, 'inventory.html', context1)
-
-#     context = {'form': form, 'cart': cart}
-#     return render(request, "checkout.html", context)
-
-# def inventory(request):
-#     cart = request.session.get('cart', {})
-#     book_titles = [item.split(", price: ")[0] for item in cart.values()]  # Extract items with title and price
-
-#     context = {
-#         'book_titles': book_titles,
-#     }
-
-#     return render(request, 'inventory.html', context)
 
