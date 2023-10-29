@@ -21,6 +21,7 @@
               <li><a class="dropdown-item" href="#">Review</a></li>
               <li><a class="dropdown-item" href="#">Jual</a></li>
               <li><a href="{% url 'inventory_management:literaloka_admin' %}" class="dropdown-item" href="#">Manajemen Inventory</a></li>
+              <li><a class="dropdown-item" href="#">Wishlist</a></li>
             </ul>
           </div>
       </div>
@@ -142,40 +143,42 @@
         return fetch("{% url 'inventory_management:get_product_json' %}").then((res) => res.json())
     }
 
-    
+    var macamBahasa = document.querySelectorAll('input[class="lang-filter"]');
+    var bahasaDifilter = [];
+
+    macamBahasa.forEach(function(checkbox) {
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                bahasaDifilter.push(this.value)
+            }
+        })
+    });
 
 
     async function refreshProducts() {
-        var macamBahasa = document.querySelectorAll('input[class="lang-filter"]');
-        var selectedCategories = [];
-
-        macamBahasa.forEach(function(checkbox) {
-            if (checkbox.checked) {
-                selectedCategories.push(checkbox.value);
-            }
-        });
-
-
         document.getElementById("product_table").innerHTML = ""
         const kumpulanbuku = await getBuku()
         let htmlString = ''
-        kumpulanbuku.forEach((buku) => {
-            htmlString += `<div class="bg-body-tertiary" style="width: 12rem; border-style: solid; border-radius: 8px;" id="product_table">
-                            <img src="${buku.fields.image_url}" class="card-img-top " alt="..." width="200" height="200">
-                            <div class="card-body" style="margin: 2px 2px; padding: 2px;">
-                                <h5 class="card-title overflow-auto" style="height: 70px;">${buku.fields.title}</h5>
-                                <p class="card-text overflow-auto" style="height: 50px;">${buku.fields.description}</p>
-                            <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                                <a href="#"><button style="border-radius: 8px;">Lihat Detail</button></a>
-                                <a href="/delete-buku/${buku.pk}"><button style="border-radius: 8px">SAMPAH</button></a>
-                            </div>
-                            </div>
-                        </div>` 
-        })
+            kumpulanbuku.forEach((buku) => {
+                    htmlString += `<div class="bg-body-tertiary" style="width: 12rem; border-style: solid; border-radius: 8px;" id="product_table">
+                                    <img src="${buku.fields.image_url}" class="card-img-top " alt="..." width="200" height="200">
+                                    <div class="card-body" style="margin: 2px 2px; padding: 2px;">
+                                        <h5 class="card-title overflow-auto" style="height: 70px;">${buku.fields.title}</h5>
+                                        <p class="card-text overflow-auto" style="height: 50px;">${buku.fields.description}</p>
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                                        <a href="#"><button style="border-radius: 8px;">Lihat Detail</button></a>
+                                        <a href="/delete-buku/${buku.pk}"><button style="border-radius: 8px">SAMPAH</button></a>
+                                    </div>
+                                    </div>
+                                </div>` 
+                }
+        )
         
         document.getElementById("product_table").innerHTML = htmlString
     }
     
+    refreshProducts()
+
     function addBuku() {
         fetch("{% url 'inventory_management:add_buku_ajax' %}", {
             method: "POST",
@@ -187,7 +190,7 @@
     }
     
     document.getElementById("button_add").onclick = addBuku
-    refreshProducts()
+
 
 </script>
 

@@ -15,6 +15,7 @@ def show_main(request):
     buku = Buku.objects.all()
     context = {
         'user': request.user,
+        'name': request.user.username,
         'kumpulanbuku': buku,
     }
 
