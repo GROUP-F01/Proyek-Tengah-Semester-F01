@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Inventory</h1>
+
+    <table>
+        {% for book_title in book_titles %}
+            <tr>{{ book_title }}</tr>
+            <tr>
+                <a href="{% url 'cart_checkout:delete_book' book_title %}">
+                    <button class="btn btn-danger">
+                        Remove
+                    </button>
+                </a>
+            </tr><br>
+        {% endfor %}
+        </table>
+
+    <a href="{% url 'main:show_main' %}">
+        <button>
+            Back
+        </button>
+    </a>
+
+{% endblock %}
