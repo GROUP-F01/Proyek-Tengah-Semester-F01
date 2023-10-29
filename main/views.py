@@ -10,8 +10,8 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from cart_checkout.views import init_cart, add_to_cart
-
-# Create your views here.
+from django.views.decorators.csrf import csrf_exempt
+# Creat
 def show_main(request):
     buku = Buku.objects.all()
 
