@@ -8,7 +8,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('main', '0003_auto_20231026_0941'),
+        ('main', '0002_auto_20231027_1958'),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
         ('jualbuku', '0001_initial'),
     ]
