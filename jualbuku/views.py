@@ -6,7 +6,19 @@ from main.models import Buku
 from jualbuku.models import BukuUser
 from django.core import serializers
 from django.contrib.auth.models import AnonymousUser
+from django.http import HttpResponseRedirect
+from functools import wraps
 
+def user_not_superuser(function):
+    @wraps(function)
+    def wrap(request, *args, **kwargs):
+        if not request.user.is_superuser:
+            return function(request, *args, **kwargs)
+        else:
+            return HttpResponseRedirect('/')
+    return wrap
+
+@user_not_superuser
 def show_buku(request):
     if(isinstance(request.user, AnonymousUser)) :
         return redirect('main:login')
@@ -17,7 +29,7 @@ def show_buku(request):
     }
     return render(request, "penjualan.html", context)
 
-
+@user_not_superuser
 def create_buku(request):
     if(isinstance(request.user, AnonymousUser)) :
         return redirect('main:login')
