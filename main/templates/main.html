@@ -32,26 +32,78 @@
 </nav>
 
 
-<div class="listpage">
-    <h3>Hyperlink:</h3>
-    <div class="list-link" style="list-style-type: none;">
-        <ul>
-            <li><a>Admin Site</a></li>
-            <li><a>Shop</a></li>
-            <li><a href="{% url 'cart_checkout:book_checkout' %}">
-                Shopping cart & Checkout (<span id="amount-added">{{amount_added}}</span>)</a>
-            </li>
-            <li><a href="{% url 'cart_checkout:inventory' %}">User Inventory</a></li>
-        </ul>
-    </div>
-</div> 
-
-
-
 <div class="main-container d-flex p-3 flex-row">
     <div class="content-page">
-                <div class="d-flex d-grid gap-3 flex-wrap m-3" style="justify-content: space-evenly;" id="product_table"></div>
+        <h1>Nama page: </h1>
+        <p>{{ namapage }}<p>
+        
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Language</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Year Published</th>
+                    <th>Thumbnail</th>
+                </tr>
+            
+                {% comment %} Berikut cara memperlihatkan data produk di bawah baris ini {% endcomment %}
+            
+        
+                {% for buku in kumpulanbuku %}
+                    <tr>
+        
+                        <td>{{buku.title}}</td>
+                        <td>{{buku.lang}}</td>
+                        <td>{{buku.author}}</td>
+                        <td>{{buku.price}} <br>
+                            <button type="submit" class="btn btn-primary add-to-cart-button" book-id="{{buku.id}}">Add to Cart</button>
+                        </td>
+                        <td>{{buku.category}}</td>
+                        <td>{{buku.publication_date}}</td>
+                        <td><img src = "{{buku.image_url}}" width="200"></td>
+                    </tr>
+                {% endfor %}
+            </table>
+                <div class="d-flex justify-content-start d-grid gap-3 flex-wrap m-3"">
+                
+                
+                    {% for buku in kumpulanbuku %}
+                        <div class="" style="width: 10rem;" id="product_table">
+                            <img src="{{ buku.image_url }}" class="card-img-top " alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">{{ buku.title }}</h5>
+                            <p class="card-text">{{ buku.category }}</p>
+                            <a href="#" class="btn btn-primary">Lihat detail</a>
+                            </div>
+                        </div>
+                        <tr>
+                        </tr>
+                    {% endfor %}
+                </div>
+        
+            <br />
+        
+            <a href="{% url 'main:create_product' %}">
+                <button>
+                    Add New Product
+                </button>
+            </a>
     </div>
+    <div class="listpage">
+        <h3>Hyperlink:</h3>
+        <div class="list-link" style="list-style-type: none;">
+            <ul>
+                <li><a>Admin Site</a></li>
+                <li><a>Shop</a></li>
+                <li><a href="{% url 'cart_checkout:book_checkout' %}">
+                    Shopping cart & Checkout (<span id="amount-added">{{amount_added}}</span>)</a>
+                </li>
+                <li><a href="{% url 'cart_checkout:inventory' %}">User Inventory</a></li>
+            </ul>
+        </div>
+    </div>  
     
 </div>
 
@@ -60,65 +112,9 @@
 {% endif %}
 
 <script> 
-
-    async function getBuku() {
-        return fetch("{% url 'inventory_management:get_product_json' %}").then((res) => res.json())
-    }
-
-    var macamBahasa = document.querySelectorAll('input[class="lang-filter"]');
-    var bahasaDifilter = [];
-
-    macamBahasa.forEach(function(checkbox) {
-        checkbox.addEventListener('change', function() {
-            if (this.checked) {
-                bahasaDifilter.push(this.value)
-            }
-        })
-    });
-
-
-    async function refreshProducts() {
-        document.getElementById("product_table").innerHTML = ""
-        const kumpulanbuku = await getBuku()
-        let htmlString = ''
-            kumpulanbuku.forEach((buku) => {
-                    htmlString += `<div class="bg-body-tertiary" style="width: 12rem; border-style: solid; border-radius: 8px;" id="product_table">
-                                    <img src="${buku.fields.image_url}" class="card-img-top " alt="..." width="200" height="200">
-                                    <div class="card-body" style="margin: 2px 2px; padding: 2px;">
-                                        <h5 class="card-title overflow-auto" style="height: 70px;">${buku.fields.title}</h5>
-                                        <p class="card-text overflow-auto" style="height: 50px;">${buku.fields.description}</p>
-                                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                                        <a href="#"><button style="border-radius: 8px;">Lihat Detail</button></a>
-                                        <a href="/delete-buku/${buku.pk}"><button style="border-radius: 8px">🗑️</button></a>
-                                        <button type="submit" class="btn btn-primary add-to-cart-button" book-id="{{buku.pk}}">Add to Cart</button>
-                                    </div>
-                                    </div>
-                                </div>` 
-                }
-        )
-        
-        document.getElementById("product_table").innerHTML = htmlString
-    }
-    
-    refreshProducts()
-
-    function addBuku() {
-        fetch("{% url 'inventory_management:add_buku_ajax' %}", {
-            method: "POST",
-            body: new FormData(document.querySelector('#form'))
-        }).then(refreshProducts)
-        
-        document.getElementById("form").reset()
-        return false
-    }
-    
-    document.getElementById("button_add").onclick = addBuku
-
-    
     document.querySelectorAll(".add-to-cart-button").forEach(function(button) {
     button.addEventListener("click", function() {
         var bookId = this.getAttribute("book-id");
-
         // Send an AJAX request to add the book to the cart
         fetch("{% url 'cart_checkout:add_to_cart' 0 %}".replace("0", bookId), {
             method: "POST",
