@@ -15,7 +15,6 @@ def show_main(request):
     buku = Buku.objects.all()
     context = {
         'kumpulanbuku': buku,
-        'last_login': request.COOKIES['last_login'],
     }
 
     return render(request, "main.html", context)
