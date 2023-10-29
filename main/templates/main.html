@@ -30,6 +30,7 @@
                     <th>Title</th>
                     <th>Language</th>
                     <th>Author</th>
+                    <th>Price</th>
                     <th>Category</th>
                     <th>Year Published</th>
                     <th>Thumbnail</th>
@@ -44,6 +45,9 @@
                         <td>{{buku.title}}</td>
                         <td>{{buku.lang}}</td>
                         <td>{{buku.author}}</td>
+                        <td>{{buku.price}} <br>
+                            <button type="submit" class="btn btn-primary add-to-cart-button" book-id="{{buku.id}}">Add to Cart</button>
+                        </td>
                         <td>{{buku.category}}</td>
                         <td>{{buku.publication_date}}</td>
                         <td><img src = "{{buku.image_url}}" width="200"></td>
@@ -74,7 +78,10 @@
             <ul>
                 <li><a>Admin Site</a></li>
                 <li><a>Shop</a></li>
-                <li><a>Shopping cart & Checkout</a></li>
+                <li><a href="{% url 'cart_checkout:book_checkout' %}">
+                    Shopping cart & Checkout (<span id="amount-added">{{amount_added}}</span>)</a>
+                </li>
+                <li><a href="{% url 'cart_checkout:inventory' %}">Inventory</a></li>
             </ul>
         </div>
     </div>  
@@ -85,5 +92,27 @@
         Logout
     </button>
 </a>
+
+<script>
+    document.querySelectorAll(".add-to-cart-button").forEach(function(button) {
+        button.addEventListener("click", function() {
+            var bookId = this.getAttribute("book-id");
+
+            // Send an AJAX request to add the book to the cart
+            fetch("{% url 'cart_checkout:add_to_cart' 0 %}".replace("0", bookId), {
+                method: "POST",
+                headers: {
+                    "X-CSRFToken": "{{ csrf_token }}",
+                    "X-Requested-With": "XMLHttpRequest", 
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("amount-added").textContent = data.amount_added;
+            })
+            .catch(error => console.error("Error:", error));
+        });
+    });
+</script>
 
 {% endblock content %}
