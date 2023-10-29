@@ -24,12 +24,10 @@ def show_main(request):
     amount_added = request.session.get('amount_added', 0)
 
     context = {
+        'user': request.user,
+        'name': request.user.username,
         'kumpulanbuku': buku,
-<<<<<<< HEAD
         'amount_added': amount_added,
-=======
-        'last_login': request.COOKIES['last_login'],
->>>>>>> 35755310f0e5a1c17710ac26dcefb0d27eda8352
     }
 
     return render(request, "main.html", context)
