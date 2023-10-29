@@ -1,51 +1,101 @@
 {% extends 'base.html' %}
-
 {% block content %}
-<style>
-  .container {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 50px;
-  }
-  .card {
-    width: 200px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border: 2px solid white;
-    margin-bottom: 20px;
-  }
-</style>
-<title>LiteraLoka | Review</title>
-<div style="padding-top:60px">
-  <nav class="navbar bg-body-tertiary fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-        LiteraLoka
+
+<head>
+  <title>LiteraLoka | Review</title>
+  <style>
+    .left {
+      width: 300px;
+      float: left;
+      height: 100vh;
+      margin-top: 20px;
+    }
+    .right {
+      margin-top: 20px;
+      margin-left: 300px;
+      height: 100vh;
+    }
+    .container {
+      width: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    .card {
+      width: 230px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      border: 2px solid white;
+      margin-bottom: 20px;
+      height: 350px;
+      margin-left: 20px;
+      margin-right: 10px
+    }
+    .rating-filter {
+      margin-bottom: 15px;
+    }
+    .button-kece {
+      background-color: white;
+      text-decoration: none;
+      color: black;
+      border: 2px solid white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 18px;
+      width: 230px;
+    }
+    .card-text-title {
+    color: black;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 20ch;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="padding-top:60px">
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          LiteraLoka
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="left">
+    <h1 style="margin-left: 20px; margin-bottom: 15px;">Review Page</h1>
+    <div class = "card" style="margin-left: 20px; height: 210px;">
+      <div style="margin-top: 5px; margin-left: 5px; margin-bottom: 5px;">
+        <div>
+        <h5 for="rating-filter" style="margin-bottom: 10px;">Filter by Rating:</h5>
+        </div>
+        <div style="margin-left: 10px;">
+          <input type="checkbox" id="rating-1" class="rating-filter" value="1"> Rating 1⭐ <br>
+          <input type="checkbox" id="rating-2" class="rating-filter" value="2"> Rating 2⭐ <br>
+          <input type="checkbox" id="rating-3" class="rating-filter" value="3"> Rating 3⭐ <br>
+          <input type="checkbox" id="rating-4" class="rating-filter" value="4"> Rating 4⭐ <br>
+          <input type="checkbox" id="rating-5" class="rating-filter" value="5"> Rating 5⭐
+        </div>
+      </div>
+    </div>
+    <div style="margin-left: 20px;">
+      <a href="{% url 'review:user_reviews' %}">
+        <button class="button-kece">
+          Lihat Review Anda
+        </button>
       </a>
     </div>
-  </nav>
-</div>
+  </div>
 
-<div>
-  <label for="rating-filter">Filter by Rating:</label>
-  <input type="checkbox" id="rating-1" class="rating-filter" value="1"> 1
-  <input type="checkbox" id="rating-2" class="rating-filter" value="2"> 2
-  <input type="checkbox" id="rating-3" class="rating-filter" value="3"> 3
-  <input type="checkbox" id="rating-4" class="rating-filter" value="4"> 4
-  <input type="checkbox" id="rating-5" class="rating-filter" value="5"> 5
-</div>
+  <div class="right">
+    <div class = "container" id="container"></div>
+  </div>
 
-<a href="{% url 'review:user_reviews' %}">
-  <button>
-    Review Anda
-</button>
-</a>
-
-<div class = "container" id="container"></div>
-
-<script>
+  <script>
     async function getBuku() {
       return fetch("{% url 'review:get_buku' %}").then((res) => res.json())
     }
@@ -59,53 +109,56 @@
       });
     });
 
-async function refreshProducts() {
-  const bukus = await getBuku();
-  const selectedRatings = Array.from(document.querySelectorAll(".rating-filter:checked")).map(
-    (checkbox) => parseInt(checkbox.value)
-  );
+    async function refreshProducts() {
+      const bukus = await getBuku();
+      const selectedRatings = Array.from(document.querySelectorAll(".rating-filter:checked")).map(
+        (checkbox) => parseInt(checkbox.value)
+      );
 
-  let filteredBukus;
+      let filteredBukus;
 
-  if (selectedRatings.length === 0) {
-    filteredBukus = bukus;
-  } else {
-    filteredBukus = bukus.filter((buku) => {
-      const bukuRating = buku.fields.rating;
-      return selectedRatings.some((rating) => {
-        if (rating === 5) {
-          return bukuRating === 5;
-        } else {
-          return bukuRating === rating || (bukuRating > rating && bukuRating < rating + 1);
-        }
+      if (selectedRatings.length === 0) {
+        filteredBukus = bukus;
+      } else {
+        filteredBukus = bukus.filter((buku) => {
+          const bukuRating = buku.fields.rating;
+          return selectedRatings.some((rating) => {
+            if (rating === 5) {
+              return bukuRating === 5;
+            } else {
+              return bukuRating === rating || (bukuRating > rating && bukuRating < rating + 1);
+            }
+          });
+        });
+      }
+
+      document.getElementById("container").innerHTML = "";
+      htmlString = "";
+
+      filteredBukus.forEach((buku) => {
+        const formattedRating = Number(buku.fields.rating).toFixed(2);
+        const truncatedTitle = buku.fields.title.length > 40 ? buku.fields.title.slice(0, 37) + "..." : buku.fields.title;
+        htmlString += `
+          <a href="/review/${buku.pk}" style="text-decoration: none; color: inherit;">
+              <div class="card">
+                <div style="width: 200px; height: 200px;">
+                  <img src="${buku.fields.image_url}" style="scale: 0.8; object-fit: cover; margin-top:10px; margin-left: 50px; max-width: 100%; max-height: 100%;">
+                </div>
+                <div class="card-body">
+                  <class="card-text" style="color: grey;">${buku.fields.author}<br>
+                  <class="card-text-title" style=" color: black; font-weight: bold;">${truncatedTitle}<br>
+                  <class="card-text" style="font-weight: bold;">${formattedRating}⭐
+                </div>
+              </div>
+            </a>
+          `;
       });
-    });
-  }
 
-  document.getElementById("container").innerHTML = "";
-  htmlString = "";
+      document.getElementById("container").innerHTML = htmlString;
+    }
 
-  filteredBukus.forEach((buku) => {
-    const formattedRating = Number(buku.fields.rating).toFixed(2);
-    htmlString += `
-      <a href="/review/${buku.pk}" style="text-decoration: none; color: inherit;">
-          <div class="card">
-            <img src="${buku.fields.image_url}" style="scale: 0.8; object-fit: cover;">
-            <div class="card-body">
-              <h5 class="card-text" style="color: grey;">${buku.fields.author}</h5>
-              <h5 class="card-text" style="font-weight: bold;">${buku.fields.title}</h5>
-              <h5 class="card-text" style="font-weight: bold;">${formattedRating}⭐</h5>
-            </div>
-          </div>
-        </a>
-      `;
-  });
+    refreshProducts();
+  </script>
+</body>
 
-  document.getElementById("container").innerHTML = htmlString;
-}
-
-refreshProducts();
-
-  refreshProducts()
-</script>
 {% endblock content %}

@@ -1,47 +1,82 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<title>LiteraLoka | {{user.username}}'s Review Page</title>
-<div style="padding-top:60px">
-    <nav class="navbar bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          LiteraLoka
-        </a>
-      </div>
-    </nav>
-  </div>
+<head>
+  <title>LiteraLoka | {{user.username}}'s Review Page</title>
+  <style>
+    .button-kece {
+      background-color: white;
+      text-decoration: none;
+      color: black;
+      border: 2px solid white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 18px;
+      width: 110px;
+      height: 50px;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    .container {
+      width: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      border-radius: 10px;
+      background-color: whitesmoke;
+    }
+  </style>
+</head>
 
-<a href="{% url 'review:show_review' %}">
-    <button>
-      Kembali
-  </button>
+<body>
+  <div style="padding-top:60px">
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            LiteraLoka
+          </a>
+        </div>
+      </nav>
+    </div>
+
+  <a href="{% url 'review:show_review' %}">
+      <button class="button-kece">
+        Kembali
+    </button>
   </a>
+  <br>
 
-<br>
+  <h1 style="text-align: center;">Welcome {{user.username}}!</h1>
+  <h3 style="text-align: center;">Berikut review yang sudah anda tulis</h3>
+  <br>
 
-<h1 style="text-align: center;">Welcome {{user.username}}!</h1>
-<h3 style="text-align: center;">Berikut review yang sudah anda tulis</h3>
-<br>
-
-{% for review in reviews %}
-<div class="card" style="width: 18rem; scale: 0.8;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);border: 2px solid white;">
-  <div class="card-body">
-    <h5 class="card-title" style="font-weight: bold;">{{review.buku.title}}</h5>
-    <h5 style="color: grey;">{{review.buku.author}}</h5>
-    <p>
-        Rating dari anda: {{review.rating|floatformat:"2"}}⭐
-        <br>
-        Review dari anda:<br>
-        {{review.review}}<br>
-        <a href="{% url 'review:delete_review' review.pk %}" style="text-decoration: none; font-size: 24px;">
-            🗑️
-        </a>
-    </p>
-
+  {% if reviews %}
+  <div class="container">
+      {% for review in reviews %}
+        <div class="card" style="width: 250px; scale: 0.8; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); border: 2px solid white;">
+          <div class="card-body">
+            <h5 class="card-title" style="font-weight: bold;">{{review.buku.title}}</h5>
+            <h5 style="color: grey;">{{review.buku.author}}</h5>
+            <p>
+              Rating dari anda: {{review.rating|floatformat:"2"}}⭐
+              <br>
+              Review dari anda:<br>
+              {{review.review}}<br>
+            </p>
+            <a href="{% url 'review:delete_review' review.pk %}" style="text-decoration: none; font-size: 24px; margin-left: 160px;">
+              🗑️
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+  {% else %}
+    <div style="text-align: center;">
+      <h1 style="color:green">Anda belum menulis review</h1>
+    </div>
+    {% endif %}
   </div>
-</div>
-{% endfor %}
+  
+</body>
 
 {% endblock content %}

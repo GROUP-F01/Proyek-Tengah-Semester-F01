@@ -8,6 +8,17 @@ from django.core import serializers
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
+from django.contrib.auth.decorators import login_required
+from functools import wraps
+
+def user_not_superuser(function):
+    @wraps(function)
+    def wrap(request, *args, **kwargs):
+        if not request.user.is_superuser:
+            return function(request, *args, **kwargs)
+        else:
+            return HttpResponseRedirect('/')
+    return wrap
 
 def show_review(request):
     buku = Buku.objects.all()
@@ -24,7 +35,10 @@ def show_review_by_id(request, id):
     }
     return render(request, "detail-review.html", context)
 
+@login_required(login_url='/login')
+@user_not_superuser
 def show_users_review(request):
+    buku = Buku.objects.all()
     user=request.user
     review = Review.objects.filter(user = user)
     context = {
@@ -46,6 +60,8 @@ def get_buku(request):
 
 @csrf_exempt
 def add_review_ajax(request, id):
+    if request.user.is_staff == True:
+        return render(request, 'login.html')
     if request.method == 'POST':
         user = request.user
         buku = Buku.objects.get(pk=id)

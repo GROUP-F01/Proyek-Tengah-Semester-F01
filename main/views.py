@@ -10,7 +10,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
-@login_required(login_url='/login')
+
 def show_main(request):
     buku = Buku.objects.all()
     context = {

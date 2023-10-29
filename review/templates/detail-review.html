@@ -1,52 +1,84 @@
 {% extends 'base.html' %}
 {% block content %}
+
 <head>
-<style>
+  <title>LiteraLoka | {{buku.title}}</title>
+  <style>
+    .left {
+      width: 300px;
+      float: left;
+      height: 100vh;
+      margin-top: 20px;
+    }
+    .right {
+      margin-top: 20px;
+      margin-left: 300px;
+      height: 100vh;
+    }
     .card {
-      width: 200px;
+      width: 250px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
       border: 2px solid white;
-      margin-top: 50px;
-      margin-left:50px;
+      margin-top: 40px;
+      margin-left: 50px;
     }
     .admodal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-}
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .admodal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 400px;
+      text-align: center;
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
 
-.admodal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
-}
+    .close:hover {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
+    .button-kece {
+      background-color: white;
+      text-decoration: none;
+      color: black;
+      border: 2px solid white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 18px;
+      width: 110px;
+      height: 50px;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    .container {
+      width: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
 
   </style>
-<title>LiteraLoka | {{buku.title}}</title>
+</head>
+
 <body>
   <div style="padding-top:60px">
     <nav class="navbar bg-body-tertiary fixed-top">
@@ -58,22 +90,29 @@
       </div>
     </nav>
   </div>
-  <div class="card">
-      <img src="{{ buku.image_url }}" style="scale: 0.8;">
-      <div class="rata-rata" id="rata-rata"></div>
+
+  <div class="left">
+    <a href="{% url 'review:show_review' %}">
+        <button class="button-kece">
+          Kembali
+      </button>
+    </a>
+    
+    <div class="card">
+        <img src="{{ buku.image_url }}" style="scale: 0.8;">
+    </div>
+
+    <button class="button-kece" type="button" style="margin-left: 40px; margin-top: 20px; width: 175px;" data-bs-toggle="modal" data-bs-target="#reviewModal">Tulis Review ✍️</button>
   </div>
 
-  
-<a href="{% url 'review:show_review' %}">
-  <button>
-    Kembali
-</button>
-</a>
-
-<button type="button" style="margin-left: 40px;" data-bs-toggle="modal" data-bs-target="#reviewModal">Tulis Review</button>
-
-  <div class = "container" id="kumpulan">
+<div class="right">
+  <div style="margin-top: 110px; margin-left: 20px;">
+    <h5 style="color: #888;">{{ buku.author }}</h5>
+    <h3>{{ buku.title }}</h3>
+    <div class="rata-rata" id="rata-rata" style="margin-left: 5px; font-size: 25px;"></div>
+    <div class = "container" id="kumpulan"></div>
   </div>
+</div>
 
   <div id="adModal" class="admodal">
       <div class="admodal-content">
@@ -155,8 +194,8 @@
           <div class="card-body">
             <p>
               User: ${review.user.username}
-              Rating: ${review.rating}
-              <br>Review: ${review.review}
+              <br>Rating: ${review.rating}.00⭐
+              <br>Review:<br>${review.review}
             </p>
           </div>
         </div>
@@ -209,4 +248,5 @@
       refreshProducts()
   </script>
 </body>
+
 {% endblock content %}
