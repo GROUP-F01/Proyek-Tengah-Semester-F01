@@ -10,7 +10,7 @@
 </ul>
 
 <h2>Tambahkan Review</h2>
-<form method="post" action="{% url 'add_review' book.id %}">
+<form method="post" action="{% url 'resensi:add_review' book.id %}">
     {% csrf_token %}
     <label for="user">User:</label>
     <input type="text" name="user" required><br>

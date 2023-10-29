@@ -1,6 +1,7 @@
 from django.urls import path
 from main.views import show_main, create_product, register, login_user, logout_user
 from main.views import show_xml, show_json, show_xml_by_id, show_json_by_id 
+from django.urls import path, include
 
 
 
@@ -17,5 +18,6 @@ urlpatterns = [
     path('register/', register, name='register'),
     path('login/', login_user, name='login'),
     path('logout/', logout_user, name='logout'),
+    path('resensi/', include('resensi.urls')),
     
 ]
