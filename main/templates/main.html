@@ -21,7 +21,7 @@
             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img width="20" height="25" src="https://static.vecteezy.com/system/resources/previews/000/582/257/non_2x/bulleted-list-icon-vector-illustration.jpg"></img></button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Resensi</a></li>
-              <li><a class="dropdown-item" href="{% url 'review:review' %}">Review</a></li>
+              <li><a class="dropdown-item" href="{% url 'review:show_review' %}">Review</a></li>
               <li><a class="dropdown-item" href="{% url 'jualbuku:jual_buku' %}">Jual</a></li>
               <li><a href="{% url 'inventory_management:literaloka_admin' %}" class="dropdown-item" href="#">Inventory</a></li>
               <li><a class="dropdown-item" href="#">Wishlist</a></li>
@@ -41,7 +41,7 @@
             <li><a href="{% url 'cart_checkout:book_checkout' %}">
                 Shopping cart & Checkout (<span id="amount-added">{{amount_added}}</span>)</a>
             </li>
-            <li><a href="{% url 'cart_checkout:inventory' %}">Inventory</a></li>
+            <li><a href="{% url 'cart_checkout:inventory' %}">User Inventory</a></li>
         </ul>
     </div>
 </div> 
@@ -60,26 +60,6 @@
 {% endif %}
 
 <script> 
-
-    document.querySelectorAll(".add-to-cart-button").forEach(function(button) {
-    button.addEventListener("click", function() {
-        var bookId = this.getAttribute("book-id");
-
-        // Send an AJAX request to add the book to the cart
-        fetch("{% url 'cart_checkout:add_to_cart' 0 %}".replace("0", bookId), {
-            method: "POST",
-            headers: {
-                "X-CSRFToken": "{{ csrf_token }}",
-                "X-Requested-With": "XMLHttpRequest", 
-            }
-        })
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById("amount-added").textContent = data.amount_added;
-        })
-        .catch(error => console.error("Error:", error));
-    });
-});
 
     async function getBuku() {
         return fetch("{% url 'inventory_management:get_product_json' %}").then((res) => res.json())
@@ -134,7 +114,26 @@
     
     document.getElementById("button_add").onclick = addBuku
 
+    
+    document.querySelectorAll(".add-to-cart-button").forEach(function(button) {
+    button.addEventListener("click", function() {
+        var bookId = this.getAttribute("book-id");
 
+        // Send an AJAX request to add the book to the cart
+        fetch("{% url 'cart_checkout:add_to_cart' 0 %}".replace("0", bookId), {
+            method: "POST",
+            headers: {
+                "X-CSRFToken": "{{ csrf_token }}",
+                "X-Requested-With": "XMLHttpRequest", 
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("amount-added").textContent = data.amount_added;
+        })
+        .catch(error => console.error("Error:", error));
+    });
+});
 </script>
 
 
