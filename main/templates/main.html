@@ -6,20 +6,55 @@
 
 <nav class="navbar bg-body-tertiary">
     <div class="container-fluid d-flex flex-row">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="{% url 'main:show_main' %}">
         <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
         LiteraLoka
       </a>
+<<<<<<< HEAD
       <div>
         <a href="#"><button style="border-radius: 8px;">Review</button></a>
         <a href="#"><button style="border-radius: 8px;">Resensi</button></a>
         <a href="{% url 'jualbuku:jual_buku' %}"><button style="border-radius: 8px;">Jual</button></a>
         <a href="#"><button style="border-radius: 8px;"><img src="https://th.bing.com/th/id/R.672ae334c8366021fd588786f054cb2d?rik=5OKBZlZEdbRDrA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_225646.png&ehk=Tjxw1TwcwdV5%2ftOEQVrvqgnbn0XKd%2fweSJ6aBiXxKB0%3d&risl=&pid=ImgRaw&r=0" width="28" height="20" alt="Logo"></button></a>
         <a href="{% url 'main:login' %}"><button style="border-radius: 8px;">Login</button></a>
+=======
+      <div style="display: flex; flex-direction: row;">
+        <a href="#"><button style="margin-top: 2px; margin-left: 2px; margin-right: 2px; border-radius: 8px; height: 35px;"><img src="https://th.bing.com/th/id/R.672ae334c8366021fd588786f054cb2d?rik=5OKBZlZEdbRDrA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_225646.png&ehk=Tjxw1TwcwdV5%2ftOEQVrvqgnbn0XKd%2fweSJ6aBiXxKB0%3d&risl=&pid=ImgRaw&r=0" width="28" height="20" alt="Logo"></button></a>
+        {% if user.is_authenticated %}
+            <a href="{% url 'main:logout' %}""><button style="margin-top: 2px; margin-left: 2px; margin-right: 2px; border-radius: 8px; height: 35px;">Logout</button></a>
+        {% else %}
+            <a href="{% url 'main:login' %}""><button style="margin-top: 2px; margin-left: 2px; margin-right: 2px; border-radius: 8px; height: 35px;">Login</button></a>
+        {% endif %}
+        <div class="dropdown" style="padding-right: 2px;">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img width="20" height="25" src="https://static.vecteezy.com/system/resources/previews/000/582/257/non_2x/bulleted-list-icon-vector-illustration.jpg"></img></button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Resensi</a></li>
+              <li><a class="dropdown-item" href="#">Review</a></li>
+              <li><a class="dropdown-item" href="#">Jual</a></li>
+              <li><a href="{% url 'inventory_management:literaloka_admin' %}" class="dropdown-item" href="#">Inventory</a></li>
+              <li><a class="dropdown-item" href="#">Wishlist</a></li>
+            </ul>
+          </div>
+>>>>>>> 17c05b710bd341b4709664afccfb7821d2bbb5dd
       </div>
     </div>
-    
-  </nav>
+</nav>
+
+
+<div class="listpage">
+    <h3>Hyperlink:</h3>
+    <div class="list-link" style="list-style-type: none;">
+        <ul>
+            <li><a>Admin Site</a></li>
+            <li><a>Shop</a></li>
+            <li><a href="{% url 'cart_checkout:book_checkout' %}">
+                Shopping cart & Checkout (<span id="amount-added">{{amount_added}}</span>)</a>
+            </li>
+            <li><a href="{% url 'cart_checkout:inventory' %}">Inventory</a></li>
+        </ul>
+    </div>
+</div> 
+
 
 
 <div class="main-container d-flex p-3 flex-row">
@@ -48,37 +83,96 @@
                     Add New Product
                 </button>
             </a>
+                <div class="d-flex d-grid gap-3 flex-wrap m-3" style="justify-content: space-evenly;" id="product_table"></div>
     </div>
-    <div class="listpage">
-        <h3>Contributor:</h3>
-        <ol>
-            <li>Fernando Valentino Sitinjak (2206081332)</li>
-            <li>Muhammad Hilmy Erryanto (2206025905)</li>
-            <li>Fathirahma Alyssa Pristanti (2206082215)</li>
-            <li>Chika Marsya Diandra Lumban Gaol (2206083344)</li>
-            <li>Pradipta Arya Pramudita (2206083685)</li>
-            <li>Leticia Kalila Darlene (2206830561)</li>
-        </ol>
-        <h3>Hyperlink:</h3>
-        <div class="list-link" style="list-style-type: none;">
-            <ul>
-                <li><a>Admin Site</a></li>
-                <li><a>Shop</a></li>
-                <li><a href="{% url 'cart_checkout:book_checkout' %}">
-                    Shopping cart & Checkout (<span id="amount-added">{{amount_added}}</span>)</a>
-                </li>
-                <li><a href="{% url 'cart_checkout:inventory' %}">Inventory</a></li>
-            </ul>
-        </div>
-    </div>  
     
 </div>
-<a href="{% url 'main:logout' %}"">
-    <button>
-        Logout
-    </button>
-</a>
 
-<h5>Sesi terakhir login: {{ last_login }}</h5>
+{% if user.is_authenticated %}
+    <h3>Account: {{ name }}</h3>
+{% endif %}
+
+<script> 
+
+    document.querySelectorAll(".add-to-cart-button").forEach(function(button) {
+    button.addEventListener("click", function() {
+        var bookId = this.getAttribute("book-id");
+
+        // Send an AJAX request to add the book to the cart
+        fetch("{% url 'cart_checkout:add_to_cart' 0 %}".replace("0", bookId), {
+            method: "POST",
+            headers: {
+                "X-CSRFToken": "{{ csrf_token }}",
+                "X-Requested-With": "XMLHttpRequest", 
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("amount-added").textContent = data.amount_added;
+        })
+        .catch(error => console.error("Error:", error));
+    });
+});
+
+    async function getBuku() {
+        return fetch("{% url 'inventory_management:get_product_json' %}").then((res) => res.json())
+    }
+
+    var macamBahasa = document.querySelectorAll('input[class="lang-filter"]');
+    var bahasaDifilter = [];
+
+    macamBahasa.forEach(function(checkbox) {
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                bahasaDifilter.push(this.value)
+            }
+        })
+    });
+
+
+    async function refreshProducts() {
+        document.getElementById("product_table").innerHTML = ""
+        const kumpulanbuku = await getBuku()
+        let htmlString = ''
+            kumpulanbuku.forEach((buku) => {
+                    htmlString += `<div class="bg-body-tertiary" style="width: 12rem; border-style: solid; border-radius: 8px;" id="product_table">
+                                    <img src="${buku.fields.image_url}" class="card-img-top " alt="..." width="200" height="200">
+                                    <div class="card-body" style="margin: 2px 2px; padding: 2px;">
+                                        <h5 class="card-title overflow-auto" style="height: 70px;">${buku.fields.title}</h5>
+                                        <p class="card-text overflow-auto" style="height: 50px;">${buku.fields.description}</p>
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                                        <a href="#"><button style="border-radius: 8px;">Lihat Detail</button></a>
+                                        <a href="/delete-buku/${buku.pk}"><button style="border-radius: 8px">🗑️</button></a>
+                                        <button type="submit" class="btn btn-primary add-to-cart-button" book-id="{{buku.id}}">Add to Cart</button>
+                                    </div>
+                                    </div>
+                                </div>` 
+                }
+        )
+        
+        document.getElementById("product_table").innerHTML = htmlString
+    }
+    
+    refreshProducts()
+
+    function addBuku() {
+        fetch("{% url 'inventory_management:add_buku_ajax' %}", {
+            method: "POST",
+            body: new FormData(document.querySelector('#form'))
+        }).then(refreshProducts)
+        
+        document.getElementById("form").reset()
+        return false
+    }
+    
+    document.getElementById("button_add").onclick = addBuku
+
+
+</script>
+
 
 {% endblock content %}
+
+ 
+
+

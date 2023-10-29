@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'inventory_management',
     'wishlist',
     'jualbuku',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
