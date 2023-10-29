@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid d-flex flex-row">
+      <a class="navbar-brand" href="{% url 'main:show_main' %}">
+        <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        LiteraLoka
+      </a>
+      <div>
+        <a href="#"><button style="border-radius: 8px;">Review</button></a>
+        <a href="#"><button style="border-radius: 8px;">Resensi</button></a>
+        <a href="{% url 'jualbuku:jual_buku' %}"><button style="border-radius: 8px;">Jual</button></a>
+        <a href="#"><button style="border-radius: 8px;"><img src="https://th.bing.com/th/id/R.672ae334c8366021fd588786f054cb2d?rik=5OKBZlZEdbRDrA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_225646.png&ehk=Tjxw1TwcwdV5%2ftOEQVrvqgnbn0XKd%2fweSJ6aBiXxKB0%3d&risl=&pid=ImgRaw&r=0" width="28" height="20" alt="Logo"></button></a>
+        <a href="{% url 'main:login' %}"><button style="border-radius: 8px;">Login</button></a>
+      </div>
+    </div>
+    
+  </nav>
+
+
+<style>
+        .card{
+            transition: transform 0.2s;
+        }
+        .card:hover {
+              transform: scale(1.05);
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          }
+</style>
+<div class="main-container d-flex p-3 flex-row">
+    <div class="content-page">
+        <a href="{% url 'jualbuku:create_buku' %}" class="m-3">
+            <button class="btn btn-dark">
+                Add New Book
+            </button>
+        </a>
+            <div class="d-flex justify-content-start d-grid gap-3 flex-wrap m-3">
+                {% for buku in list_buku %}
+                    <div class="card" style="width: 12rem;">
+                        <img src="{{ buku.buku.image_url }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-weight: 700;">{{buku.buku.title }}</p>
+                        </div>
+                        </div>
+                {% endfor %}
+            </div>
+    </div>  
+</div>
+
+{% endblock content %}
