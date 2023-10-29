@@ -22,4 +22,5 @@ urlpatterns = [
     # path('main/', include('main.urls')),
     path('', include('main.urls')),
     path('jualbuku/', include('jualbuku.urls')),
+    path('cart_checkout/', include('cart_checkout.urls', namespace='cart_checkout')),
 ]

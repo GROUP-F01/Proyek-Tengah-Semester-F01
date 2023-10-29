@@ -9,12 +9,23 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages  
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from cart_checkout.views import init_cart, add_to_cart
 
 # Create your views here.
 def show_main(request):
     buku = Buku.objects.all()
+
+    init_cart(request)
+
+    if request.method == "POST":
+        book_id = request.POST.get("book_id")
+        add_to_cart(request, book_id)
+
+    amount_added = request.session.get('amount_added', 0)
+
     context = {
         'kumpulanbuku': buku,
+        'amount_added': amount_added,
     }
 
     return render(request, "main.html", context)

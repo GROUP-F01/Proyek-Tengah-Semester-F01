@@ -64,7 +64,10 @@
             <ul>
                 <li><a>Admin Site</a></li>
                 <li><a>Shop</a></li>
-                <li><a>Shopping cart & Checkout</a></li>
+                <li><a href="{% url 'cart_checkout:book_checkout' %}">
+                    Shopping cart & Checkout (<span id="amount-added">{{amount_added}}</span>)</a>
+                </li>
+                <li><a href="{% url 'cart_checkout:inventory' %}">Inventory</a></li>
             </ul>
         </div>
     </div>  
