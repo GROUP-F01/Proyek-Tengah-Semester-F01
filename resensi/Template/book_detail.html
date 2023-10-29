@@ -1,0 +1,20 @@
+<h1>{{ book.title }}</h1>
+<p>{{ book.author }}</p>
+<p>{{ book.publication_date }}</p>
+
+<h2>Review</h2>
+<ul>
+    {% for review in reviews %}
+        <li>{{ review.user }} says: {{ review.review_text }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Tambahkan Review</h2>
+<form method="post" action="{% url 'add_review' book.id %}">
+    {% csrf_token %}
+    <label for="user">User:</label>
+    <input type="text" name="user" required><br>
+    <label for="review_text">Review:</label>
+    <textarea name="review_text" required></textarea><br>
+    <input type="submit" value="Tambahkan Review">
+</form>
