@@ -1,0 +1,30 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+<h1>Book Checkout</h1>
+
+<ul>
+    {% for book_id, book_title in cart.items %}
+        <li>{{ book_title }}</li>
+    {% endfor %}
+</ul>
+
+
+<h5>Total: Rp {{ total_price }}</h5>
+
+
+<form method="POST">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Checkout"/>
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+{% endblock %}

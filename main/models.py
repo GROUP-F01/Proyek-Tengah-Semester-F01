@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
+from django.contrib.auth.models import User
 
 class Buku(models.Model):
     isbn = models.CharField(null=True, blank=True, max_length=255)

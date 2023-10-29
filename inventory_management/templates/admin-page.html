@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid d-flex flex-row">
+      <a class="navbar-brand" href="{% url 'main:show_main' %}">
+        <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        LiteraLoka
+      </a>
+      <div style="display: flex; flex-direction: row;">
+        <button style="margin-top: 2px; margin-left: 2px; margin-right: 2px; border-radius: 8px; height: 35px;" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="https://cdn.icon-icons.com/icons2/1710/PNG/512/addplussignoutline_112526.png" width="20" height="20" alt="Tambah buku"></button>
+        <a href="#"><button style="margin-top: 2px; margin-left: 2px; margin-right: 2px; border-radius: 8px; height: 35px;"><img src="https://th.bing.com/th/id/R.672ae334c8366021fd588786f054cb2d?rik=5OKBZlZEdbRDrA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_225646.png&ehk=Tjxw1TwcwdV5%2ftOEQVrvqgnbn0XKd%2fweSJ6aBiXxKB0%3d&risl=&pid=ImgRaw&r=0" width="28" height="20" alt="Logo"></button></a>
+        <a href="{% url 'main:logout' %}""><button style="margin-top: 2px; margin-left: 2px; margin-right: 2px; border-radius: 8px; height: 35px;">Logout</button></a>
+        <div class="dropdown" style="padding-right: 2px;">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img width="20" height="25" src="https://static.vecteezy.com/system/resources/previews/000/582/257/non_2x/bulleted-list-icon-vector-illustration.jpg"></img></button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Resensi</a></li>
+              <li><a class="dropdown-item" href="#">Review</a></li>
+              <li><a class="dropdown-item" href="#">Jual</a></li>
+              <li><a href="{% url 'inventory_management:literaloka_admin' %}" class="dropdown-item" href="#">Manajemen Inventory</a></li>
+              <li><a class="dropdown-item" href="#">Wishlist</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+</nav>
+
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h1>Admin Page</h1>
+    <h3>Filter by language:</h3>
+    <div style="display: flex; flex-direction: row;">
+        <input type="checkbox" id="en" class="lang-filter" value="en"> English
+        <input type="checkbox" id="ta" class="lang-filter" value="ta"> Tagalog
+        <input type="checkbox" id="id" class="lang-filter" value="id"> Indonesia
+        <input type="checkbox" id="ko" class="lang-filter" value="ko"> Korea 
+        <input type="checkbox" id="pt-BR" class="lang-filter" value="pt-BR"> Brazilian Portuguese
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Masukkan informasi buku Anda</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form" onsubmit="return false;">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="isbn" class="col-form-label">ISBN:</label>
+                        <input type="number" class="form-control" id="isbn" name="isbn"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="title" class="col-form-label">Title:</label>
+                        <input type="text" class="form-control" id="title" name="title"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="col-form-label">Description:</label>
+                        <textarea class="form-control" id="description" name="description"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="author" class="col-form-label">Author:</label>
+                        <input type="text" class="form-control" id="author" name="author"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="publisher" class="col-form-label">Publisher:</label>
+                        <input type="text" class="form-control" id="publisher" name="publisher"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="publication-date" class="col-form-label">Publication Date:</label>
+                        <input type="text" class="form-control" id="publication-date" name="publication-date"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="page-count" class="col-form-label">Page Count:</label>
+                        <input type="number" class="form-control" id="page-count" name="page-count"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="category" class="col-form-label">Category:</label>
+                        <select id="category" name="category">
+                            <option value="History">History</option>
+                            <option value="Social Science">Social Science</option>
+                            <option value="Social Science">Political Science</option>
+                            <option value="Business & Economics">Business & Economics</option>
+                            <option value="Pyschology">Pyschology</option>
+                            <option value="Biography & Autobiography">Biography & Autobiography</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Philosophy">Philosophy</option>
+                            <option value="Computers">Computers</option>
+                            <option value="Nature">Nature</option>
+                            <option value="Science">Science</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Comics & Graphic Novels">Comics & Graphic Novels</option>
+                            <option value="Humor">Humor</option>
+                            <option value="Literary Collections">Literary Collections</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="url" class="col-form-label">Image URL:</label>
+                        <input type="url" class="form-control" id="url" name="url"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lang" class="col-form-label">Language:</label>
+                        <select id="lang" name="lang">
+                            <option value="en">English</option>
+                            <option value="ta">Tagalog</option>
+                            <option value="ko">Korea</option>
+                            <option value="id">Indonesia</option>
+                            <option value="de">Deustch</option>
+                            <option value="pt-BR">Brazilian Portuguese</option>
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="col-form-label">Price:</label>
+                        <input type="number" class="form-control" id="price" name="price"></input>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="button_add" data-bs-dismiss="modal">Add Product</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="main-container d-flex p-3 flex-row">
+    <div class="content-page">
+                <div class="d-flex d-grid gap-3 flex-wrap m-3" style="justify-content: space-evenly;" id="product_table"></div>
+    </div>
+    
+</div>
+
+<h3>Account: {{ name }}</h3>
+
+<script> 
+    async function getBuku() {
+        return fetch("{% url 'inventory_management:get_product_json' %}").then((res) => res.json())
+    }
+
+    var macamBahasa = document.querySelectorAll('input[class="lang-filter"]');
+    var bahasaDifilter = [];
+
+    macamBahasa.forEach(function(checkbox) {
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                bahasaDifilter.push(this.value)
+            }
+        })
+    });
+
+
+    async function refreshProducts() {
+        document.getElementById("product_table").innerHTML = ""
+        const kumpulanbuku = await getBuku()
+        let htmlString = ''
+            kumpulanbuku.forEach((buku) => {
+                    htmlString += `<div class="bg-body-tertiary" style="width: 12rem; border-style: solid; border-radius: 8px;" id="product_table">
+                                    <img src="${buku.fields.image_url}" class="card-img-top " alt="..." width="200" height="200">
+                                    <div class="card-body" style="margin: 2px 2px; padding: 2px;">
+                                        <h5 class="card-title overflow-auto" style="height: 70px;">${buku.fields.title}</h5>
+                                        <p class="card-text overflow-auto" style="height: 50px;">${buku.fields.description}</p>
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                                        <a href="#"><button style="border-radius: 8px;">Lihat Detail</button></a>
+                                        <a href="/delete-buku/${buku.pk}"><button style="border-radius: 8px">SAMPAH</button></a>
+                                    </div>
+                                    </div>
+                                </div>` 
+                }
+        )
+        
+        document.getElementById("product_table").innerHTML = htmlString
+    }
+    
+    refreshProducts()
+
+    function addBuku() {
+        fetch("{% url 'inventory_management:add_buku_ajax' %}", {
+            method: "POST",
+            body: new FormData(document.querySelector('#form'))
+        }).then(refreshProducts)
+        
+        document.getElementById("form").reset()
+        return false
+    }
+    
+    document.getElementById("button_add").onclick = addBuku
+
+
+</script>
+
+{% endblock content %}
