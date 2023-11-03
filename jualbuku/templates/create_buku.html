@@ -1,0 +1,129 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid d-flex flex-row">
+      <a class="navbar-brand" href="{% url 'main:show_main' %}">
+        <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        LiteraLoka
+      </a>
+      <div>
+        <a href="#"><button style="border-radius: 8px;">Review</button></a>
+        <a href="#"><button style="border-radius: 8px;">Resensi</button></a>
+        <a href="{% url 'jualbuku:jual_buku' %}"><button style="border-radius: 8px;">Jual</button></a>
+        <a href="#"><button style="border-radius: 8px;"><img src="https://th.bing.com/th/id/R.672ae334c8366021fd588786f054cb2d?rik=5OKBZlZEdbRDrA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_225646.png&ehk=Tjxw1TwcwdV5%2ftOEQVrvqgnbn0XKd%2fweSJ6aBiXxKB0%3d&risl=&pid=ImgRaw&r=0" width="28" height="20" alt="Logo"></button></a>
+        <a href="{% url 'main:login' %}"><button style="border-radius: 8px;">Login</button></a>
+      </div>
+    </div>
+    
+  </nav>
+
+<div class="d-flex justify-content-center ">
+    <div class="w-50">
+        <h1 class="mt-5 mx-3">Add New Book</h1>
+        <form class="mx-3 mb-3" method="post" id="form-create">
+            <div class="mb-3">
+              <label for="title" class="form-label">Title</label>
+              <input type="text" class="form-control" id="title" required>
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Description</label>
+              <textarea class="form-control" id="description" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="author" class="form-label">Author</label>
+                <input type="text" class="form-control" id="author" required>
+            </div>
+            <div class="mb-3">
+                <label for="publisher" class="form-label">Publisher</label>
+                <input type="text" class="form-control" id="publisher" required>
+            </div>
+            <div class="mb-3">
+                <label for="image-url" class="form-label">Image URL</label>
+                <input type="text" class="form-control" id="image-url" required>
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Price</label>
+                <input type="number" class="form-control" id="price" required>
+            </div>
+            <div class="mb-3">
+                <label for="lang" class="form-label">Lang</label>
+                <input type="text" class="form-control" id="lang" required>
+            </div>
+            <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
+                <input type="text" class="form-control" id="category" required>
+            </div>
+            <div class="mb-3">
+                <label for="page-count" class="form-label">Page Count</label>
+                <input type="number" class="form-control" id="page-count" required>
+            </div>
+            <div class="mb-3">
+                <label for="publication-date" class="form-label">Publication Date</label>
+                <input type="date" class="form-control" id="publication-date" required>
+            </div>
+            <div class="mb-3">
+                <label for="isbn" class="form-label">ISBN</label>
+                <input type="text" class="form-control" id="isbn" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div id="alert" style="display:none;">
+
+<script>
+    function getCookie(name) {
+        var cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = jQuery.trim(cookies[i]);
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+    $('#form-create').on('submit', (event) => {
+        event.preventDefault();
+        const data = {
+            title:$('#title').val(),
+            description:$('#description').val(),
+            author: $('#author').val(),
+            publisher: $('#publisher').val(),
+            image_url: $('#image-url').val(),
+            price: $('#price').val(),
+            lang: $('#lang').val(),
+            category: $('#category').val(),
+            page_count: $('#page-count').val(),
+            publication_date: $('#publication-date').val(),
+            isbn: $('#isbn').val(),
+        }
+        $.ajax({
+            url: "{% url 'jualbuku:create_buku' %}",
+            type: 'POST',
+            data: {
+                csrfmiddlewaretoken: getCookie('csrftoken'),
+                data : JSON.stringify(data)
+            },
+            success: (response) => {
+                if (response.success) {
+                   alert("Buku berhasil dibuat")
+                   location.href = "{% url 'jualbuku:jual_buku' %}"
+                }
+
+            },
+            error: (response) => {
+                console.log(response)
+                alert("Error")
+            }
+        })
+    })
+</script>
+
+{% endblock %}

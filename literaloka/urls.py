@@ -19,6 +19,10 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('main/', include('main.urls')),
     path('', include('main.urls')),
+    path('jualbuku/', include('jualbuku.urls')),
+    path('cart_checkout/', include('cart_checkout.urls', namespace='cart_checkout')),
+    path('', include('inventory_management.urls')),
+    path('', include('review.urls')),
+    path('wishlist/', include('wishlist.urls')),
 ]

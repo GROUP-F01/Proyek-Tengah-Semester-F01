@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <head>
+        <title>LiteraLoka | Wishlist</title>
+    <link
+        rel="stylesheet"
+        href="{% static './forms.css' %}"
+        type="text/css"
+    />
+    </head>
+
+    <body>
+     <div style="padding-top:60px">
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'main:show_main' %}">
+          <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          LiteraLoka
+        </a>
+      </div>
+    </nav>
+  </div>
+     <div class="button-back-container">
+             <button class="button-back" id="button-back">Back</button>
+
+     </div>
+    <div class="main-container">
+        <div class="form-container">
+            <h1>Add Wishlist</h1>
+            <form method="POST">
+                 {% csrf_token %}
+                {{ form }}
+                <label></label>
+            <input type="submit" value="Add to Wishlist" class="button-submit">
+            </form>
+        </div>
+    </div>
+    <script src="{% static './forms_wishlist.js' %}" type="application/javascript"></script>
+    </body>
+
+
+{% endblock content %}
