@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+       <head>
+        <title>LiteraLoka | Wishlist</title>
+    <link
+        rel="stylesheet"
+        href="{% static './wishlist.css' %}"
+        type="text/css"
+    />
+    </head>
+      <body>
+     <div style="padding-top:60px">
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'main:show_main' %}">
+          <img src="https://th.bing.com/th/id/OIP.AvspTpBxlo8rlUhLwCHVNwHaFj?pid=ImgDet&w=185&h=138&c=7&dpr=1,5" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          LiteraLoka
+        </a>
+      </div>
+    </nav>
+     </div>
+
+      <div class="main-container">
+        <div class="wishlist-container">
+            <div class="button-wishlist-container">
+             <button class="button-wishlist" id="button-wishlist">Add Wishlist</button>
+            </div>
+            <h1>{{ user.username }}'s Wishlist</h1>
+            <div class="wishlist-card-container" id="wishlist-card-container">
+                <div class="grid-card-container" id="grid-card-container">
+                </div>
+            </div>
+        </div>
+      </div>
+      </div>
+      </body>
+
+    <script>
+    async function fetchWishlist(){
+        const response = await fetch("{% url 'wishlist:get_wishlist' %}")
+        const data = await response.json()
+        return data.wishlist
+    }
+
+    function addWishlist(){
+        window.location.href = "{% url 'wishlist:add_wishlist' %}"
+    }
+
+    async function refreshWishlist(){
+        const wishlist = await fetchWishlist()
+        if(wishlist.length === 0){
+            document.getElementById("wishlist-card-container").innerHTML = `<div class="empty-wishlist">Your wishlist is Empty</div>`
+            return
+        }
+
+        const cardContainer = document.getElementById("grid-card-container")
+        cardContainer.innerHTML = ""
+        let card = ""
+        for (const data of wishlist){
+            if (data.reason === ""){
+                data.reason = "No Reason"
+            }
+            card += `
+             <div class="wishlist-card">
+                        <img src="${data.book__image_url}"/>
+                        <p class="category">${data.book__category}</p>
+                        <div class="title-container">
+                            <h2 class="title-card">${data.book__title}</h2>
+                        </div>
+                        <div class="reason-container">
+                            <h3 class="reason-card">Reason:</h3>
+                            <h3 class="reason-card">${data.reason}</h3>
+                        </div>
+                        <div class="button-card-container">
+                            <button class="button-card" id="button-remove-${data.id}">Remove Wishlist</button>
+                        </div>
+            </div>
+            `
+        }
+        cardContainer.innerHTML = card
+
+
+        for(const data of wishlist){
+            const id = `button-remove-${data.id}`
+            document.getElementById(id).addEventListener("click", async () => {
+                const url = `delete-wishlist/${data.id}`
+                const response = await fetch(url, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CSRFToken": "{{ csrf_token }}"
+                    }
+                })
+                alert(`${data.book__title} Wishlist Removed`)
+                await refreshWishlist()
+            })
+        }
+    }
+
+    document.getElementById("button-wishlist").addEventListener("click", addWishlist)
+    refreshWishlist()
+    </script>
+{% endblock content %}
