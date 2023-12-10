@@ -56,7 +56,7 @@ def get_reviews_buku(request, id):
 
 def get_buku(request):
     buku = Buku.objects.all()
-    return HttpResponse(serializers.serialize('json', buku))
+    return HttpResponse(serializers.serialize('json', buku),content_type="application/json")
 
 @csrf_exempt
 def add_review_ajax(request, id):
