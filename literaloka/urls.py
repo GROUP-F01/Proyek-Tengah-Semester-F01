@@ -25,4 +25,5 @@ urlpatterns = [
     path('', include('inventory_management.urls')),
     path('', include('review.urls')),
     path('wishlist/', include('wishlist.urls')),
+    path('auth/', include('authentication.urls')),
 ]
