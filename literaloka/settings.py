@@ -28,6 +28,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SAMESITE = 'None'
 
 # Application definition
 
@@ -47,7 +53,11 @@ INSTALLED_APPS = [
     'wishlist',
     'jualbuku',
     'rest_framework',
+<<<<<<< HEAD
     'authentication',
+=======
+    'corsheaders'
+>>>>>>> 713a4845c6c72b5bf288cb580ff3f68ecd5a7cc3
 ]
 
 MIDDLEWARE = [
@@ -59,6 +69,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware'
 ]
 
 ROOT_URLCONF = 'literaloka.urls'
@@ -111,6 +123,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1', 'http://localhost', 'https://literaloka.my.id', 'http://literaloka.my.id']
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/

@@ -54,9 +54,15 @@ def register(request):
     context = {'form':form}
     return render(request, 'register.html', context)
 
+<<<<<<< HEAD
 def show_json(request):
     data = Buku.objects.all()
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+=======
+def show_buku(request):
+    buku = Buku.objects.all()
+    return HttpResponse(serializers.serialize('json', buku),content_type="application/json")
+>>>>>>> 713a4845c6c72b5bf288cb580ff3f68ecd5a7cc3
 
 def login_user(request):
     if request.method == 'POST':
