@@ -53,11 +53,7 @@ INSTALLED_APPS = [
     'wishlist',
     'jualbuku',
     'rest_framework',
-<<<<<<< HEAD
     'authentication',
-=======
-    'corsheaders'
->>>>>>> 713a4845c6c72b5bf288cb580ff3f68ecd5a7cc3
 ]
 
 MIDDLEWARE = [
