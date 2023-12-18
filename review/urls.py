@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import show_review, show_review_by_id, add_review_ajax, get_reviews_buku, get_buku, show_users_review, delete_review
+from .views import show_review, show_review_by_id, add_review_ajax, get_reviews_buku, get_buku, show_users_review, delete_review, add_review_flutter, check_review
 
 app_name = 'review'
 
@@ -11,4 +11,6 @@ urlpatterns = [
     path('my-review/', show_users_review, name='user_reviews'),
     path('get-buku/', get_buku, name = 'get_buku'),
     path('delete/<int:id>', delete_review, name='delete_review'),
+    path('create-review/<int:id>', add_review_flutter, name='create_review'),
+    path('check-review/<int:id>', check_review, name='check_review'),
 ]

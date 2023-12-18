@@ -57,7 +57,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -119,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1', 'http://localhost', 'https://literaloka.my.id', 'http://literaloka.my.id']
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1', 'http://localhost', 'https://literaloka.my.id', 'http://literaloka.my.id', 'https://hilmy.literaloka.my.id', 'http://hilmy.literaloka.my.id',]
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/

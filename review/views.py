@@ -1,9 +1,10 @@
+import json
 import math
 from django.shortcuts import render
 from django.urls import reverse
 from main.models import Buku
 from .models import Review, ReviewSerializer
-from django.http import HttpResponseRedirect, HttpResponse, HttpResponseNotFound, HttpResponseBadRequest
+from django.http import HttpResponseRedirect, HttpResponse, HttpResponseNotFound, HttpResponseBadRequest, JsonResponse
 from django.core import serializers
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.response import Response
@@ -102,3 +103,47 @@ def delete_review(request, id):
     buku.save()
     review.delete()
     return HttpResponseRedirect(reverse('review:user_reviews'))
+
+@csrf_exempt
+def add_review_flutter(request, id):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        user = request.user
+        rating = int(data["rating"])
+        review = data["review"]
+        buku = Buku.objects.get(pk=id)
+
+        existing_review = Review.objects.filter(user=user, buku=buku).first()
+        if existing_review:
+            return JsonResponse({"status": "duplicate"}, status=400)
+        
+        all_reviews = Review.objects.filter(buku__id=id)
+        new_rating = (buku.rating * len(all_reviews) + rating) / (len(all_reviews) + 1)
+        new_rating = round(new_rating, 2)
+        buku.rating = new_rating
+        buku.save()
+
+        new_review = Review.objects.create(
+            user=user, buku=buku, rating=rating, review=review
+        )
+        new_review.save()
+        return JsonResponse({"status": "success"}, status=200)
+    else:
+        return JsonResponse({"status": "error"}, status=401)
+    
+@csrf_exempt
+def check_review(request, id):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        user = request.user
+        rating = int(data["rating"])
+        review = data["review"]
+        buku = Buku.objects.get(pk=id)
+
+        existing_review = Review.objects.filter(user=user, buku=buku).first()
+        if existing_review:
+            return JsonResponse({"status": "duplicate"}, status=400)
+
+        return JsonResponse({"status": "success"}, status=200)
+    else:
+        return JsonResponse({"status": "error"}, status=401)
