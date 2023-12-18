@@ -14,7 +14,7 @@ Kami berencana untuk membuat website toko buku bernama LiteraLoka. Website ini p
 ## 📁 Daftar dan Pembagian Tugas Modul
 Berikut ini fitur-fitur yang tersedia di LiteraLoka:
 ### 🗃️ Manajemen Inventori - Nando
-Modul khusus untuk super admin, sehingga hanya admin yang bisa mengakses page ini. Fungsionalitas dari page ini adalah sebagai kontrol utama terhadap semua data yang ada di website, mulai dari mengatur buku, hingga mengakses data tiap user. Untuk selain admin yang melakukan login ataupun tidak, akan land di page yang sama dengan tampilan yang berbeda (opsional) atau land di page yang hanya menampilkan 404 not found.
+Modul khusus untuk super admin, sehingga hanya admin yang bisa mengakses page ini. Fungsionalitas dari page ini adalah sebagai kontrol utama terhadap semua data yang ada di website, mulai dari mengatur buku, hingga mengakses data tiap user. Untuk selain admin yang melakukan login ataupun tidak, akan land di page main
 
 ### 💰 Penjualan Buku User - Chika
 Modul ini hanya dapat digunakan oleh user yang sedang login untuk menjual buku mereka ke LiteraLoka. Pada page penjualan buku, user dapat menjual buku dengan cara menginput judul, tahun terbit, dan lainnya pada form pengisian. Pada form ini user juga dapat menginput foto dari buku yang akan dijual. Setelah submit form, buku akan ditampilkan pada dataset penjualan.
@@ -32,7 +32,7 @@ Modul ini hanya dapat digunakan oleh user yang sedang login untuk menulis resens
 Modul ini hanya dapat digunakan oleh user yang sedang login. Modul ini bertujuan untuk menampilkan urutan buku-buku terbaik menurut user yang dinilai dari rating yang diberikan untuk buku tersebut. Pada modul ini user dapat memberi rating sekaligus menulis komentar singkat untuk buku tersebut.
 
 ## 📑 Sumber Dataset Katalog Buku
-https://drive.google.com/file/d/17jiAwHx_68zUrolbTl75IoLRFK_JLYrx/view
+[Google API](https://developers.google.com/books/)
 
 ## 👥 Roles
 | Role  | Description |
