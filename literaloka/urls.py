@@ -26,4 +26,5 @@ urlpatterns = [
     path('', include('review.urls')),
     path('wishlist/', include('wishlist.urls')),
     path('auth/', include('authentication.urls')),
+    path('resensi/', include('resensi.urls')),
 ]
