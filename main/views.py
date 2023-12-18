@@ -56,7 +56,7 @@ def register(request):
 
 def show_buku(request):
     buku = Buku.objects.all()
-    return HttpResponse(serializers.serialize('json', buku),content_type="application/json")
+    return HttpResponse(serializers.serialize('json', buku), content_type="application/json")
 
 def login_user(request):
     if request.method == 'POST':
