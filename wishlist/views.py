@@ -91,7 +91,9 @@ def delete_wishlist_ajax(request, wishlist_id):
         "message": "success delete wishlist"
     }
     return HttpResponse(json.dumps(response), content_type='application/json')
+
 @csrf_exempt
+@login_required
 def add_wishlist_ajax(request):
     if request.method == 'POST':
         data = json.loads(request.body)
